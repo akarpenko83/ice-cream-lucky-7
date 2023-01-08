@@ -1,1 +1,15 @@
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+
 @import './common';
+
+@import './components/logo';
+@import './components/buttons';
+@import './components/grid';
+@import './components/card';
+@import './components/slider';
+
+@import './layouts/hero-header.scss';
+
+
