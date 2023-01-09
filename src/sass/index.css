@@ -1,4 +1,14 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+.container {
+  outline: 2px dashed #f44336;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
 body {
   color: #131313;
   font-family: "Montserrat", sans-serif;
@@ -20,6 +30,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  height: 100vh;
 }
 
 .temp {
