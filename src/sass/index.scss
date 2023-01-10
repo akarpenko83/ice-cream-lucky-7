@@ -2,7 +2,7 @@
 @import './utils/placeholders';
 @import './utils/mixins';
 
-@import './common';
+@import './base/common';
 
 @import './components/container';
 @import './components/site-nav';
@@ -17,7 +17,8 @@
 @import './components/slider';
 @import './components/socials';
 
-@import './layouts/hero-header.scss';
+@import './layouts/header.scss';
+@import './layouts/hero.scss';
 @import './layouts/products';
 @import './layouts/about';
 @import './layouts/advantages';
