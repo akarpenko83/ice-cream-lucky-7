@@ -5,12 +5,27 @@
 @import './common';
 
 @import './components/container';
+@import './components/site-nav';
+@import './components/backdrop';
+@import './components/menu';
+@import './components/mobile-menu';
+@import './components/modal';
 @import './components/logo';
 @import './components/buttons';
 @import './components/grid';
 @import './components/card';
 @import './components/slider';
+@import './components/socials';
 
 @import './layouts/hero-header.scss';
+@import './layouts/products';
+@import './layouts/about';
+@import './layouts/advantages';
+@import './layouts/gallery';
+@import './layouts/customer-reviews';
+@import './layouts/contacts';
+@import './layouts/footer';
+
+
 
 

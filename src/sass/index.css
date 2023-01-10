@@ -1,9 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 .container {
-  outline: 2px dashed #f44336;
-}
-
-.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
@@ -11,8 +7,7 @@
 
 body {
   color: #131313;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Seymour One", sans-serif;
+  font-family: "Montserrat", "Seymour One", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -33,12 +28,38 @@ img {
 }
 
 .container {
-  height: 100vh;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
-.temp {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.backdrop {
+  position: fixed;
+  opacity: 1;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop--is-hidden {
+  opacity: 0;
+  visibility: collapse;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.5);
 }/*# sourceMappingURL=index.css.map */
