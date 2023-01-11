@@ -1,20 +1,21 @@
 // basic colors:
-$themePrimaryColor: #84A178;
-$txtPrimaryColor: #131313;
-$txtSecondaryColor: #FCFCFC;
-$accentColor: #F8D24E;
-$addrColor: #D6936D;
-$modalBgdColor: #FCFCFC;
+$themePrimaryColor: #84A178; // основний колір теми
+$txtPrimaryColor: #131313; // осноний колір тексту
+$txtSecondaryColor: #FCFCFC; // другорядний колір тексту
+$accentColor: #F8D24E; // колір акценту
+$addrColor: #D6936D; // колір тексту фізичної адреси
+$modalBgdColor: #FCFCFC; // колір бекграунду модальних вікон
+$cprtColor: #7A7A7A; // колір copyright у футері
 
-// product colors:
+// product colors:  основні кольори карток продуктів
 $iceCreamColor: #AEC6A5;
 $iceCoffeeColor: #EFD478;
 $milkshakeColor: #D6936D;
 
-// button colors
-$btnHoverColor: #0A8817;
-$btnDisableColor: #ABABAB;
-$sldrDotColor: #D9D9D9;
+// button colors -- кольори кнопок
+$btnHoverColor: #0A8817; // при ховері та фокусі
+$btnDisableColor: #ABABAB; // неактивна кнопка та години роботи у контактах
+$sldrDotColor: #D9D9D9; // дотси у слайдері некативні
 
 // functions
-$cubicBezier: 0.4, 0, 0.2, 1;
+$cubicBezier: 0.4, 0, 0.2, 1; // параметри для функції cubic-bezier

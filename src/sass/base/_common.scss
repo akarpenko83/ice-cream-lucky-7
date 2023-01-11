@@ -1,5 +1,6 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 body {
+    background-color: $themePrimaryColor;
     color: $txtPrimaryColor;
     font-family: 'Montserrat', 'Seymour One', sans-serif;
     font-size: 14px;
