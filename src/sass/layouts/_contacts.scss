@@ -1,0 +1,115 @@
+.container { 
+    @extend %container
+}
+
+
+.contact__list { 
+    display: flex;
+    @extend %list;
+    background: $txtSecondaryColor;
+ box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+ border-radius: 24px;
+ width: 280px;
+ height: 412px;
+ justify-content: center;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 40px;
+ border: 1px;
+ 
+}
+
+.contact__list__title {
+    display: none;
+}
+
+.contact__list-name {
+    list-style: none;
+    width: 76px;
+    background: $accentColor;
+    font-weight: 500;
+  font-size: 16px;
+ line-height: 140%;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+.nav__list {
+    @extend %list;
+}
+
+.contact__items { 
+    margin-left: 40px;
+}
+
+.contact__list-town {
+    margin-top: 20px;
+    font-weight: 500;
+ font-size: 12px;
+ line-height: 186%;
+ letter-spacing: 0.04em;
+ color: $txtPrimaryColor;
+}
+
+.contact__address { 
+    @extend %link;
+    font-weight: 500;
+ font-size: 12px;
+ line-height: 183%;
+ letter-spacing: 0.04em;
+ color: $milkshakeColor;
+ font-style: normal;
+ margin-top: 8px;
+ 
+}
+
+
+.contact__list-worktime { 
+    @extend %list;
+    margin-top: 50px;
+    border-bottom:  1px solid #E1E1E1;
+}
+
+.contact__list-item { 
+    font-weight: 500;
+ font-size: 12px;
+ line-height: 186%;
+ color: $txtPrimaryColor;
+}
+
+.contact__list-text { 
+    font-style: normal;
+ font-weight: 500;
+ font-size: 12px;
+ line-height: 186%;
+ color: $btnDisableColor;
+ 
+}
+
+.contact__list-nav { 
+    @extend %list;
+    margin-top: 49px;
+}
+
+.contact__list-tel { 
+    color: $txtPrimaryColor;
+    @extend %link;
+    font-weight: 500;
+ font-size: 12px;
+ line-height: 160%;
+}
+
+.contact__list-mail { 
+    color: $txtPrimaryColor;
+    @extend %link;
+    font-weight: 500;
+ font-size: 12px;
+ line-height: 160%;
+}
+
+.check__list { 
+    @extend %list;
+    border-bottom:  1px solid #E1E1E1;
+    
+}
