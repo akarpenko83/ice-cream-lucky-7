@@ -1,8 +1,6 @@
 .products {
   padding: 60px 0px;
-
-  // background-image: url();
-  background-color: white;
+  background-image: url('../images/backgrounds/background.png');
 }
 .products__description {
   margin-bottom: 12px;
@@ -59,6 +57,7 @@
   background-color: $milkshakeColor;
 }
 .product-card__img {
+  position: relative;
 }
 .product-card__meta {
 }
@@ -83,4 +82,5 @@
   letter-spacing: 0.04em;
 }
 .product-card__button {
+ background-color: transparent;
 }
