@@ -1,19 +1,86 @@
-.content{
-}
-.card-products {
-    @extend %list;
-}
-.card-products__item {
-}
 .products {
+  padding: 60px 0px;
+
+  // background-image: url();
+  background-color: white;
 }
-.products__img {
+.products__description {
+  margin-bottom: 12px;
+
+  color: $txtPrimaryColor;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
-.products__meta {
+.products__title {
+  margin-bottom: 148px;
+
+  color: $txtPrimaryColor;
+
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
-.products__name {
+
+.card-list {
 }
-.products__text {
+.products__card-list {
+  @extend %list;
 }
-.products__button {
+.card-list__item:not(:last-child) {
+  margin-bottom: 168px;
+}
+.product-card {
+}
+.card-list__product-card {
+  padding: 126px 45px 16px 45px;
+  min-height: 420px;
+
+  background-color: $iceCreamColor;
+
+  text-align: center;
+  border-radius: 25px;
+}
+
+.card-list__item:nth-child(2) > .card-list__product-card {
+  background-color: $iceCoffeeColor;
+}
+
+.card-list__item:nth-child(3) > .card-list__product-card {
+  background-color: $milkshakeColor;
+}
+.product-card__img {
+}
+.product-card__meta {
+}
+.product-card__name {
+  margin-bottom: 40px;
+
+  color: $txtPrimaryColor;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.product-card__text {
+  margin-bottom: auto;
+
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.product-card__button {
 }
