@@ -1,4 +1,4 @@
-$('.reviews-js').slick({
+$('.reviews__slider').slick({
   dots: true,
   arrows: false,
   infinite: true,
