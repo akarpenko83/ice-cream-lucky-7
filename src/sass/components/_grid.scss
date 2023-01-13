@@ -1,0 +1,15 @@
+.grid {
+    @extend %list;
+    display: flex;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: flex-start;
+    }
+}
+
+.grid__item {
+    @media screen and (min-width: 768px) {
+        lex-basis: calc(100% / 3 - 20px);
+    }
+}
