@@ -2,55 +2,29 @@
     @extend %container
 }
 
-
-.contact { 
-    display: flex;
-    @extend %list;
-    background: $txtSecondaryColor;
- box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
- border-radius: 24px;
- width: 280px;
- height: 412px;
- justify-content: center;
- margin-left: auto;
- margin-right: auto;
- margin-top: 40px;
- border: 1px;
- 
-}
-
-.contact__title {
+.section-heading {
     display: none;
 }
 
 .contact__name {
-    list-style: none;
+   list-style: none;
     width: 76px;
     background: $accentColor;
     font-weight: 500;
-  font-size: 16px;
- line-height: 140%;
+    font-size: 16px;
+  line-height: 140%;
   text-align: center;
   border-radius: 5px;
-  margin-top: 40px;
+   margin-bottom: 20px;
 }
 
-.nav__list {
-    @extend %list;
-}
-
-.contact__items { 
-    margin-left: 40px;
-}
-
-.contact__town {
-    margin-top: 20px;
+ .contact__town { 
     font-weight: 500;
- font-size: 12px;
- line-height: 186%;
- letter-spacing: 0.04em;
- color: $txtPrimaryColor;
-}
+     font-size: 12px;
+     line-height: 186%;
+     letter-spacing: 0.04em;
+     color: $txtPrimaryColor;
+ }
 
 .contact__address { 
     @extend %link;
@@ -69,51 +43,131 @@
     text-decoration: underline;
 }
 
-.contact__worktime { 
-    @extend %list;
-    margin-top: 50px;
-    border-bottom:  1px solid #E1E1E1;
-}
-
-.contact__item { 
+.contact__week-first { 
     font-weight: 500;
  font-size: 12px;
  line-height: 186%;
  color: $txtPrimaryColor;
+    margin-top: 48px;
+  
 }
 
-.contact__text { 
-    font-style: normal;
- font-weight: 500;
+.contact__week-second { 
+    font-weight: 500;
+ font-size: 12px;
+ line-height: 186%;
+ color: $txtPrimaryColor;
+    margin-top: 8px;
+}
+
+.contact__time { 
+    font-weight: 500;
  font-size: 12px;
  line-height: 186%;
  color: $btnDisableColor;
- 
 }
 
 .contact__nav { 
     @extend %list;
-    margin-top: 49px;
+    margin-top: 48px;
 }
 
-.contact__-tel { 
+
+.contact__tel { 
     color: $txtPrimaryColor;
     @extend %link;
     font-weight: 500;
- font-size: 12px;
- line-height: 160%;
+    font-size: 12px;
+    line-height: 160%;
+    margin-top: 48px;
 }
 
 .contact__mail { 
     color: $txtPrimaryColor;
     @extend %link;
     font-weight: 500;
- font-size: 12px;
- line-height: 160%;
+    font-size: 12px;
+    line-height: 160%;
+    margin-top: 6px;
 }
 
-.contact__titles { 
-    @extend %list;
-    border-bottom:  1px solid #E1E1E1;
-    
+.contact__border { 
+    border-bottom: 1px solid #E1E1E1;
+    width: 216px;
+   
 }
+
+// .contact__town {
+//     margin-top: 20px;
+//     font-weight: 500;
+//  font-size: 12px;
+//  line-height: 186%;
+//  letter-spacing: 0.04em;
+//  color: $txtPrimaryColor;
+// }
+
+// .contact__address { 
+//     @extend %link;
+//     font-weight: 500;
+//  font-size: 12px;
+//  line-height: 183%;
+//  letter-spacing: 0.04em;
+//  color: $milkshakeColor;
+//  font-style: normal;
+//  margin-top: 8px;
+ 
+// }
+
+// .contact__address:hover,
+// .contact__address:focus {
+//     text-decoration: underline;
+// }
+
+// .contact__worktime { 
+//     @extend %list;
+//     margin-top: 50px;
+//     border-bottom:  1px solid #E1E1E1;
+// }
+
+// .contact__item { 
+//     font-weight: 500;
+//  font-size: 12px;
+//  line-height: 186%;
+//  color: $txtPrimaryColor;
+// }
+
+// .contact__text { 
+//     font-style: normal;
+//  font-weight: 500;
+//  font-size: 12px;
+//  line-height: 186%;
+//  color: $btnDisableColor;
+ 
+// }
+
+// .contact__nav { 
+//     @extend %list;
+//     margin-top: 49px;
+// }
+
+// .contact__-tel { 
+//     color: $txtPrimaryColor;
+//     @extend %link;
+//     font-weight: 500;
+//  font-size: 12px;
+//  line-height: 160%;
+// }
+
+// .contact__mail { 
+//     color: $txtPrimaryColor;
+//     @extend %link;
+//     font-weight: 500;
+//  font-size: 12px;
+//  line-height: 160%;
+// }
+
+// .contact__titles { 
+//     @extend %list;
+//     border-bottom:  1px solid #E1E1E1;
+    
+// }
