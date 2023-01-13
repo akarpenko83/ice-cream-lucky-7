@@ -1,91 +1,91 @@
-// /* --- reviews --- */
+/* --- reviews --- */
 
-// .reviews__slider {
-//     position: relative;
-//     padding-left: 20px;
-//     padding-right: 20px;
-//     background-color: transparent;
-//   }
+.reviews__slider {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: transparent;
+  }
   
-//   .reviews__block {
-//     text-align: center;
-//   }
+  .reviews__block {
+    text-align: center;
+  }
   
-//   .photo {
-//     width: 85px;
-//     height: 85px;
-//     border-radius: 50%;
-//     overflow: hidden;
+  .photo {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    overflow: hidden;
   
-//     margin-right: auto;
-//     margin-left: auto;
-//     margin-bottom: 32px;
-//   }
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
+  }
   
-//   .reviews__statement {
-//     width: 280px;
-//     height: 256px;
-//     padding: 35px 39px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 32px;
+  .reviews__statement {
+    width: 280px;
+    height: 256px;
+    padding: 35px 39px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
   
-//     font-family: 'Montserrat', sans-serif;
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 12px;
-//     line-height: 2.58;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.58;
   
-//     text-align: center;
-//     border-radius: 10px;
-//     color: #fcfcfc;
+    text-align: center;
+    border-radius: 10px;
+    color: #fcfcfc;
   
-//     background-color: rgba(132, 161, 120, 1);
-//   }
+    background-color: rgba(132, 161, 120, 1);
+  }
   
-//   .reviews__name {
-//     margin-bottom: 24px;
+  .reviews__name {
+    margin-bottom: 24px;
   
-//     font-family: 'Montserrat', sans-serif;
-//     font-style: normal;
-//     font-weight: 500;
-//     font-size: 20px;
-//     line-height: 1.86;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
   
-//     color: #131313;
-//   }
+    color: #131313;
+  }
   
-//   .slick-dots {
-//     /* position: absolute; */
-//     bottom: 0;
-//     left: 0;
-//     /* display: block;
-//     width: 100%;
-//     padding: 0;
-//     margin: 0;
-//     list-style: none;
-//     text-align: center; */
-//   }
+  .slick-dots {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    /* display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center; */
+  }
   
-//   .slick-dots li button:before {
-//     /* font-family: 'slick'; */
-//     font-size: 12px;
-//     line-height: 12px;
-//     /* position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 20px;
-//     height: 20px;
-//     content: '•';
-//     text-align: center; */
-//     opacity: 1;
-//     color: #d9d9d9;
-//     /* -webkit-font-smoothing: antialiased;
-//     -moz-osx-font-smoothing: grayscale; */
-//   }
+  .slick-dots li button:before {
+    /* font-family: 'slick'; */
+    font-size: 12px;
+    line-height: 12px;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center; */
+    opacity: 1;
+    color: #d9d9d9;
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+  }
   
-//   .slick-dots li.slick-active button:before {
-//     opacity: 1;
-//     color: #84a178;
-//   }
+  .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #84a178;
+  }
   
