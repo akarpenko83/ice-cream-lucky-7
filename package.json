@@ -1,11 +1,11 @@
 {
-  "name": "parcel-project-template",
+  "name": "ice-cream-lucky-7",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://akarpenko83.github.io/ice-cream/",
+  "homepage": "https://akarpenko83.github.io/ice-cream-lucky-7/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /ice-cream/"
+    "build": "parcel build src/*.html --public-url /ice-cream-lucky-7/"
   },
   "repository": {
     "type": "git",
