@@ -46,6 +46,7 @@
 @media screen and (max-width: 1199px) {
   /*menu-button*/
   .menu-button {
+    position: relative;
     margin: 0;
     margin-right: 32px;
     padding: 0;
@@ -66,8 +67,6 @@
   .menu-button.is-open .icon-cros {
     display: block;
     fill: #fcfcfc;
-    position: absolute;
-    left: -100px;
   }
   .menu-button.is-open .icon-menu {
     display: none;
@@ -170,41 +169,10 @@
   margin-left: auto;
   margin-right: auto;
 }
-
-@media screen and (max-width: 1199px) {
-  .menu-container {
-    background-color: #84a178;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    z-index: 2;
-  }
-  .menu-container.is-open {
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 100px 32px 64px 32px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    overflow-y: scroll;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .menu-container {
-    position: relative;
-  }
-}
-.menu-logo {
-  position: absolute;
-  top: 7px;
-  @media screen and (min-width: 1200px) {
-    display: none;
+@media screen and (min-width: 480px) {
+  .lodo-png {
+    width: 48px;
+    height: 44px;
   }
 }
 @media screen and (min-width: 1200px) {
