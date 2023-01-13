@@ -1,9 +1,7 @@
-.content{
-    
+.content {
 }
-
 .card-products {
-
+  @extend %list;
 }
 .card-products__item {
 }
