@@ -2,6 +2,8 @@
   @extend %container;
   @extend %outline;
 
+  padding: 0 20px;
+
   @include phone {
     padding: 0 20px;
   }
@@ -80,6 +82,10 @@
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+
+    @include tablet {
+      margin-bottom: 48px;
+    }
   }
   &__composition-item {
     @extend %list;
@@ -181,6 +187,10 @@
   &__list {
     display: block;
     margin-bottom: 40px;
+
+    @include tablet {
+      margin-bottom: 48px;
+    }
   }
 
   &__item {
@@ -206,13 +216,18 @@
 
   &__field {
     display: block;
+    margin-bottom: 16px;
 
     @media screen and (min-width: 768px) {
       width: 368px;
     }
 
-    &:not(:last-child) {
-      margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 24px;
+
+      @include tablet {
+        margin-bottom: 32px;
+      }
     }
   }
 
@@ -245,5 +260,15 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 28px;
+
+    // padding: 50px;
+    width: 132px;
+    height: 42px;
+
+    @include tablet {
+      margin-bottom: 32px;
+      width: 121px;
+      height: 42px;
+    }
   }
 }
