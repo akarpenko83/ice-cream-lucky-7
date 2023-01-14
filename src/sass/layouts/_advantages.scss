@@ -1,4 +1,9 @@
-
+.container__benefits { 
+  margin-bottom: 64px;
+  @include tablet { 
+    margin-bottom: 204px;
+  }
+}
 
 .benefits { 
     @extend %list;
