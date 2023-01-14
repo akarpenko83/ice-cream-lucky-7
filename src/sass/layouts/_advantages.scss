@@ -68,9 +68,9 @@
   width: 238px;
   @include tablet { 
     font-weight: 400;
- font-size: 14px;
-  line-height: 174%;
-  width: 174px;
+   font-size: 14px;
+    line-height: 174%;
+    width: 152px;
   }
   @include desktop { 
     font-weight: 400;
@@ -84,4 +84,11 @@
 
 .benefits__item:not(:last-child) > .benefits__text { 
   margin-bottom: 32px;
+}
+
+.benefits__item:nth-child(3) > .benefits__text { 
+  @include tablet {
+    margin-bottom: 32px;
+  }
+  
 }
