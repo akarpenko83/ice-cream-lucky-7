@@ -26,7 +26,10 @@
   @media screen and (min-width: 480px) {
     width: 210px;
   }
-  margin: auto;
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    width: 454px;
+  }
 }
 .about__label {
   font-weight: 700;
@@ -36,6 +39,9 @@
   width: 100%;
    @media screen and (min-width: 480px) {
     width: 220px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 454px;
   }
 }
 .about__title {
@@ -49,6 +55,9 @@
   font-style: normal;
    @media screen and (min-width: 480px) {
     width: 200px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 454px;
   }
 }
 .about__text {
@@ -89,4 +98,7 @@
 .text {
   max-width: 100%;
   text-align: center;
+}
+.about__wrap{
+    margin:0 auto;
 }
