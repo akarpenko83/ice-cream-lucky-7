@@ -245,8 +245,13 @@
     margin-right: auto;
     margin-bottom: 29px;
 
+    width: 114px;
+    height: 42px;
+
     @include tablet {
       margin-bottom: 32px;
+      width: 121px;
+      height: 42px;
     }
   }
 }
