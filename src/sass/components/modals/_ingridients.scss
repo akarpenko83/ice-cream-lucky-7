@@ -82,6 +82,10 @@
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+
+    @include tablet {
+      margin-bottom: 48px;
+    }
   }
   &__composition-item {
     @extend %list;
@@ -183,6 +187,10 @@
   &__list {
     display: block;
     margin-bottom: 40px;
+
+    @include tablet {
+      margin-bottom: 48px;
+    }
   }
 
   &__item {
@@ -216,6 +224,10 @@
 
     &:last-child {
       margin-bottom: 24px;
+
+      @include tablet {
+        margin-bottom: 32px;
+      }
     }
   }
 
@@ -248,5 +260,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 28px;
+
+    @include tablet {
+      margin-bottom: 32px;
+    }
   }
 }

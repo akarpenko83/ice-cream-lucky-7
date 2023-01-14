@@ -2,6 +2,8 @@
   @extend %container;
   @extend %outline;
 
+  padding: 0 28px;
+
   @include phone {
     padding: 0 28px;
   }
@@ -241,6 +243,10 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 28px;
+    margin-bottom: 29px;
+
+    @include tablet {
+      margin-bottom: 32px;
+    }
   }
 }
