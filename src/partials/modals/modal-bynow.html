@@ -10,7 +10,7 @@
   <form name="input details" class="modal-buynow__form" action="">
 
 
-    <ul>
+    <ul class="modal-buynow__products">
     <li class="modal-buynow__picture">
       <label for="modal-buynow__item-check" class="modal-buynow__label">
         <input
@@ -88,8 +88,8 @@
         <div class="modal-buynow__rectangle modal-buynow__rectangle--color3"></div>
       </li>
     </ul>
-    <ul>
-    <li class="modal-buynow__field">
+    <div class="modal-bynow__fields">
+    <div class="modal-buynow__field">
       <input
         type="text"
         name="name"
@@ -97,21 +97,24 @@
         class="modal-buynow__input"
         autocomplete="name"
         placeholder="Name"
+        pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}"
         required
       />
-    </li>
-    <li class="modal-buynow__field">
+    </div>
+    <div class="modal-buynow__field">
       <input
-        type="text"
+        type="tel"
         name="phone"
         id="phone"
         class="modal-buynow__input"
         autocomplete="phone"
         placeholder="Phone"
+        pattern="[0]{1}[0-9]{9}"
+
         required
       />
-    </li>
-    <li class="modal-buynow__field">
+    </div>
+    <div class="modal-buynow__field">
       <textarea
         type="text"
         name="comment"
@@ -120,8 +123,8 @@
         autocomplete="none"
         placeholder="Comment"
       ></textarea>
-    </li>
-    </ul>
+    </div>
+    </div>
     <button type="submit" class="modal-buynow__submit button button__submit button--full">Submit</button>
   </form>
 </div>

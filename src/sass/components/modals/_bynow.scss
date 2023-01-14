@@ -1,6 +1,6 @@
 .modal-buynow {
   @extend %container;
-  @extend %outline;
+  // @extend %outline;
   // z-index: 886;
   padding: 0 28px;
 
@@ -45,6 +45,12 @@
     }
   }
 
+  &__products {
+    @include tablet {
+      display: flex;
+    }
+  }
+
   &__picture {
     position: relative;
     display: block;
@@ -58,6 +64,13 @@
     &:last-child {
       margin-bottom: 98px;
     }
+
+    @include tablet {
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+
     @media screen and (min-width: 768px) {
       //   margin-bottom: 31px;
     }
@@ -203,11 +216,18 @@
     margin-bottom: 12px;
 
     @media screen and (min-width: 768px) {
-      width: 368px;
     }
 
     &:last-child {
       margin-bottom: 24px;
+    }
+
+    @include tablet {
+      width: 368px;
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 32px;
+      }
     }
   }
 
@@ -220,8 +240,13 @@
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84a178;
     border-radius: 10px;
+
     @include tablet {
       padding-left: 16px;
+    }
+
+    &:invalid:not(:placeholder-shown) {
+      background: rgba(218, 56, 2, 0.2);
     }
   }
 
