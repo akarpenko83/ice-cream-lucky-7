@@ -105,7 +105,7 @@
     margin-right: auto;
     margin-bottom: 32px;
 
-    @include font($fw: null, $fs: 12px, $lh: 2.55, $ls: null);
+    @include font($fw: null, $fs: 12, $lh: 2.55, $ls: null);
 
     text-align: center;
     border-radius: 10px;
