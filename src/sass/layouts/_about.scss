@@ -1,0 +1,27 @@
+.section.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: $modalBgdColor;
+
+}
+.about__label {
+}
+.about__title {
+}
+.about__text {
+width: 220px;
+
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+}
+.about__picture{
+    width: 280px;
+    height: 300px;
+}
