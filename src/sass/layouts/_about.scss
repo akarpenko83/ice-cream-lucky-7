@@ -3,26 +3,33 @@
   text-align: center;
   color: $modalBgdColor;
   padding-top: 60px;
-   @media screen and (min-width:480px) {
-    .container{
-        max-width: 450px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  @media screen and (min-width: 480px) {
+    .container {
+      max-width: 450px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
-  @media screen and (min-width:768px) {
-  min-width: 702px;
-}
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 702px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .container{
+      max-width: 1200px;
+    }
+  }
 }
 .section.about .container {
-  margin:0 auto;
+  margin: 0 auto;
 }
 .about__slogan {
-    max-width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column-reverse;
-  
+
   @media screen and (max-width: 479px) {
     flex-direction: column;
   }
@@ -40,18 +47,18 @@
   line-height: 1.22;
   margin-bottom: 32px;
   width: 100%;
-   @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) {
     width: 220px;
   }
   @media screen and (min-width: 768px) {
     width: 454px;
   }
-  @media screen and (min-width:768px) {
-  margin-bottom: 12px;
-}
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
 }
 .about__title {
-  margin-bottom: 12px;
+  padding-bottom: 12px;
   width: 100%;
   font-size: 30px;
   line-height: 1.26;
@@ -59,7 +66,7 @@
   letter-spacing: 0.04em;
   font-family: 'Seymour One';
   font-style: normal;
-   @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) {
     width: 200px;
   }
   @media screen and (min-width: 768px) {
@@ -68,6 +75,7 @@
   }
 }
 .about__text {
+  margin: 0 auto;
   width: 100%;
   font-weight: 400;
   font-size: 12px;
@@ -75,23 +83,23 @@
   text-align: center;
   letter-spacing: 0.04em;
   line-height: 176%;
-&:not(:last-child){
-      margin-bottom: 4px;
-    }
-   @media screen and (min-width: 480px) {
+  &:not(:last-child) {
+    padding-bottom: 4px;
+  }
+  @media screen and (min-width: 480px) {
     width: 220px;
   }
   @media screen and (min-width: 768px) {
     width: 336px;
     text-align: start;
-    &:not(:last-child){
-      margin-bottom: 8px;
+    &:not(:last-child) {
+      padding-bottom: 8px;
     }
   }
 }
 .about__text--none {
   display: none;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: block;
   }
 }
@@ -105,16 +113,23 @@
     rgba(248, 210, 78, 0.7),
     rgba(248, 210, 78, 0.7)
   );
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
 
-  margin-bottom: 62px;
-  @media screen and (min-width:480px) {
+  padding-bottom: 62px;
+  @media screen and (min-width: 480px) {
     max-width: 280px;
   }
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     width: 330px;
-  height: 330px;
-  margin-right: 38px;
-}
+    height: 330px;
+    padding-right: 38px;
+    border-radius: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 490px;
+    height: 490px;
+    padding-right: 109px;
+  }
 }
 .picture__block {
   width: 279px;
@@ -124,18 +139,15 @@
   max-width: 100%;
   text-align: center;
 }
-.about__wrap{
-@media screen and (min-width:768px) {
+.about__wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.about__button {
   display: flex;
-  justify-content: space-between;
-}
-}
-.test{
-
-}
-.about__button{
-  display: flex;
-  @media screen and (min-width:768px) {
-    margin-top: 44px;
+  @media screen and (min-width: 768px) {
+    padding-top: 44px;
   }
 }
