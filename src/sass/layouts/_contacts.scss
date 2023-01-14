@@ -17,13 +17,12 @@
   text-align: center;
   border-radius: 5px;
    margin-bottom: 20px;
-   
+   @include tablet { 
+    margin-bottom: 32px;
+   }
 }
 
-.contact__name-check:nth-child(2)  .contact__name { 
-    width: 130px;
-    background: $accentColor;
-}
+
 
  .contact__town { 
     font-weight: 500;
@@ -31,6 +30,14 @@
      line-height: 186%;
      letter-spacing: 0.04em;
      color: $txtPrimaryColor;
+     @include tablet { 
+        font-size: 14px;
+        margin-bottom: 12px;
+     }
+     @include desktop { 
+        font-size: 16px;
+        margin-bottom: 8px;
+     }
  }
 
 .contact__address { 
@@ -42,7 +49,15 @@
  color: $milkshakeColor;
  font-style: normal;
  margin-top: 8px;
- 
+ @include tablet { 
+    font-size: 14px;
+    width: 173px;
+ }
+ @include desktop { 
+    line-height: 183%;
+ letter-spacing: 0.04em;
+    font-size: 16px;
+ }
 }
 
 .contact__address:hover,
@@ -56,7 +71,14 @@
  line-height: 186%;
  color: $txtPrimaryColor;
     margin-top: 30px;
-  
+    @include tablet { 
+        font-size: 14px;
+    }
+    @include desktop { 
+        line-height: 183%;
+     letter-spacing: 0.04em;
+        font-size: 16px;
+     }
 }
 
 .contact__week-second { 
@@ -65,6 +87,14 @@
  line-height: 186%;
  color: $txtPrimaryColor;
     margin-top: 8px;
+    @include tablet { 
+        font-size: 14px;
+    }
+    @include desktop { 
+        line-height: 183%;
+     letter-spacing: 0.04em;
+        font-size: 16px;
+     }
 }
 
 .contact__time { 
@@ -72,6 +102,13 @@
  font-size: 12px;
  line-height: 186%;
  color: $btnDisableColor;
+ @include tablet { 
+    font-size: 14px;
+}
+@include desktop { 
+    line-height: 183%;
+    font-size: 16px;
+ }
 }
 
 .contact__nav { 
@@ -87,6 +124,14 @@
     font-size: 12px;
     line-height: 160%;
     margin-top: 48px;
+    @include tablet { 
+        font-size: 14px;
+        line-height: 150%;
+    }
+    @include desktop { 
+        font-size: 16px;
+       line-height: 150%;
+    }
 }
 
 .contact__mail { 
@@ -97,12 +142,26 @@
     line-height: 160%;
     margin-top: 6px;
     display: block;
+    @include tablet { 
+        font-size: 14px;
+        line-height: 150%;
+    }
+    @include desktop { 
+        font-size: 16px;
+       line-height: 150%;
+    }
 }
 
 .contact__border { 
     border-bottom: 1px solid #E1E1E1;
     width: 216px;
    padding-bottom: 20px;
+   @include tablet { 
+    width: 173px;
+   }
+   @include desktop { 
+    width: 288px;
+   }
 }
 
 // .contact__town {
