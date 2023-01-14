@@ -19,7 +19,10 @@
    
 }
 
-
+.contact__name-check:nth-child(2)  .contact__name { 
+    width: 130px;
+    background: $accentColor;
+}
 
  .contact__town { 
     font-weight: 500;
@@ -51,7 +54,7 @@
  font-size: 12px;
  line-height: 186%;
  color: $txtPrimaryColor;
-    margin-top: 48px;
+    margin-top: 30px;
   
 }
 
@@ -72,7 +75,7 @@
 
 .contact__nav { 
     @extend %list;
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 
@@ -92,12 +95,13 @@
     font-size: 12px;
     line-height: 160%;
     margin-top: 6px;
+    display: block;
 }
 
 .contact__border { 
     border-bottom: 1px solid #E1E1E1;
     width: 216px;
-   
+   padding-bottom: 20px;
 }
 
 // .contact__town {
