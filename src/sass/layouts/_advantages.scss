@@ -1,8 +1,18 @@
+
+
 .benefits { 
     @extend %list;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    @include tablet { 
+        gap: 80px;
+        flex-direction: inherit;
+    }
+    @include desktop { 
+        gap: 32px;
+    }
 }
 
 .benefits__icon { 
@@ -16,6 +26,9 @@
     margin-right: auto;
     margin-bottom: 16px;
     // margin-top: 32px;
+    @include tablet { 
+        margin-top: 40px;
+    }
 }
 
 .benefits__title { 
@@ -26,6 +39,17 @@
  text-transform: uppercase;
  color: $modalBgdColor;
   margin-bottom: 16px;
+  @include tablet { 
+    font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  letter-spacing: 0.04em;
+  }
+  @include desktop { 
+    font-size: 58px;
+ line-height: 71px;
+  letter-spacing: 0.04em;
+  }
 }
 
 
@@ -37,4 +61,17 @@
  font-weight: 700;
  margin-bottom: 32px;
   width: 238px;
+  @include tablet { 
+    font-weight: 400;
+ font-size: 14px;
+  line-height: 174%;
+  width: 174px;
+  }
+  @include desktop { 
+    font-weight: 400;
+ font-size: 16px;
+ line-height: 176%;
+ letter-spacing: 0.02em;
+ width: 368px;
+  }
 }
