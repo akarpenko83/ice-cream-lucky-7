@@ -206,13 +206,14 @@
 
   &__field {
     display: block;
+    margin-bottom: 16px;
 
     @media screen and (min-width: 768px) {
       width: 368px;
     }
 
-    &:not(:last-child) {
-      margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 24px;
     }
   }
 

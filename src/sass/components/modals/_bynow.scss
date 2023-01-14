@@ -58,7 +58,7 @@
     height: 132;
 
     &:last-child {
-      margin-bottom: 116px;
+      margin-bottom: 98px;
     }
     @media screen and (min-width: 768px) {
       //   margin-bottom: 31px;
@@ -202,13 +202,14 @@
 
   &__field {
     display: block;
+    margin-bottom: 12px;
 
     @media screen and (min-width: 768px) {
       width: 368px;
     }
 
-    &:not(:last-child) {
-      margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 24px;
     }
   }
 
