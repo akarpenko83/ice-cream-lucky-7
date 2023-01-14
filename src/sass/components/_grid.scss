@@ -10,11 +10,14 @@
    //  margin-right: auto;
     margin-top: 40px;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
      align-items: center;
      @include tablet { 
       display: flex;
       flex-direction: inherit;
+    }
+    @include desktop { 
+      gap: 30px;
     }
  }
 
