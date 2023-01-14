@@ -5,34 +5,6 @@
   margin: 0 auto;
 }
 
-// .dummy {
-//   background-color: aquamarine;
-//   max-width: 479px;
-//   min-width: 320px;
-//   height: 200px;
-//   text-align: center;
-
-//   margin: 0 auto;
-
-//   @include phone {
-//     max-width: none;
-//     min-width: none;
-//     width: 480px;
-//   }
-
-//   @include tablet {
-//     max-width: none;
-//     min-width: none;
-//     width: 768px;
-//   }
-
-//   @include desktop {
-//     max-width: none;
-//     min-width: none;
-//     width: 1200px;
-//   }
-// }
-
 .gallery {
   position: relative;
 
