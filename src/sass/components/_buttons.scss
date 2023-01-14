@@ -1,5 +1,13 @@
 // Util classes // Section Hero
 
+.container {
+    // @extend %container;
+    @extend %outline;
+    display: block;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .button {
     border-radius: 10px;
     font-family: inherit;
