@@ -1,0 +1,147 @@
+.modal-franchise {
+  position: relative;
+  //   top: 50%;
+  //   left: 50%;
+  width: 280px;
+  @extend %container;
+  padding: 28px 28px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  box-sizing: border-box;
+
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  @include tablet {
+    width: 568px;
+  }
+  //   @media screen and (min-width: 320px) and (max-width: 767px) {
+  //     max-width: 280px;
+  //   }
+
+  //   @include phone {
+  //     width: 280px;
+  //   }
+}
+
+.modals-close__button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 12px;
+}
+
+.modal-franhise__title {
+  color: $btnSecondaryColor;
+  font-family: 'Seymour One';
+  font-size: 15px;
+  line-height: 1.5;
+  width: 220px;
+  height: auto;
+  margin-bottom: 20px;
+
+  @include tablet {
+    width: 322px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.modal-franchise__dscr {
+  color: $txtPrimaryColor;
+
+  width: 222px;
+  margin-bottom: 24px;
+
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.4;
+
+  @include tablet {
+    width: 448px;
+
+    font-size: 15px;
+    line-height: 1.4;
+  }
+}
+
+.modal-franchise__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-franchise__input {
+  color: $btnSecondaryColor;
+
+  width: 224px;
+  height: 32px;
+
+  padding-left: 12px;
+  margin-bottom: 12px;
+
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.4px;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    // border: 1px solid; !!!
+  }
+
+  &::placeholder {
+    color: $btnSecondaryColor;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.4px;
+  }
+
+  @include tablet {
+    width: 368px;
+  }
+}
+
+.modal-franchise__textarea {
+  width: 224px;
+  height: 64px;
+  resize: none;
+  padding-left: 12px;
+  padding-top: 13px;
+  margin-bottom: 24px;
+
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.4px;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+
+  transition: border-color 250ms $cubicBezier;
+
+  &::placeholder {
+    color: $btnSecondaryColor;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.4px;
+  }
+
+  @include tablet {
+    width: 368px;
+    height: 84px;
+  }
+}
+
+.button--centered {
+  display: block;
+}
