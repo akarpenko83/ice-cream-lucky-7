@@ -70,11 +70,18 @@
 
   padding: 126px 45px 16px 45px;
   min-height: 420px;
-
+  max-width: 250px;
   background-color: $iceCreamColor;
 
   text-align: center;
   border-radius: 25px;
+  @include tablet{
+    max-width: 220px;
+  }
+  @include desktop{
+    max-width: 370px;
+    min-height: 530px;
+  }
 }
 
 .card-list__product-card::after {
@@ -94,6 +101,10 @@
     rgba(156, 190, 143, 0.7)
   );
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    @include desktop {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .card-list__item:nth-child(2) > .card-list__product-card::after {
@@ -119,6 +130,15 @@
 }
 
 .card-list__item {
+  @include tablet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  @include desktop{
+    gap: 29px;
+  }
 }
 
 .card-list__item:not(:last-child) {
@@ -139,6 +159,9 @@
   width: 200px;
 
   z-index: 2;
+  @include desktop {
+    width: 300px;
+  }
 }
 
 .product-card__img {
