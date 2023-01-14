@@ -1,9 +1,13 @@
 /* --- reviews --- */
+.container {
+  padding: 0;
+  margin: 0;
+}
 
 .reviews {
   display: block;
 
-  max-width: 480px;
+  max-width: 479px;
   min-width: 320px;
 
   padding-top: 178px;
@@ -12,9 +16,29 @@
   padding-right: 20px;
   margin: 0 auto;
 
+  @include phone {
+    padding-top: 257px;
+    padding-bottom: 417px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+
+  }
+
   background-image: url(../images/backgrounds/background-mob.png),
     linear-gradient(to right, $modalBgdColor, $modalBgdColor);
   background-position: center bottom;
+
+  @include retina {
+    background-image: url(../images/backgrounds/background-mob-@2x.png),
+      linear-gradient(to right, $modalBgdColor, $modalBgdColor);
+  }
 
   &__header {
     @extend %visually-hidden;
@@ -39,7 +63,7 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 32px;
-    background-color: #fff;
+    background-color: $modalBgdColor;
   }
 
   &__statement {
@@ -50,27 +74,19 @@
     margin-right: auto;
     margin-bottom: 32px;
 
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2.58;
+    @include font($fs: 12px, $fw: null, $lh: 2.55, $ls: null);
 
     text-align: center;
     border-radius: 10px;
-    color: #fcfcfc;
 
-    background-color: rgba(132, 161, 120, 1);
+    color: $txtSecondaryColor;
+    background-color: $themePrimaryColor;
   }
 
   &__name {
     margin-bottom: 12px;
 
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.86;
+    @include font($fs: 20px, $fw: 500, $lh: 1.86, $ls: null);
 
     color: $txtPrimaryColor;
   }

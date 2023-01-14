@@ -1,4 +1,8 @@
 /* --- gallery --- */
+.container {
+  padding: 0;
+  margin: 0;
+}
 
 .dummy {
   background-color: aquamarine;
@@ -10,12 +14,33 @@
 .gallery {
   position: relative;
 
-  max-width: 480px;
+  max-width: 479px;
   min-width: 320px;
   height: 0;
 
   margin: 0 auto;
   padding: 0 20px;
+
+  @include phone {
+    max-width: none;
+    min-width: none;
+    width: 480px;
+    padding: 0 20px;
+  }
+
+  @include tablet {
+    max-width: none;
+    min-width: none;
+    width: 768px;
+    padding: 0 32px;
+  }
+
+  @include desktop {
+    max-width: none;
+    min-width: none;
+    width: 1200px;
+    padding: 0 93px;
+  }
 
   &__header {
     @extend %visually-hidden;
@@ -35,15 +60,33 @@
     overflow: hidden;
     border-radius: 8px;
     background: $modalBgdColor;
+
+    @include phone {
+      top: -27px;
+      height: 204px;
+      
+    }
+
+    @include tablet {
+      top: -144px;
+      height: 327px;
+      border-radius: 18px;
+    }
+
+    @include desktop {
+      top: -160px;
+      height: 422px;
+      border-radius: 24px;
+    }
   }
 
-  &__item {
-    object-fit: fill;
-    object-position: center center;
-  }
+  // &__item {
+  //   object-fit: cover;
+  //   object-position: center center;
+  // }
 
   &__image {
-    height: 100%;
+    height: auto;
     width: auto;
   }
 }
