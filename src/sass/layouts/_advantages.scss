@@ -1,11 +1,11 @@
-.container__benefits { 
+.benefits__container { 
   margin-bottom: 64px;
   @include tablet { 
     margin-bottom: 204px;
   }
 }
 
-.benefits { 
+.benefits__list { 
     @extend %list;
     display: flex;
     justify-content: center;
@@ -64,7 +64,7 @@
  text-align: center;
  color: $modalBgdColor;
  font-weight: 700;
- margin-bottom: 32px;
+ 
   width: 238px;
   @include tablet { 
     font-weight: 400;
@@ -79,4 +79,9 @@
  letter-spacing: 0.02em;
  width: 368px;
   }
+ 
+}
+
+.benefits__item:not(:last-child) > .benefits__text { 
+  margin-bottom: 32px;
 }
