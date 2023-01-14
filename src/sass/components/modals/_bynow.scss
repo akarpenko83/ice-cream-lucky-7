@@ -224,6 +224,9 @@
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84a178;
     border-radius: 10px;
+    @include tablet {
+      padding-left: 16px;
+    }
   }
 
   &__textarea {
@@ -237,6 +240,10 @@
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84a178;
     border-radius: 10px;
+
+    @include tablet {
+      padding-left: 16px;
+    }
   }
 
   &__submit {
