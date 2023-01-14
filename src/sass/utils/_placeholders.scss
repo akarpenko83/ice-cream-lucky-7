@@ -25,3 +25,58 @@
     margin: 0 auto;
     padding: 0 16px;
 }
+
+%button-full {
+    border: 2px solid transparent;
+
+    background-color: $accentColor;
+    color: $btnMainСolor;
+    
+    &:hover {
+            background-color: $btnHoverColor;
+    
+        }
+    
+    &:focus {
+            color: $btnFocusColor;
+            background-color: $btnHoverColor;
+    }
+    
+    &:disabled {
+            background-color: $btnDisableColor;
+        }
+
+}
+
+%button-bordered {
+    color: $btnMainСolor;
+    background-color: transparent;
+        border: 2px solid $accentColor;
+
+    &:hover {
+            border: 2px solid $btnHoverColor;
+     }   
+}
+
+%button-transparent {
+
+    
+    color: $accentColor;
+    text-decoration-line: underline;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+            color: $btnHoverColor;
+        }
+    
+        &:focus {
+    
+            color: $txtSecondaryColor;
+        }
+    
+        &:disabled {
+            color: $btnDisableColor;
+        }
+
+}
