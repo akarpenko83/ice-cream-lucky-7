@@ -13,11 +13,6 @@
   align-items: center;
 }
 
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -43,41 +38,51 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1199px) {
-  /*menu-button*/
-  .menu-button {
-    position: relative;
-    margin: 0;
-    margin-right: 32px;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    display: inline-flex;
-    cursor: pointer;
-    z-index: 2;
-  }
-  .menu-button:focus .icon-cros {
-    fill: #e8185a;
-    cursor: pointer;
-  }
+/*menu-button*/
+.menu-button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 
-  .menu-button .icon-cros {
-    display: none;
-  }
-  .menu-button.is-open .icon-cros {
-    display: block;
-    fill: #fcfcfc;
-  }
-  .menu-button.is-open .icon-menu {
-    display: none;
-  }
-  .menu-button:focus .icon-menu {
-    fill: #ffffff;
+  cursor: pointer;
+  z-index: 2;
+}
+.menu-button:focus .icon-cros {
+  fill: #e8185a;
+  cursor: pointer;
+}
+
+.menu-button .icon-cros {
+  display: none;
+}
+.menu-button.is-open .icon-cros {
+  display: block;
+  fill: #fcfcfc;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+.menu-button:focus .icon-menu {
+  fill: #ffffff;
+}
+
+.menu-button.is-open {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .menu-button.is-open {
+    top: 32px;
+    right: 32px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+@media screen and (min-width: 768px) {
   .menu-button {
     display: inline-flex;
+    margin-right: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -126,7 +131,7 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 1.21;
-
+  cursor: url('../images/header-hero/logo.png'), pointer;
   color: #fcfcfc;
 }
 .item-link:hover {
@@ -134,11 +139,8 @@
 }
 @media screen and (min-width: 1200px) {
   .item-link {
-    font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
-
-    align-items: center;
   }
   .item-link:hover {
     color: #f8d24e;
