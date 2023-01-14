@@ -2,6 +2,7 @@
   @extend %container;
   @extend %outline;
 
+  // z-index: 886;
   padding: 0 20px;
 
   @include phone {
@@ -11,7 +12,7 @@
     padding: 0 40px;
   }
 
-  position: relative;
+  // position: relative;
 
   //   background-color: $modalBgdColor;
 
