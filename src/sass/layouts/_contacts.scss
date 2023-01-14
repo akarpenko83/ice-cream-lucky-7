@@ -114,6 +114,12 @@
 .contact__nav { 
     @extend %list;
     margin-top: 32px;
+    @include tablet { 
+        padding-bottom: 20px;
+    }
+    @include desktop { 
+        padding-bottom: 20px;
+    }
 }
 
 
@@ -131,6 +137,7 @@
     @include desktop { 
         font-size: 16px;
        line-height: 150%;
+       
     }
 }
 
@@ -158,9 +165,11 @@
    padding-bottom: 20px;
    @include tablet { 
     width: 173px;
+    padding-bottom: 30px;
    }
    @include desktop { 
     width: 288px;
+    padding-bottom: 30px;
    }
 }
 
