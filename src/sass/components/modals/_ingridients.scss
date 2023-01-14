@@ -2,6 +2,8 @@
   @extend %container;
   @extend %outline;
 
+  padding: 0 20px;
+
   @include phone {
     padding: 0 20px;
   }
