@@ -1,21 +1,21 @@
 .products {
   padding: 60px 0px;
-  background-color: #FFFFFF;
-  background-image:  url('../images/backgrounds/background-mob.png');
-          @include retina{
-            background-image:  url('../images/backgrounds/background-mob-@2x.png');
-           }
-  @include tablet {
-            background-image:  url('../images/backgrounds/background-tab.png');
-           @include retina{
-            background-image:  url('../images/backgrounds/background-tab-@2x.png');
+  background-color: #ffffff;
+  background-image: url('../images/backgrounds/background-mob.png');
+  @include retina {
+    background-image: url('../images/backgrounds/background-mob-@2x.png');
   }
+  @include tablet {
+    background-image: url('../images/backgrounds/background-tab.png');
+    @include retina {
+      background-image: url('../images/backgrounds/background-tab-@2x.png');
+    }
   }
   @include desktop {
-           background-image:  url('../images/backgrounds/background.png');
-           @include retina{
-           background-image:  url('../images/backgrounds/background-@2x.png');
-  }
+    background-image: url('../images/backgrounds/background.png');
+    @include retina {
+      background-image: url('../images/backgrounds/background-@2x.png');
+    }
   }
 }
 .products__description {
@@ -29,10 +29,10 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  @include tablet{
+  @include tablet {
     font-size: 22px;
   }
-  @include desktop{
+  @include desktop {
     font-size: 30px;
   }
 }
@@ -49,10 +49,10 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  @include tablet{
+  @include tablet {
     font-size: 34px;
   }
-  @include desktop{
+  @include desktop {
     font-size: 36px;
   }
 }
@@ -62,13 +62,12 @@
 .products__card-list {
   @extend %list;
 }
-.card-list__item:not(:last-child) {
-  margin-bottom: 168px;
-}
+
 .product-card {
-  
 }
 .card-list__product-card {
+  position: relative;
+
   padding: 126px 45px 16px 45px;
   min-height: 420px;
 
@@ -76,6 +75,54 @@
 
   text-align: center;
   border-radius: 25px;
+}
+
+.card-list__product-card::after {
+  background-color: rgb(212, 223, 208);
+
+  content: '';
+  position: absolute;
+  top: -89px;
+  right: 45px;
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+  background-image: linear-gradient(
+    0deg,
+    rgba(156, 190, 143, 0.7),
+    rgba(156, 190, 143, 0.7)
+  );
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+}
+
+.card-list__item:nth-child(2) > .card-list__product-card::after {
+  background-color: rgba(248, 210, 78, 0.7);
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+
+.card-list__item:nth-child(3) > .card-list__product-card::after {
+  background-color: rgba(213, 117, 63, 0.7);
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+
+.card-list__item {
+}
+
+.card-list__item:not(:last-child) {
+  margin-bottom: 168px;
 }
 
 .card-list__item:nth-child(2) > .card-list__product-card {
@@ -86,10 +133,17 @@
   background-color: $milkshakeColor;
 }
 .product-card__img {
-  background-image: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),;
-  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  position: absolute;
+  top: -100px;
+  right: 45px;
+  width: 200px;
 
+  z-index: 2;
 }
+
+.product-card__img {
+}
+
 .product-card__meta {
 }
 .product-card__name {
@@ -103,10 +157,10 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  @include tablet{
+  @include tablet {
     font-size: 22px;
   }
-  @include desktop{
+  @include desktop {
     font-size: 30px;
   }
 }
@@ -119,9 +173,9 @@
   letter-spacing: 0.04em;
 }
 .product-card__button {
- background-color: transparent;
- border-color: transparent;
+  background-color: transparent;
+  border-color: transparent;
 }
-.product-card__icons{
+.product-card__icons {
   fill: #131313;
 }
