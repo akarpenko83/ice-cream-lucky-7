@@ -1,5 +1,6 @@
 .products {
   padding: 60px 0px;
+  height: 1930px;
   background-color: #ffffff;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,13 +9,20 @@
   @include retina {
     background-image: url('../images/backgrounds/background-mob-@2x.png');
   }
+
+  @include phone {
+    height: 1960px;
+  }
+
   @include tablet {
+    height: 790px;
     background-image: url('../images/backgrounds/background-tab.png');
     @include retina {
       background-image: url('../images/backgrounds/background-tab-@2x.png');
     }
   }
   @include desktop {
+    height: 1050px;
     background-image: url('../images/backgrounds/background.png');
     @include retina {
       background-image: url('../images/backgrounds/background-@2x.png');
@@ -57,6 +65,8 @@
   }
   @include desktop {
     font-size: 36px;
+
+    margin-bottom: 303px;
   }
 }
 
@@ -75,7 +85,7 @@
   @include desktop {
     flex-direction: row;
     align-items: flex-start;
-    gap: 16px;
+    gap: 29px;
   }
 }
 
@@ -84,12 +94,14 @@
   flex-direction: column;
 
   position: relative;
+  z-index: 0;
 
   padding: 128px 45px 0px 45px;
   padding-bottom: 0px;
   min-height: 420px;
   max-width: 280px;
   background-color: $iceCreamColor;
+  margin: 0 auto;
 
   text-align: center;
   border-radius: 25px;
@@ -107,15 +119,11 @@
   }
 
   @include desktop {
-    max-width: 370px;
-    min-height: 530px;
-  }
-}
+    min-width: 370px;
+    min-height: 536px;
 
-.product-card__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    padding: 165px 64px 0px 64px;
+  }
 }
 
 .card-list__product-card::after {
@@ -148,6 +156,9 @@
   @include desktop {
     width: 302px;
     height: 302px;
+
+    top: -160px;
+    right: 33px;
   }
 }
 
@@ -198,24 +209,27 @@
 }
 .product-card__img {
   position: absolute;
-  top: -100px;
-  right: 40px;
+  top: -50px;
+  right: 20px;
   width: 200px;
   margin: 0 auto;
 
   z-index: 2;
 
   @include phone {
-    right: 25px;
+    right: 12px;
   }
 
   @include tablet {
-    right: 13px;
+    right: 7px;
   }
 
   @include desktop {
     width: 302px;
     height: auto;
+
+    top: -89px;
+    right: 16px;
   }
 }
 
@@ -254,6 +268,16 @@
     margin-bottom: 70px;
     width: 172px;
   }
+
+  @include desktop {
+    margin: 0px auto;
+    margin-bottom: 115px;
+    width: 205px;
+
+    font-size: 14px;
+    line-height: 1.8;
+    line-height: 1.8;
+  }
 }
 
 .card-list__item:nth-child(2) .product-card__text {
@@ -266,6 +290,10 @@
   @include tablet {
     margin-bottom: 20px;
   }
+
+  @include desktop {
+    margin-bottom: 70px;
+  }
 }
 
 .card-list__item:nth-child(3) .product-card__text {
@@ -276,7 +304,11 @@
   }
 
   @include tablet {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
+  }
+
+  @include desktop {
+    margin-bottom: 95px;
   }
 }
 
