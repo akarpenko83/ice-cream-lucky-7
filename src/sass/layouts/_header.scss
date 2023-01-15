@@ -1,11 +1,9 @@
 .header {
   padding-top: 12px;
-  width: 100%;
-  top: 0;
-  left: 0;
+
   position: relative;
 }
-.headeer-container {
+.header__container {
   display: flex;
   justify-content: space-between;
   margin-left: auto;
@@ -25,8 +23,8 @@
 }
 @media screen and (min-width: 1200px) {
   .container {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
     width: 1200px;
   }
 }
@@ -142,7 +140,7 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 1.21;
-  cursor: url('../images/header-hero/logo.png'), pointer;
+  cursor: url('../images/header-hero/Cursor1.png'), pointer;
   color: #fcfcfc;
 }
 .item-link:hover {
