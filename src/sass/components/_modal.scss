@@ -1,0 +1,90 @@
+%h1-modals {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-align: center;
+  color: $txtPrimaryColor;
+
+  @include tablet {
+    font-size: 20px;
+  }
+}
+
+%h2-modals {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-align: center;
+  color: $txtPrimaryColor;
+}
+
+.modals-close__button {
+  display: block;
+  padding: 0;
+  border-style: none;
+  background-color: transparent;
+  line-height: 0;
+  cursor: pointer;
+  &--position {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+}
+
+.modal {
+  /* Скрываем окна  */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  z-index: 890;
+
+  opacity: 0;
+  visibility: hidden;
+
+  // transition: 0.3s all;
+
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 889;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@import './modals/ingridients';
+@import './modals/bynow';
+@import './modals/readmore';
+@import './modals/ourlocation';
+@import './modals/franchise';
