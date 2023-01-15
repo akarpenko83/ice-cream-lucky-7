@@ -1,34 +1,55 @@
 <!----gallery---->
-<section>
-  <div class="container">
-    <div class="dummy">
-      <p>DUMMY</p>
-    </div>
-  </div>
-</section>
-<section>
-  <div class="container">
-    <div class="gallery">
+
+<section class="gallery">
+  <div class="container gallery__container">
+    <div class="gallery__wrap">
       <h2 class="gallery__header">Gallery</h2>
       <div class="gallery__slider">
         <div class="gallery__item">
           <img
             class="gallery__image"
-            src="./images/gallery/slider1.jpg"
+            srcset="
+              ./images/gallery/1dt1x.jpg    1013w,
+              ./images/gallery/1dt-@2x.jpg  2026w,
+              ./images/gallery/1tab1x.jpg    704w,
+              ./images/gallery/1tab-@2x.jpg 1408w,
+              ./images/gallery/1mob1x.jpg    440w,
+              ./images/gallery/1mob-@2x.jpg  880w
+            "
+            sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, (min-width: 480px) 440px, 100vw"
+            src="./images/gallery/1mob1x.jpg"
             alt="Ice-cream and blueberry"
           />
         </div>
         <div class="gallery__item">
           <img
             class="gallery__image"
-            src="./images/gallery/slider2.jpg#"
+            srcset="
+              ./images/gallery/2dt1x.jpg    1013w,
+              ./images/gallery/2dt-@2x.jpg  2026w,
+              ./images/gallery/2tab1x.jpg    704w,
+              ./images/gallery/2tab-@2x.jpg 1408w,
+              ./images/gallery/2mob1x.jpg    440w,
+              ./images/gallery/2mob-@2x.jpg  880w
+            "
+            sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, (min-width: 480px) 440px, 100vw"
+            src="./images/gallery/2mob1x.jpg"
             alt="Ice-cream and sweet confetti"
           />
         </div>
         <div class="gallery__item">
           <img
             class="gallery__image"
-            src="./images/gallery/slider3.jpg"
+            srcset="
+              ./images/gallery/3dt1x.jpg    1013w,
+              ./images/gallery/3dt-@2x.jpg  2026w,
+              ./images/gallery/3tab1x.jpg    704w,
+              ./images/gallery/3tab-@2x.jpg 1408w,
+              ./images/gallery/3mob1x.jpg    440w,
+              ./images/gallery/3mob-@2x.jpg  880w
+            "
+            sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, (min-width: 480px) 440px, 100vw"
+            src="./images/gallery/3mob1x.jpg"
             alt="Ice-cream and sweet cherry"
           />
         </div>
