@@ -1,3 +1,70 @@
-<section class="hero-header">
-    <div class="container"></div>
+<section class="header">
+  <div class="container headeer-container">
+    <a class="header__logo" href="#">
+      <img class="logo-png" src=".\images\header-hero\logo.png" />
+    </a>
+    <div class="menu-container" id="menu-container" data-menu>
+      <a class="header__logo menu-logo" href="#">
+        <img width="40" height="37" src=".\images\header-hero\logo.png" />
+      </a>
+
+      <nav>
+        <ul class="header__list">
+          <li class="item"><a href="" class="item-link">Home</a></li>
+          <li class="item">
+            <a href="" class="item-link">How it’s made?</a>
+          </li>
+          <li class="item"><a href="" class="item-link">Our products</a></li>
+          <li class="item"><a href="" class="item-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button
+        type="button"
+        class="button hero__button button--full buy-now js-open-modal"
+        data-modal="1"
+      >
+        <span>Buy now</span>
+        <svg width="12" height="12" class="button__icon">
+          <use href="./images/icons/icons.svg#icon-button"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="header__tablet">
+      <button
+        type="button"
+        class="menu-button"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button
+      >
+        <svg
+          width="32px"
+          height="32px"
+          class="hiden"
+          aria-label="вмикач мобільного меню"
+        >
+          <use
+            class="icon-cros"
+            href=".\images\icons\icons.svg#icon-close"
+          ></use>
+          <use
+            class="icon-menu"
+            href=".\images\icons\icons.svg#icon-mob-menu"
+          ></use>
+        </svg>
+      </button>
+
+      <button
+        type="button"
+        class="button hero__button button--full button-none js-open-modal"
+        data-modal="1"
+      >
+        <span>Buy now</span>
+        <svg width="12" height="12" class="button__icon">
+          <use href="./images/icons/icons.svg#icon-button"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!-------------------------------------------------------->
 </section>

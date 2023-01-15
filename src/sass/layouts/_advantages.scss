@@ -1,0 +1,94 @@
+.benefits__container { 
+  margin-bottom: 64px;
+  @include tablet { 
+    margin-bottom: 204px;
+  }
+}
+
+.benefits__list { 
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include tablet { 
+        gap: 80px;
+        flex-direction: inherit;
+    }
+    @include desktop { 
+        gap: 32px;
+    }
+}
+
+.benefits__icon { 
+    display: flex;
+    padding: 7;
+    background: $accentColor;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    // margin-top: 32px;
+    @include tablet { 
+        margin-top: 40px;
+    }
+}
+
+.benefits__title { 
+    font-size: 36px;
+ line-height: 44px;
+ text-align: center;
+ letter-spacing: 0.04em;
+ text-transform: uppercase;
+ color: $modalBgdColor;
+  margin-bottom: 16px;
+  @include tablet { 
+    font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  letter-spacing: 0.04em;
+  }
+  @include desktop { 
+    font-size: 58px;
+ line-height: 71px;
+  letter-spacing: 0.04em;
+  }
+}
+
+
+.benefits__text { 
+    font-size: 12px;
+ line-height: 170%;
+ text-align: center;
+ color: $modalBgdColor;
+ font-weight: 700;
+ 
+  width: 238px;
+  @include tablet { 
+    font-weight: 400;
+   font-size: 14px;
+    line-height: 174%;
+    width: 152px;
+  }
+  @include desktop { 
+    font-weight: 400;
+ font-size: 16px;
+ line-height: 176%;
+ letter-spacing: 0.02em;
+ width: 368px;
+  }
+ 
+}
+
+.benefits__item:not(:last-child) > .benefits__text { 
+  margin-bottom: 32px;
+}
+
+.benefits__item:nth-child(3) > .benefits__text { 
+  @include tablet {
+    margin-bottom: 32px;
+  }
+  
+}
