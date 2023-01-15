@@ -45,8 +45,8 @@
       width: 480px;
       padding-top: 257px;
       padding-bottom: 409px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     @include tablet {
@@ -74,8 +74,8 @@
       width: 1200px;
       padding-top: 400px;
       padding-bottom: 292px;
-      padding-left: 116px;
-      padding-right: 116px;
+      padding-left: 0;
+      padding-right: 0;
 
       background-image: url(../images/backgrounds/background.png),
         linear-gradient(to right, $modalBgdColor, $modalBgdColor);
@@ -146,7 +146,7 @@
     }
 
     @include desktop {
-      width: 1136px;
+      width: 968px;
       padding: 43px 109px;
       margin-left: auto;
       margin-right: auto;
