@@ -82,3 +82,29 @@ document.addEventListener('DOMContentLoaded', function () {
     this.classList.remove('active');
   });
 }); // end ready
+
+/* data-modal="1"   - ставиш на модалку
+js-modal-close      -  добавляєш в клас на кнопку закриття
+js-overlay-modal    - клас на бекдроп
+
+
+.backdrop {                                
+  opacity: 0;
+  visibility: hidden;
+z-index: 20;
+  }
+ .modal {
+  z-index: 30;
+  opacity: 0;
+  visibility: hidden;
+
+  .modal.active,
+.backdrop.active {
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+*/
