@@ -1,0 +1,208 @@
+/* --- reviews --- */
+
+.reviews {
+  &__container {
+    padding: 0;
+    margin: 0 auto;
+
+    @include phone {
+      width: 480px;
+    }
+
+    @include tablet {
+      width: 768px;
+    }
+
+    @include desktop {
+      width: 1200px;
+    }
+  }
+
+  &__wrap {
+    display: block;
+
+    max-width: 479px;
+    min-width: 320px;
+
+    padding-top: 178px;
+    padding-bottom: 393px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+
+    background-image: url(../images/backgrounds/background-mob.png),
+      linear-gradient(to right, $modalBgdColor, $modalBgdColor);
+    background-position: center bottom;
+
+    @include retina {
+      background-image: url(../images/backgrounds/background-mob-@2x.png),
+        linear-gradient(to right, $modalBgdColor, $modalBgdColor);
+    }
+
+    @include phone {
+      max-width: none;
+      min-width: none;
+      padding-top: 257px;
+      padding-bottom: 409px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @include tablet {
+      max-width: none;
+      min-width: none;
+      padding-top: 283px;
+      padding-bottom: 379px;
+      padding-left: 32px;
+      padding-right: 32px;
+
+      background-image: url(../images/backgrounds/background-tab.png),
+        linear-gradient(to right, $modalBgdColor, $modalBgdColor);
+      background-position: center bottom;
+
+      @include retina {
+        background-image: url(../images/backgrounds/background-tab-@2x.png),
+          linear-gradient(to right, $modalBgdColor, $modalBgdColor);
+      }
+    }
+
+    @include desktop {
+      max-width: none;
+      min-width: none;
+      padding-top: 400px;
+      padding-bottom: 292px;
+      padding-left: 116px;
+      padding-right: 116px;
+
+      background-image: url(../images/backgrounds/background.png),
+        linear-gradient(to right, $modalBgdColor, $modalBgdColor);
+      background-position: center bottom;
+
+      @include retina {
+        background-image: url(../images/backgrounds/background-@2x.png),
+          linear-gradient(to right, $modalBgdColor, $modalBgdColor);
+      }
+    }
+  }
+
+  &__header {
+    @extend %visually-hidden;
+  }
+
+  &__slider {
+    position: relative;
+    background-color: transparent;
+  }
+
+  &__block {
+    text-align: center;
+  }
+
+  &__photo {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
+    background-color: $modalBgdColor;
+  }
+
+  &__statement {
+    width: 280px;
+    padding: 35px 39px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+
+    @include font($fw: null, $fs: 12, $lh: 2.55, $ls: null);
+
+    text-align: center;
+    border-radius: 10px;
+
+    color: $txtSecondaryColor;
+    background-color: $themePrimaryColor;
+
+    @include phone {
+      width: 280px;
+      padding: 35px 39px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 32px;
+      @include font($fw: null, $fs: 12, $lh: 2.55, $ls: null);
+    }
+
+    @include tablet {
+      width: 100%;
+      padding: 28px 80px;
+      margin-left: 0;
+      margin-right: 0;
+      border-radius: 24px;
+      @include font($fw: 500, $fs: 14, $lh: 1.86, $ls: 0.04em);
+    }
+
+    @include desktop {
+      width: 100%;
+      padding: 43px 109px;
+      margin-left: 0;
+      margin-right: 0;
+      border-radius: 24px;
+      @include font($fw: 500, $fs: 16, $lh: 1.86, $ls: 0.04em);
+    }
+  }
+
+  &__name {
+    margin-bottom: 12px;
+
+    @include font($fw: 500, $fs: 20, $lh: 1.86, $ls: null);
+
+    color: $txtPrimaryColor;
+
+    @include phone {
+      margin-bottom: 12px;
+      @include font($fw: 500, $fs: 20, $lh: 1.86, $ls: null);
+    }
+
+    @include tablet {
+      margin-bottom: 32px;
+      @include font($fw: 500, $fs: 16, $lh: 1.86, $ls: null);
+    }
+
+    @include desktop {
+      margin-bottom: 32px;
+      @include font($fw: 500, $fs: 16, $lh: 1.86, $ls: null);
+    }
+  }
+
+  .slick-dots {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+
+  .slick-dots li {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .slick-dots li + li {
+    margin-left: 18px;
+  }
+
+  .slick-dots li button:before {
+    font-size: 14px;
+    line-height: 14px;
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    color: $sldrDotColor;
+  }
+
+  .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: $themePrimaryColor;
+  }
+}
