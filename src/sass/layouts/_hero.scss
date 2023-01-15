@@ -1,1 +1,214 @@
+p {
+  margin: 0;
+}
+.heroy {
+  position: relative;
+}
 
+.heroy__container {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  position: relative;
+  display: block;
+  background-image: url('../images/header-hero/dots-mob.png');
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: bottom right;
+}
+@media screen and (min-width: 480px) {
+  .heroy__container {
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 330px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .heroy__container {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../images/header-hero/dots-tab.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heroy__container {
+    background-image: url('../images/header-hero/dots.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+}
+
+.heroy__title {
+  margin-bottom: 32px;
+  margin-top: 50px;
+  width: 247px;
+
+  font-family: 'Seymour One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .heroy__title {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heroy__title {
+    margin-top: 45px;
+  }
+}
+.heroy__buttons {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .heroy__buttons {
+    margin-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heroy__buttons {
+    margin-bottom: 42px;
+  }
+}
+
+.hero-margin {
+  margin-right: 12px;
+}
+
+.heroy {
+  color: #f8d24e;
+}
+
+.heroy__efekt {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .heroy__efekt {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    .heroy__efekt {
+      margin-bottom: 65px;
+    }
+  }
+  .plate {
+    margin-right: 32px;
+    width: 152px;
+    height: 152px;
+    transform: rotate(180deg);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+  .plate:hover {
+    transform: rotate(360deg);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .plate {
+    width: 225px;
+    height: 225px;
+  }
+}
+
+.heroy__inform {
+  margin-right: 53px;
+  margin-bottom: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  width: 139px;
+
+  color: #fcfcfc;
+}
+@media screen and (min-width: 1200px) {
+  .heroy__inform {
+    font-size: 14px;
+    width: 200px;
+  }
+}
+.arrow {
+  fill: #fcfcfc;
+}
+.heroy__right {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .heroy__right {
+    justify-content: flex-end;
+  }
+}
+
+.img-ice {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .img-ice {
+    width: 268px;
+    margin-right: 14px;
+    position: absolute;
+    right: 75px;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .img-ice {
+    width: 456px;
+    margin-right: 14px;
+    bottom: 0;
+    right: 95px;
+  }
+}
+
+.heroy-number {
+  font-family: 'Montserrat' sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.21;
+
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  color: #131313;
+}
+.heroy-text {
+  font-family: 'Montserrat' sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+
+  text-align: right;
+  margin-bottom: 20px;
+  color: #fcfcfc;
+}
+.heroy__advantage {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .heroy__advantage {
+    display: block;
+    margin-bottom: 205px;
+  }
+}
+
+/*TEST*/
