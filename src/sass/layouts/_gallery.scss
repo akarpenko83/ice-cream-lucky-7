@@ -1,57 +1,99 @@
 /* --- gallery --- */
 
-.dummy {
-  background-color: aquamarine;
-  width: 100%;
-  height: 200px;
-  text-align: center;
-}
-
 .gallery {
-  position: relative;
+  &__container {
+    padding: 0;
+    margin: 0 auto;
 
-  padding: 0 20px;
-  height: 0;
-  max-width: 480px;
-  min-width: 320px;
+    @include phone {
+      width: 480px;
+    }
 
-  margin: 0 auto;
-}
+    @include tablet {
+      width: 768px;
+    }
 
-.gallery__header {
-  @extend %visually-hidden;
-}
+    @include desktop {
+      width: 1200px;
+    }
+  }
 
-.gallery__slider {
-  position: absolute;
+  &__wrap {
+    position: relative;
 
-  display: flex;
+    max-width: 479px;
+    min-width: 320px;
+    height: 0;
 
-  justify-content: center;
-  align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
 
-  z-index: 10;
-  top: -32px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 130px;
+    @include phone {
+      max-width: none;
+      min-width: none;
+      width: 480px;
+      padding: 0 20px;
+    }
 
-  overflow: hidden;
-  border-radius: 8px;
-  background: rgb(111, 111, 111);
-}
+    @include tablet {
+      max-width: none;
+      min-width: none;
+      width: 768px;
+      padding: 0 32px;
+    }
 
-.gallery__item {
-  object-fit: fill;
-  object-position: 50% 50%;
-}
+    @include desktop {
+      max-width: none;
+      min-width: none;
+      width: 1200px;
+      padding: 0 93px;
+    }
+  }
 
-.gallery__image {
-  height: 100%;
-  width: auto;
-}
+  &__header {
+    @extend %visually-hidden;
+  }
 
-.slick-slider {
-  position: absolute;
+  &__slider {
+    position: absolute;
+
+    z-index: 10;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    height: 130px;
+
+    overflow: hidden;
+    border-radius: 8px;
+    background: $modalBgdColor;
+
+    @include phone {
+      top: -27px;
+      height: 204px;
+    }
+
+    @include tablet {
+      top: -144px;
+      height: 327px;
+      border-radius: 18px;
+    }
+
+    @include desktop {
+      top: -160px;
+      height: 422px;
+      border-radius: 24px;
+    }
+  }
+
+  // &__item {
+  //   object-fit: cover;
+  //   object-position: center center;
+  // }
+
+  &__image {
+    height: auto;
+    width: auto;
+  }
 }
