@@ -11,20 +11,19 @@
   .footer-container__text{
     width: 232px;
     margin-bottom: 60px;
+   
     @media screen and (min-width: 768px) {
       width: 352px;
       margin-bottom: 32px;
   }
   
-  @media screen and (min-width: 1200px) {
+     @media screen and (min-width: 1200px) {
     width: 504px;
     margin-bottom: 60px;
   }
   }
   
   .footer-container__desc{
-    font-family: 'Montserrat';
-  
   margin-bottom: 16px;
   
   font-weight: 700;
@@ -32,7 +31,7 @@
   line-height: calc(22 / 18);
   text-transform: uppercase;
   
-  color: #FCFCFC;
+  color:$txtSecondaryColor;
   
   @media screen and (min-width: 768px) {
   
@@ -47,14 +46,13 @@
   
   .footer-container__desc--big{
   
-  
   font-weight: 700;
   font-size: 34px;
   line-height: calc(41 / 34);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   
-  color: #FCFCFC;
+  color:$txtSecondaryColor;
   
   @media screen and (min-width: 768px) {
     
@@ -76,17 +74,18 @@
       margin-bottom: 34px;
   }
   
-  @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     margin-bottom: 40px;
   }
   
   }
   
   .footer__social--icon{
-  fill:#84A178;
+  fill:$themePrimaryColor;
+ 
   &:hover,
   &:focus {
-  fill:#FCFCFC;
+  fill:$txtSecondaryColor;
   }
   }
   
@@ -97,7 +96,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        background-color:  #F8D24E;
+        background-color: $accentColor;
         content: "";
            
       }
@@ -109,13 +108,13 @@
   }
   
   .footer__contact--desc{
-   margin-right: 4px; 
+  margin-right: 4px; 
   font-weight: 700;
   font-size: 12px;
   line-height: calc(22 / 12);
   text-align: right;
   
-  color: #131313;
+  color:$txtPrimaryColor;
   }
   
   .footer__contact--tel{
@@ -145,7 +144,7 @@
   font-size: 14px;
   line-height: calc(21 / 14);
   text-align: center;
-  color: #7A7A7A;
+  color: $cprtColor;
   
   
   }
