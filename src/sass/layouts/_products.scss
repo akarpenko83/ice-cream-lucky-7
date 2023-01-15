@@ -73,6 +73,7 @@
 .products__card-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   @extend %list;
 
@@ -292,7 +293,7 @@
   }
 
   @include desktop {
-    margin-bottom: 70px;
+    margin-bottom: 95px;
   }
 }
 
