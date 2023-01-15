@@ -1,5 +1,6 @@
 // basic colors:
 $themePrimaryColor: #84a178; // основний колір теми
+$txtPrimaryColor: #131313; // осноний колір тексту
 $txtPrimaryColor: hsl(0, 0%, 7%); // осноний колір тексту
 $txtSecondaryColor: #fcfcfc; // другорядний колір тексту
 $accentColor: #f8d24e; // колір акценту
@@ -13,6 +14,9 @@ $iceCoffeeColor: #efd478;
 $milkshakeColor: #d6936d;
 
 // button colors -- кольори кнопок
+$btnHoverColor: #0a8817; // при ховері та фокусі
+$btnDisableColor: #ababab; // неактивна кнопка та години роботи у контактах
+$sldrDotColor: #d9d9d9; // дотси у слайдері некативні
 $btnMainСolor: #000000; // основний колір тексту
 $btnHoverColor: #0a8817; // фон при ховері та фокусі
 $btnFocusColor: #ffffff; // шрифт при фокусі
