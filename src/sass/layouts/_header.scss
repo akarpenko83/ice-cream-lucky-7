@@ -1,0 +1,172 @@
+.header {
+  padding-top: 12px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+.headeer-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 1200px;
+  }
+}
+.header__logo {
+  cursor: pointer;
+}
+.header__tablet {
+  display: flex;
+  justify-content: space-between;
+}
+.button-none {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .button-none {
+    display: block;
+  }
+}
+
+/*menu-button*/
+.menu-button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+  z-index: 2;
+}
+.menu-button:focus .icon-cros {
+  fill: #e8185a;
+  cursor: pointer;
+}
+
+.menu-button .icon-cros {
+  display: none;
+}
+.menu-button.is-open .icon-cros {
+  display: block;
+  fill: #fcfcfc;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+.menu-button:focus .icon-menu {
+  fill: #ffffff;
+}
+
+.menu-button.is-open {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .menu-button.is-open {
+    top: 32px;
+    right: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: inline-flex;
+    margin-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.header__list {
+  text-align: center;
+  margin-left: 0;
+  padding-inline-start: 0;
+}
+@media screen and (min-width: 1200px) {
+  .header__list {
+    display: flex;
+    margin: 0;
+  }
+}
+.buy-now {
+  margin-left: auto;
+  margin-right: auto;
+}
+.buy-now {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.item {
+  list-style: none;
+}
+.item:not(:last-child) {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1200px) {
+  .item:not(:last-child) {
+    margin-right: 28px;
+    margin-bottom: 0;
+  }
+}
+
+.item-link {
+  text-decoration: none;
+  color: #fcfcfc;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.21;
+  cursor: url('../images/header-hero/logo.png'), pointer;
+  color: #fcfcfc;
+}
+.item-link:hover {
+  color: #131313;
+}
+@media screen and (min-width: 1200px) {
+  .item-link {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .item-link:hover {
+    color: #f8d24e;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .lodo-png {
+    width: 48px;
+    height: 44px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .lodo-png {
+    width: 60px;
+    height: 65px;
+  }
+}
