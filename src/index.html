@@ -4,7 +4,33 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>IceCream</title>
-        <!-- --------------------------------------------------------------- шрифти -->
+        <!-- --------------------------------------------------------------- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- --------------------------------------------------------------- шрифти --->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -20,11 +46,20 @@
             type="text/css"
             href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
         />
+        <!-- ------------------------------------------------------ анімації -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <link
             rel="stylesheet"
             type="text/css"
             href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
         />
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
     </head>
     <body>
         <!-- ❗️❗️❗️ Add partials like so for every page -->
@@ -37,6 +72,9 @@
             <include src="./partials/gallery.html"></include>
             <include src="./partials/customer-reviews.html"></include>
             <include src="./partials/contacts.html"></include>
+            <!-- Додав Buttons для перевірки/ перед здачею видалити -->
+            <!-- <include src="./partials/buttons.html"></include> -->
+            <!-- <include src="./partials/modals.html"></include> -->
         </main>
         <include src="./partials/footer.html"></include>
         <script
@@ -47,5 +85,7 @@
         ></script>
         <script src="./js/modal.js" type="module"></script>
         <script src="./js/mobile-menu.js" type="module"></script>
+        <script src="./js/gallery.js" type="module"></script>
+        <script src="./js/reviews.js" type="module"></script>
     </body>
 </html>

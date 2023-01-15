@@ -1,0 +1,73 @@
+.modal-ourlocation {
+  //   position: relative;
+  //   top: 50%;
+  //   left: 50%;
+  width: 280px;
+  @extend %container;
+  padding: 0 26px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  box-sizing: border-box;
+
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  @include tablet {
+    width: 568px;
+    padding: 0 58px;
+  }
+
+  &__header {
+    @extend %h1-modals;
+    // width: 142px;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      width: auto;
+      // margin-top: 32px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__map {
+    background: $txtPrimaryColor;
+    border-radius: 10px;
+    width: 100%;
+    // width: 224px;
+    height: 199px;
+    margin-bottom: 24px;
+
+    @include tablet {
+      // width: 448px;
+      height: 260px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+
+    // padding: 50px;
+    width: 134px;
+    height: 42px;
+
+    @include tablet {
+      margin-bottom: 32px;
+      width: 145px;
+      height: 42px;
+    }
+  }
+}
