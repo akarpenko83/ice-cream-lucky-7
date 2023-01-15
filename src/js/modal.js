@@ -83,9 +83,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 }); // end ready
 
-/* data-modal="1"    - ставиш на модалку
-js-modal-close       -  добавляєш в клас на кнопку закриття
-js-overlay-modal     - клас на бекдроп
+/* data-modal="1"   - ставиш на модалку
+js-modal-close      -  добавляєш в клас на кнопку закриття
+js-overlay-modal    - клас на бекдроп
 
 
 .backdrop {                                
@@ -107,5 +107,4 @@ z-index: 20;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 */
