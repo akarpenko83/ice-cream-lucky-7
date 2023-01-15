@@ -1,68 +1,70 @@
-<div class="modal-franchise">
-  <button
-    type="button"
-    class="modals-close__button modals-close__button--position"
-  >
+<button type="submit" class="js-open-modal" data-modal="5">Franchise</button>
+
+<div class="modal-franchise modal----" data-modal="5">
+  <button type="button" class="modals-close__button modals-close__button--position">
     <svg class="modals-close__icon" width="20" height="20">
       <use href="./images/icons/icons.svg#icon-close"></use>
     </svg>
   </button>
 
-  <h1 class="modal-franhise__title">
-    Thank you for your interest in owning an Ice Cream shop
-  </h1>
+  <h1 class="modal-franchise__header">Thank you for your interest in owning an Ice Cream shop</h1>
 
   <p class="modal-franchise__dscr">
-    Due to the overwhelming volume of franchise requests we are not accepting
-    new franchisee applications at this time. Once the application process
-    resumes, we will contact you for further information. Please fill out the
-    contact information below and we will reach out for additional information.
-    We appreciate your patience.
+    Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+    applications at this time. Once the application process resumes, we will contact you for further
+    information. Please fill out the contact information below and we will reach out for additional
+    information. We appreciate your patience.
   </p>
-
   <form name="input details" class="modal-franchise__form" action="">
-    <input
-      type="text"
-      name="name"
-      id="name"
-      class="modal-franchise__input"
-      autocomplete="name"
-      placeholder="Name"
-      required
-    />
-
-    <input
-      type="text"
-      name="phone"
-      id="phone"
-      class="modal-franchise__input"
-      autocomplete="phone"
-      placeholder="Phone"
-      required
-    />
-
-    <input
-      type="email"
-      name="email"
-      id="email"
-      class="modal-franchise__input"
-      placeholder="Email"
-      required
-    />
-
-    <textarea
-      type="text"
-      name="comment"
-      id="comment"
-      class="modal-franchise__textarea"
-      autocomplete="none"
-      placeholder="Comment"
-    ></textarea>
-
-    <button
-      type="submit"
-      class="button button--full button__submit button--centered"
-    >
+    <ul>
+      <li class="modal-franchise__field">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="modal-franchise__input"
+          autocomplete="name"
+          placeholder="Name"
+          pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}"
+          required
+        />
+      </li>
+      <li class="modal-franchise__field">
+        <input
+          type="text"
+          name="phone"
+          id="phone"
+          class="modal-franchise__input"
+          autocomplete="phone"
+          placeholder="Phone"
+          pattern="[0]{1}[0-9]{9}"
+          required
+        />
+      </li>
+      <li class="modal-franchise__field">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="modal-franchise__input"
+          autocomplete="email"
+          placeholder="Email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          required
+        />
+      </li>
+      <li class="modal-franchise__field">
+        <textarea
+          type="text"
+          name="comment"
+          id="comment"
+          class="modal-franchise__textarea"
+          autocomplete="none"
+          placeholder="Comment"
+        ></textarea>
+      </li>
+    </ul>
+    <button type="submit" class="button modal-franchise__submit button__submit button--full">
       <span>Submit</span>
     </button>
   </form>

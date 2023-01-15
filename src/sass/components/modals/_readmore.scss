@@ -1,5 +1,5 @@
 .modal-readmore {
-  position: relative;
+  // position: relative;
   //   top: 50%;
   //   left: 50%;
   width: 280px;
@@ -59,13 +59,17 @@
     // width: 224px;
 
     text-align: left;
-    font-size: 13px;
-    line-height: 1.4;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0;
 
     @include tablet {
       // width: 448px;
 
-      font-size: 15px;
+      font-size: 16px;
     }
   }
 }
