@@ -7,19 +7,32 @@
     <div class="about__wrap">
       <div class="about__picture">
         <span class="about__picture--bg">
-          <picture class="about__picture--cow">
+              <picture class="about__picture--cow">
             <source
-              srcset="./images/about/cow-mob.png"
-              media="(max-width: 767px)"
+              srcset="
+                ./images/about/cow.png   1x,
+                ./images/about/cow-@2x.png 2x
+              "
+              media="(min-width: 1200px)"
             />
             <source
-              srcset="./images/about/cow-tab.png"
-              media="(max-width: 1199px)"
+              srcset="
+                ./images/about/cow-tab.png   1x,
+                ./images/about/cow-tab-@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/about/cow-mob.png   1x,
+                ./images/about/cow-mob-@2x.png 2x
+              "
+              media="(min-width: 320px)"
             />
             <img
               class="about__picture--size"
-              src="./images/about/cow.png"
-              alt="cow"
+              src="./images/about/cow-mob.png"
+              alt="Cow"
             />
           </picture>
         </span>
