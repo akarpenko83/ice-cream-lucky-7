@@ -1,12 +1,7 @@
 <section class="header">
   <div class="container headeer-container">
     <a class="header__logo" href="#">
-      <img
-        class="logo-png"
-        width="40px"
-        height="37px"
-        src=".\images\header-hero\logo.png"
-      />
+      <img class="logo-png" src=".\images\header-hero\logo.png" />
     </a>
     <div class="menu-container" id="menu-container" data-menu>
       <a class="header__logo menu-logo" href="#">
@@ -23,10 +18,14 @@
           <li class="item"><a href="" class="item-link">Contact</a></li>
         </ul>
       </nav>
-      <button type="button" class="button buy-now">
-        Buy now
-        <svg width="12" height="12">
-          <use href=".\images\icons\icons.svg#icon-button"></use>
+      <button
+        type="button"
+        class="button hero__button button--full buy-now js-open-modal"
+        data-modal="1"
+      >
+        <span>Buy now</span>
+        <svg width="12" height="12" class="button__icon">
+          <use href="./images/icons/icons.svg#icon-button"></use>
         </svg>
       </button>
     </div>
@@ -55,12 +54,17 @@
         </svg>
       </button>
 
-      <button type="button" class="header__button" data-modal-open>
-        Buy now
-        <svg width="12" height="12">
-          <use href=".\images\icons\icons.svg#icon-button"></use>
+      <button
+        type="button"
+        class="button hero__button button--full button-none js-open-modal"
+        data-modal="1"
+      >
+        <span>Buy now</span>
+        <svg width="12" height="12" class="button__icon">
+          <use href="./images/icons/icons.svg#icon-button"></use>
         </svg>
       </button>
     </div>
   </div>
+  <!-------------------------------------------------------->
 </section>

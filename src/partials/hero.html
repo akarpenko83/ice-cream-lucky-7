@@ -4,20 +4,30 @@
       <div>
         <h1 class="heroy__title">ice cream made with passion</h1>
         <div class="heroy__buttons">
-          <a href="" class="heroy__button"> Products</a>
+          <button
+            type="button"
+            class="button hero__button button--bordered hero-margin"
+          >
+            <span>Products</span>
+          </button>
 
-          <a href="" class="heroy__button privilege"> How it’s made?</a>
+          <button type="button" class="button button--transparent">
+            <span>How its made?</span>
+          </button>
         </div>
       </div>
       <div class="heroy__efekt">
         <img
-          class="plate"
-          width="152"
-          height="152"
+          class="plate animate__animated animate__fadeInLeft"
           src=".\images\header-hero\round-ice-cream.png"
+          srcset="
+            .\images\header-hero\round-ice-cream-tab.png 152w,
+            .\images\header-hero\round-ice-cream.png     225w
+          "
+          sizes=" (min-width:1200px) 225px , (min-width:768px) 152px "
         />
         <div>
-          <p class="heroy__inform">
+          <p class="heroy__inform animate__animated animate__fadeInLeft">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
@@ -29,7 +39,7 @@
     </div>
     <div class="heroy__right">
       <img
-        class="img-ice"
+        class="img-ice animate__animated animate__backInLeft"
         src=".\images\header-hero\main-ice-cream.png"
         srcset="
           .\images\header-hero\main-ice-cream-mob.png 218w,

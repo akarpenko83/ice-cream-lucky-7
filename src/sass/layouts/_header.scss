@@ -37,6 +37,14 @@
   display: flex;
   justify-content: space-between;
 }
+.button-none {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .button-none {
+    display: block;
+  }
+}
 
 /*menu-button*/
 .menu-button {
@@ -102,7 +110,10 @@
     margin: 0;
   }
 }
-
+.buy-now {
+  margin-left: auto;
+  margin-right: auto;
+}
 .buy-now {
   @media screen and (min-width: 768px) {
     display: none;
@@ -147,30 +158,6 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .header__button {
-    display: none;
-  }
-}
-
-.header__button {
-  width: 152px;
-  padding: 11px 26px;
-  background: #f8d24e;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-.button {
-  width: 152px;
-  padding: 11px 26px;
-  background: #f8d24e;
-  border-radius: 10px;
-  border: none;
-  margin-left: auto;
-  margin-right: auto;
-}
 @media screen and (min-width: 480px) {
   .lodo-png {
     width: 48px;
