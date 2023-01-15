@@ -2,13 +2,13 @@
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.4;
   text-align: center;
   color: $txtPrimaryColor;
 
   @include tablet {
-    font-size: 28px;
+    font-size: 20px;
   }
 }
 
