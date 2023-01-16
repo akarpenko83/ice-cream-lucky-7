@@ -42,7 +42,7 @@
   /* Скрываем окна  */
 
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -25%);
   z-index: 890;
@@ -59,6 +59,7 @@
 
 .modal.active,
 .overlay.active {
+  position: fixed;
   opacity: 1;
   visibility: visible;
   transition-property: opacity, visibility;
