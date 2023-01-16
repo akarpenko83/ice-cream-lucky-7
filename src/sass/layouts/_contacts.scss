@@ -4,7 +4,12 @@
 .contact {
     position: relative;
         min-height: 1095px;
-        
+        @include tablet { 
+            min-height: 350px;
+        }
+        @include desktop { 
+            min-height: 620px;
+        }
 }
 .contact__container { 
    
