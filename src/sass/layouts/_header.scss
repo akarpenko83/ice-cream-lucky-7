@@ -1,6 +1,5 @@
 .header {
   padding-top: 12px;
-
   position: relative;
 }
 .header__container {
@@ -8,7 +7,12 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
+  align-items: flex-end;
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -34,6 +38,7 @@
 .header__tablet {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .button-none {
   display: none;
@@ -74,7 +79,7 @@
 }
 
 .menu-button.is-open {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
 }
