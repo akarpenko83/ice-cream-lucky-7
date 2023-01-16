@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 
 .footer-container {
     border-bottom: 1px solid #E1E1E1;
@@ -62,354 +61,6 @@
     }
 
     
-=======
-// .footer-container{
-  
-//     @media screen and (min-width: 768px) {
-//        display: flex;
-//        justify-content:space-between;
-//        align-items: center;
-      
-//     } 
-//   }
-  
-//   .footer-container__text{
-//     width: 232px;
-//     margin-bottom: 60px;
-   
-//     @media screen and (min-width: 768px) {
-//       width: 352px;
-//       margin-bottom: 32px;
-//   }
-  
-//      @media screen and (min-width: 1200px) {
-//     width: 504px;
-//     margin-bottom: 60px;
-//   }
-//   }
-  
-//   .footer-container__desc{
-//   margin-bottom: 16px;
-  
-//   font-weight: 700;
-//   font-size: 18px;
-//   line-height: calc(22 / 18);
-//   text-transform: uppercase;
-  
-//   color:$txtSecondaryColor;
-  
-//   @media screen and (min-width: 768px) {
-  
-  
-//   font-style: normal;
-//   font-size: 26px;
-//   line-height: calc(32 / 26);
-//   letter-spacing: 0.04em;
-//   text-transform: uppercase;
-//   }
-//   }
-  
-//   .footer-container__desc--big{
-  
-//   font-weight: 700;
-//   font-size: 34px;
-//   line-height: calc(41 / 34);
-//   letter-spacing: 0.04em;
-//   text-transform: uppercase;
-  
-//   color:$txtSecondaryColor;
-  
-//   @media screen and (min-width: 768px) {
-    
-//   font-weight: 700;
-//   font-size: 48px;
-//   line-height: calc(59 / 48);
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
-//   }
-//   }
-  
-//   .footer__social--list{
-//     display: flex;
-//     gap: 20px;
-//     justify-content: flex-end;
-//     margin-bottom: 20px;
-  
-//     @media screen and (min-width: 768px) {
-//       margin-bottom: 34px;
-//   }
-  
-//     @media screen and (min-width: 1200px) {
-//     margin-bottom: 40px;
-//   }
-  
-//   }
-  
-//   .footer__social--icon{
-//   fill:$themePrimaryColor;
- 
-//   &:hover,
-//   &:focus {
-//   fill:$txtSecondaryColor;
-//   }
-//   }
-  
-//   .footer-social__link {
-//         width: 100%;
-//         height: 100%;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         border-radius: 50%;
-//         background-color: $accentColor;
-//         content: "";
-           
-//       }
-  
-//   .footer__contact{
-//     display: flex;
-//     justify-content: flex-end;
-//     margin-bottom: 40px;
-//   }
-  
-//   .footer__contact--desc{
-//   margin-right: 4px; 
-//   font-weight: 700;
-//   font-size: 12px;
-//   line-height: calc(22 / 12);
-//   text-align: right;
-  
-//   color:$txtPrimaryColor;
-//   }
-  
-//   .footer__contact--tel{
-//   font-weight: 700;
-//   font-size: 12px;
-//   line-height: calc(22 / 12);
-//   text-align: right;
-  
-//   color: rgba(252, 252, 252, 1);
-//   }
-  
-//   .footer__copyright{
-//   padding-top: 20px;
-//   border-top:1px solid #E1E1E1;
-  
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     padding-top: 12px;
-//    justify-content: center;
-//   }
-  
-//   }
-  
-//   .footer__copyright--first,
-//   .footer__copyright--second {
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: calc(21 / 14);
-//   text-align: center;
-//   color: $cprtColor;
-  
-  
-//   }
-
-// .footer-container{
-  
-//     @media screen and (min-width: 768px) {
-//        display: flex;
-//        justify-content:space-between;
-//        align-items: center;
-      
-//     } 
-//   }
-  
-//   .footer-container__text{
-//     width: 232px;
-//     margin-bottom: 60px;
-   
-//     @media screen and (min-width: 768px) {
-//       width: 352px;
-//       margin-bottom: 32px;
-//   }
-  
-//      @media screen and (min-width: 1200px) {
-//     width: 504px;
-//     margin-bottom: 60px;
-//   }
-//   }
-  
-//   .footer-container__desc{
-//   margin-bottom: 16px;
-  
-//   font-weight: 700;
-//   font-size: 18px;
-//   line-height: calc(22 / 18);
-//   text-transform: uppercase;
-  
-//   color:$txtSecondaryColor;
-  
-//   @media screen and (min-width: 768px) {
-  
-  
-//   font-style: normal;
-//   font-size: 26px;
-//   line-height: calc(32 / 26);
-//   letter-spacing: 0.04em;
-//   text-transform: uppercase;
-//   }
-//   }
-  
-//   .footer-container__desc--big{
-  
-//   font-weight: 700;
-//   font-size: 34px;
-//   line-height: calc(41 / 34);
-//   letter-spacing: 0.04em;
-//   text-transform: uppercase;
-  
-//   color:$txtSecondaryColor;
-  
-//   @media screen and (min-width: 768px) {
-    
-//   font-weight: 700;
-//   font-size: 48px;
-//   line-height: calc(59 / 48);
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
-//   }
-//   }
-  
-//   .footer__social--list{
-//     display: flex;
-//     gap: 20px;
-//     justify-content: flex-end;
-//     margin-bottom: 20px;
-  
-//     @media screen and (min-width: 768px) {
-//       margin-bottom: 34px;
-//   }
-  
-//     @media screen and (min-width: 1200px) {
-//     margin-bottom: 40px;
-//   }
-  
-//   }
-  
-//   .footer__social--icon{
-//   fill:$themePrimaryColor;
- 
-//   &:hover,
-//   &:focus {
-//   fill:$txtSecondaryColor;
-//   }
-//   }
-  
-//   .footer-social__link {
-//         width: 100%;
-//         height: 100%;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         border-radius: 50%;
-//         background-color: $accentColor;
-//         content: "";
-           
-//       }
-  
-//   .footer__contact{
-//     display: flex;
-//     justify-content: flex-end;
-//     margin-bottom: 40px;
-//   }
-  
-//   .footer__contact--desc{
-//   margin-right: 4px; 
-//   font-weight: 700;
-//   font-size: 12px;
-//   line-height: calc(22 / 12);
-//   text-align: right;
-  
-//   color:$txtPrimaryColor;
-//   }
-  
-//   .footer__contact--tel{
-//   font-weight: 700;
-//   font-size: 12px;
-//   line-height: calc(22 / 12);
-//   text-align: right;
-  
-//   color: rgba(252, 252, 252, 1);
-//   }
-  
-//   .footer__copyright{
-//   padding-top: 20px;
-//   border-top:1px solid #E1E1E1;
-  
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     padding-top: 12px;
-//    justify-content: center;
-//   }
-  
-//   }
-  
-//   .footer__copyright--first,
-//   .footer__copyright--second {
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: calc(21 / 14);
-//   text-align: center;
-//   color: $cprtColor;
-  
-  
-//   }
-
-.footer-container {
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-    }
-}
-
-.footer-container__text {
-    width: 232px;
-    margin-bottom: 60px;
-
-    @media screen and (min-width: 768px) {
-        width: 352px;
-        margin-bottom: 32px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 504px;
-        margin-bottom: 60px;
-    }
-}
-
-.footer-container__desc {
-    margin-bottom: 16px;
-
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(22 / 18);
-    text-transform: uppercase;
-
-    color: $txtSecondaryColor;
-
-    @media screen and (min-width: 768px) {
-
-
-        font-style: normal;
-        font-size: 26px;
-        line-height: calc(32 / 26);
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-    }
->>>>>>> Stashed changes
 }
 
 .footer-container__desc--big {
@@ -422,7 +73,6 @@
 
     color: $txtSecondaryColor;
 
-<<<<<<< Updated upstream
     @include tablet {
         font-weight: 700;
             font-size: 48px;
@@ -451,16 +101,6 @@
         }
 
    
-=======
-    @media screen and (min-width: 768px) {
-
-        font-weight: 700;
-        font-size: 48px;
-        line-height: calc(59 / 48);
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-    }
->>>>>>> Stashed changes
 }
 
 .footer__social--list {
@@ -469,31 +109,20 @@
     justify-content: flex-end;
     margin-bottom: 20px;
 
-<<<<<<< Updated upstream
     @include tablet {
     margin-bottom: 34px;
     gap: 30px;
     }
     
     @include desktop {
-=======
-    @media screen and (min-width: 768px) {
-        margin-bottom: 34px;
-    }
-
-    @media screen and (min-width: 1200px) {
->>>>>>> Stashed changes
         margin-bottom: 40px;
     }
 
 }
-<<<<<<< Updated upstream
 .footer__social--item {
     @extend %list;
    
 }
-=======
->>>>>>> Stashed changes
 
 .footer__social--icon {
     fill: $themePrimaryColor;
@@ -516,7 +145,6 @@
 
 }
 
-<<<<<<< Updated upstream
 .footer__contacts {
     display: flex;
     justify-content: flex-end;
@@ -546,26 +174,10 @@
 
 .footer__contact--desc {
     
-=======
-.footer__contact {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 40px;
-}
-
-.footer__contact--desc {
-    margin-right: 4px;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: calc(22 / 12);
-    text-align: right;
-
->>>>>>> Stashed changes
     color: $txtPrimaryColor;
 }
 
 .footer__contact--tel {
-<<<<<<< Updated upstream
        
        color: $txtSecondaryColor;
 
@@ -638,35 +250,4 @@
             margin-right: 4px;
         }
     
-=======
-    font-weight: 700;
-    font-size: 12px;
-    line-height: calc(22 / 12);
-    text-align: right;
-
-    color: rgba(252, 252, 252, 1);
-}
-
-.footer__copyright {
-    padding-top: 20px;
-    border-top: 1px solid #E1E1E1;
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        padding-top: 12px;
-        justify-content: center;
-    }
-
-}
-
-.footer__copyright--first,
-.footer__copyright--second {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(21 / 14);
-    text-align: center;
-    color: $cprtColor;
-
-
->>>>>>> Stashed changes
 }
