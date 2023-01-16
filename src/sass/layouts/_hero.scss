@@ -96,7 +96,7 @@ p {
 @media screen and (min-width: 768px) {
   .heroy__efekt {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     margin-bottom: 12px;
   }
   @media screen and (min-width: 1200px) {
@@ -121,7 +121,11 @@ p {
   .plate {
     width: 225px;
     height: 225px;
+    margin-right: 16px;
   }
+}
+.heroy__efekt-text {
+  margin-bottom: 20px;
 }
 
 .heroy__inform {
