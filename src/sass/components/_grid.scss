@@ -1,7 +1,8 @@
  .grid { 
     @extend %list;
     display: flex;
-    
+    // position: absolute;
+
    //   width: 100%;
    //   height: 412px;
     justify-content: center;

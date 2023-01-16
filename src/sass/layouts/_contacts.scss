@@ -1,5 +1,11 @@
-.container { 
-    @extend %container
+.contact {
+    position: relative;
+        min-height: 1095px;
+}
+.contact__container { 
+    @extend %container;
+position: absolute;
+top: -400px;
 }
 
 .section-heading {
@@ -21,9 +27,6 @@
     margin-bottom: 32px;
    }
 }
-
-
-
  .contact__town { 
     font-weight: 500;
      font-size: 12px;
@@ -39,7 +42,6 @@
         margin-bottom: 8px;
      }
  }
-
 .contact__address { 
     @extend %link;
     font-weight: 500;
