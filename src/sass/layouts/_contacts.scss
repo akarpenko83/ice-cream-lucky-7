@@ -1,6 +1,35 @@
-.container { 
-    @extend %container
+
+
+
+.contact {
+    position: relative;
+        min-height: 1095px;
+        @include tablet { 
+            min-height: 350px;
+        }
+        @include desktop { 
+            min-height: 620px;
+        }
 }
+.contact__container { 
+   
+    @extend %container;
+  position: absolute;
+  top: -400px;
+  left: 50%;
+  transform: translateX(-50%);
+  @include tablet { 
+    top: -340px;
+  }
+   @include desktop { 
+    top: -160px;
+    padding: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+   }
+}
+
+
 
 .section-heading {
     display: none;
@@ -21,9 +50,6 @@
     margin-bottom: 32px;
    }
 }
-
-
-
  .contact__town { 
     font-weight: 500;
      font-size: 12px;
@@ -39,9 +65,10 @@
         margin-bottom: 8px;
      }
  }
-
 .contact__address { 
     @extend %link;
+    cursor: url('../images/header-hero/Cursor1.png'), pointer;
+     color: #fcfcfc;
     font-weight: 500;
  font-size: 12px;
  line-height: 183%;
