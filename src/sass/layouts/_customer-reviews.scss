@@ -32,19 +32,26 @@
   }
 
   &__container {
+    @extend %outline;
     padding: 0;
     margin: 0 auto;
 
     @include phone {
       width: 480px;
+      padding-left: 0px;
+      padding-right: 0px;
     }
 
     @include tablet {
       width: 768px;
+      padding-left: 0px;
+      padding-right: 0px;
     }
 
     @include desktop {
       width: 1200px;
+      padding-left: 0px;
+      padding-right: 0px;
     }
   }
 
