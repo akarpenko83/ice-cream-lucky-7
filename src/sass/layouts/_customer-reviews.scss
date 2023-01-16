@@ -1,6 +1,36 @@
 /* --- reviews --- */
 
 .reviews {
+  background-color: $modalBgdColor;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/backgrounds/background-mob.png');
+  @include retina {
+    background-image: url('../images/backgrounds/background-mob-@2x.png');
+  }
+
+  @include phone {
+    background-image: url('../images/backgrounds/background-mob.png');
+    @include retina {
+      background-image: url('../images/backgrounds/background-mob-@2x.png');
+    }
+  }
+
+  @include tablet {
+    background-image: url('../images/backgrounds/background-tab.png');
+    @include retina {
+      background-image: url('../images/backgrounds/background-tab-@2x.png');
+    }
+  }
+
+  @include desktop {
+    background-image: url('../images/backgrounds/background.png');
+    @include retina {
+      background-image: url('../images/backgrounds/background-@2x.png');
+    }
+  }
+
   &__container {
     padding: 0;
     margin: 0 auto;
@@ -21,70 +51,46 @@
   &__wrap {
     display: block;
 
+    height: 1037px;
+
     max-width: 479px;
     min-width: 320px;
 
     padding-top: 178px;
-    padding-bottom: 393px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
 
-    background-image: url(../images/backgrounds/background-mob.png),
-      linear-gradient(to right, $modalBgdColor, $modalBgdColor);
-    background-position: center bottom;
-
-    @include retina {
-      background-image: url(../images/backgrounds/background-mob-@2x.png),
-        linear-gradient(to right, $modalBgdColor, $modalBgdColor);
-    }
-
     @include phone {
+      height: 1132px;
       max-width: none;
       min-width: none;
       width: 480px;
       padding-top: 257px;
-      padding-bottom: 409px;
       padding-left: 0;
       padding-right: 0;
     }
 
     @include tablet {
+      height: 1017px;
       max-width: none;
       min-width: none;
       width: 768px;
       padding-top: 283px;
-      padding-bottom: 379px;
+
       padding-left: 0;
       padding-right: 0;
-
-      background-image: url(../images/backgrounds/background-tab.png),
-        linear-gradient(to right, $modalBgdColor, $modalBgdColor);
-      background-position: center bottom;
-
-      @include retina {
-        background-image: url(../images/backgrounds/background-tab-@2x.png),
-          linear-gradient(to right, $modalBgdColor, $modalBgdColor);
-      }
     }
 
     @include desktop {
+      height: 1053px;
       max-width: none;
       min-width: none;
       width: 1200px;
       padding-top: 400px;
-      padding-bottom: 292px;
+
       padding-left: 0;
       padding-right: 0;
-
-      background-image: url(../images/backgrounds/background.png),
-        linear-gradient(to right, $modalBgdColor, $modalBgdColor);
-      background-position: center bottom;
-
-      @include retina {
-        background-image: url(../images/backgrounds/background-@2x.png),
-          linear-gradient(to right, $modalBgdColor, $modalBgdColor);
-      }
     }
   }
 
