@@ -1,17 +1,27 @@
 <section class="section about">
   <div class="container">
     <div class="about__slogan">
-      <p class="about__label">TRADITION AND LOVE </p>
+      <p class="about__label">TRADITION AND LOVE</p>
       <h2 class="about__title">HOW IT'S MADE?</h2>
     </div>
     <div class="about__wrap">
       <div class="about__picture">
         <span class="about__picture--bg">
           <picture class="about__picture--cow">
-            <source srcset="./images/about/cow.png" media="(max-width: 767px)">
-            <source srcset="./images/about/cow.png" media="(max-width: 1199px)">
-        <img src="./images/about/cow.png" alt="cow">
-    </picture>
+            <source
+              srcset="./images/about/cow-mob.png"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="./images/about/cow-tab.png"
+              media="(max-width: 1199px)"
+            />
+            <img
+              class="about__picture--size"
+              src="./images/about/cow.png"
+              alt="cow"
+            />
+          </picture>
         </span>
       </div>
       <div class="about__description">
@@ -31,7 +41,8 @@
             This is enough to choose ice cream and coffee for any mood!
           </p>
         </div>
-        <button class="about__button" type="button">Read more
+        <button class="about__button js-open-modal" data-modal="3" type="submit">
+          Read more
           <svg class="about__button--icon" width="12" height="12">
             <use href="./images/icons/icons.svg#icon-button"></use>
           </svg>
@@ -40,3 +51,5 @@
     </div>
   </div>
 </section>
+
+
