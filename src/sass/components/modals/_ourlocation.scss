@@ -70,4 +70,8 @@
       height: 42px;
     }
   }
+
+  &__link {
+    @extend %link;
+  }
 }
