@@ -33,7 +33,7 @@
   }
 }
 .header__logo {
-  cursor: pointer;
+  cursor: url('../images/header-hero/Cursor1.png'), pointer;
 }
 .header__tablet {
   display: flex;
@@ -55,13 +55,12 @@
   padding: 0;
   background-color: transparent;
   border: none;
-
-  cursor: pointer;
+  fill: #fcfcfc;
+  cursor: url('../images/header-hero/Cursor1.png'), pointer;
   z-index: 2;
 }
 .menu-button:focus .icon-cros {
-  fill: #e8185a;
-  cursor: pointer;
+  cursor: url('../images/header-hero/Cursor1.png'), pointer;
 }
 
 .menu-button .icon-cros {
