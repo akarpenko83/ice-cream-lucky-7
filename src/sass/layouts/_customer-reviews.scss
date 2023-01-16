@@ -38,20 +38,20 @@
 
     @include phone {
       width: 480px;
-      padding-left: 0px;
-      padding-right: 0px;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     @include tablet {
       width: 768px;
-      padding-left: 0px;
-      padding-right: 0px;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     @include desktop {
       width: 1200px;
-      padding-left: 0px;
-      padding-right: 0px;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
