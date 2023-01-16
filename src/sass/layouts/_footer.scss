@@ -11,27 +11,27 @@
 }
 
 .footer-container__text {
-    
+
     width: 236px;
     margin-bottom: 60px;
 
     @include tablet {
-       
+
         width: 352px;
-            margin-bottom: 32px;
+        margin-bottom: 32px;
     }
 
     @include desktop {
-        
+
         width: 504px;
-            margin-bottom: 60px;
+        margin-bottom: 60px;
     }
 
-    
+
 }
 
 .footer-container__desc {
-    
+
     margin-bottom: 16px;
 
     font-weight: 700;
@@ -42,25 +42,25 @@
     color: $txtSecondaryColor;
 
     @include tablet {
-            margin-bottom: 8px;
-            font-size: 26px;
-            line-height: calc(32 / 26);
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
+        margin-bottom: 8px;
+        font-size: 26px;
+        line-height: calc(32 / 26);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
 
     }
 
     @include desktop {
         margin-bottom: 14px;
         font-weight: 400;
-            font-size: 30px;
-            line-height: 1.2;
-        
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
+        font-size: 30px;
+        line-height: 1.2;
+
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
     }
 
-    
+
 }
 
 .footer-container__desc--big {
@@ -75,32 +75,34 @@
 
     @include tablet {
         font-weight: 700;
-            font-size: 48px;
-            line-height: calc(59 / 48);
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
+        font-size: 48px;
+        line-height: calc(59 / 48);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
     }
 
     @include desktop {
         font-weight: 700;
-            font-size: 58px;
-            line-height: 1.2;
-        
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
+        font-size: 58px;
+        line-height: 1.2;
+
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
     }
 
-    
+
 }
+
 .footer__social {
     @include tablet {
         padding-top: 61px;
     }
-        @include desktop {
-            padding-top: 18px;
-        }
 
-   
+    @include desktop {
+        padding-top: 18px;
+    }
+
+
 }
 
 .footer__social--list {
@@ -110,18 +112,19 @@
     margin-bottom: 20px;
 
     @include tablet {
-    margin-bottom: 34px;
-    gap: 30px;
+        margin-bottom: 34px;
+        gap: 30px;
     }
-    
+
     @include desktop {
         margin-bottom: 40px;
     }
 
 }
+
 .footer__social--item {
     @extend %list;
-   
+
 }
 
 .footer__social--icon {
@@ -150,43 +153,44 @@
     justify-content: flex-end;
 
     @media screen and (max-width: 767px) {
-    margin-bottom: 40px;
+        margin-bottom: 40px;
     }
-    
+
 }
 
 .footer__contact {
     @extend %link;
     margin-right: 4px;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 1.9;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.9;
 
     @include tablet {
         font-size: 14px;
     }
-        @include tablet {
-            margin-right: 5px;
-            font-size: 16px;
-        }
+
+    @include tablet {
+        margin-right: 5px;
+        font-size: 16px;
+    }
 
 }
 
 .footer__contact--desc {
-    
+
     color: $txtPrimaryColor;
 }
 
 .footer__contact--tel {
-       
-       color: $txtSecondaryColor;
+
+    color: $txtSecondaryColor;
 
 }
 
 .footer-copyrights {
     padding-top: 20px;
     padding-bottom: 20px;
-    
+
     // width: 280px;
 
     // @include phone {
@@ -194,31 +198,33 @@
     // }
 
     @include phone {
-        
+
         padding-bottom: 24px;
-       
-        
+
+
     }
+
     @include tablet {
         padding-top: 12px;
         padding-bottom: 12px;
-        
+
     }
 
-   
+
     // @media screen and (min-width: 768px) {
     //     // display: flex;
     //     padding-top: 12px;
     //     // justify-content: center;
     //     // align-items: center;
-        
+
     // }
 
 }
 
 .footer-copyrights__list {
     // padding: 0;
-     @extend %list;
+    @extend %list;
+
     //  width: 280px;
     @media screen and (min-width: 768px) {
         display: flex;
@@ -240,14 +246,16 @@
     @include tablet {
         letter-spacing: 0.02em;
     }
-   @include desktop {
-    font-size: 12px;
-   }
+
+    @include desktop {
+        font-size: 12px;
+    }
 
 }
+
 .footer__copyright--first {
     @include tablet {
-            margin-right: 4px;
-        }
-    
+        margin-right: 4px;
+    }
+
 }
