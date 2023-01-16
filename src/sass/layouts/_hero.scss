@@ -177,9 +177,11 @@ p {
 
 .img-ice {
   display: block;
+  width: 177px;
 }
 @media screen and (min-width: 480px) {
   .img-ice {
+    width: 218px;
     position: absolute;
     bottom: 0;
     right: 20px;
