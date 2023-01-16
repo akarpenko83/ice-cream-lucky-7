@@ -1,30 +1,31 @@
 @media screen and (max-width: 1199px) {
   .menu-container {
     background-color: #84a178;
-
+    z-index: 900;
     height: auto;
     position: absolute;
-    right: 100%;
-    bottom: 100px;
-    transform: translate(100%);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transform: rotateX(100%);
+    transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .menu-container.is-open {
-    overflow-x: hidden;
-    overflow-y: auto;
-    left: 0;
-    top: 0;
+  .menu-container.active {
+    opacity: 1;
+    visibility: visible;
+    transition-property: opacity, visibility;
+    transition-duration: 0.25s;
     width: 100vw;
     height: 100vh;
-    z-index: 2;
+    z-index: 900;
     position: fixed;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
-    justify-content: space-around;
+
     padding: 100px 32px 64px 32px;
-    transform: translate(0);
+    right: 100%;
+    bottom: 0;
     overflow-y: scroll;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -37,5 +38,25 @@
   top: 7px;
   @media screen and (min-width: 1200px) {
     display: none;
+  }
+}
+.btn-cros {
+  width: 40px;
+
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: url('../images/header-hero/Cursor1.png'), pointer;
+}
+.icon-cros {
+  fill: #fcfcfc;
+  width: 32px;
+}
+@media screen and (min-width: 768px) {
+  .btn-cros {
+    right: 32px;
+    top: 32px;
   }
 }

@@ -12,26 +12,11 @@
 @media screen and (min-width: 1200px) {
   .header__container {
     align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    padding-left: 16px;
-    padding-right: 16px;
-    width: 1200px;
-  }
-}
 .header__logo {
   cursor: url('../images/header-hero/Cursor1.png'), pointer;
 }

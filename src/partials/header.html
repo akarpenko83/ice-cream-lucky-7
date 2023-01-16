@@ -12,7 +12,23 @@
         sizes=" (min-width:1200px) 60px , (min-width:768px) 48px,(min-width:480px) 48px ,(min-width:320px) 40px  "
       />
     </a>
-    <div class="menu-container" id="menu-container" data-menu>
+
+    <!---------------------------------------------------------------->
+
+    <div class="menu-container modal" data-modal="6">
+      <button class="btn-cros js-modal-close" type="submit" data-modal="6">
+        <svg
+          width="32px"
+          height="32px"
+          class="hiden"
+          aria-label="вмикач мобільного меню"
+        >
+          <use
+            class="icon-cros"
+            href=".\images\icons\icons.svg#icon-close"
+          ></use>
+        </svg>
+      </button>
       <a class="header__logo menu-logo" href="#">
         <img
           src=".\images\header-hero\logo-mob-40-37.png "
@@ -27,20 +43,35 @@
 
       <nav>
         <ul class="header__list">
-          <li class="item"><a href="#home" class="item-link">Home</a></li>
           <li class="item">
-            <a href="#about" class="item-link">How it’s made?</a>
+            <a
+              href="#home"
+              class="item-link js-modal-close"
+              aria-expanded="folse"
+              aria-controls="menu-container"
+              >Home</a
+            >
           </li>
           <li class="item">
-            <a href="#products" class="item-link">Our products</a>
+            <a href="#about" class="item-link js-modal-close">How it’s made?</a>
           </li>
-          <li class="item"><a href="#Contact" class="item-link">Contact</a></li>
+          <li class="item">
+            <a href="#products" class="item-link js-modal-close"
+              >Our products</a
+            >
+          </li>
+          <li class="item">
+            <a href="#Contact" class="item-link js-modal-close">Contact</a>
+          </li>
         </ul>
       </nav>
+
+      <!-----------by NUW-------------------------------------->
       <button
-        class="button hero__button button--full buy-now js-open-modal"
+        class="button hero__button button--full buy-now js-open-modal js-modal-close"
         type="submit"
         data-modal="1"
+        data-modal="6"
       >
         <span>Buy now</span>
         <svg width="12" height="12" class="button__icon">
@@ -48,14 +79,10 @@
         </svg>
       </button>
     </div>
+    <!---------------------------------------------------->
+
     <div class="header__tablet">
-      <button
-        type="button"
-        class="menu-button"
-        aria-expanded="false"
-        aria-controls="menu-container"
-        data-menu-button
-      >
+      <button type="button" class="menu-button js-open-modal" data-modal="6">
         <svg
           width="32px"
           height="32px"
@@ -72,7 +99,7 @@
           ></use>
         </svg>
       </button>
-
+      <!------------------------------------------------------------>
       <button
         class="button hero__button button--full button-none js-open-modal"
         type="submit"
