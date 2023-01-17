@@ -15,12 +15,12 @@
       </a>
     </div>
     <button
-      class="page-header__button menu-toggle js-open-menu"
+      class="mobile-menu__open menu-toggle js-open-menu"
       aria-expanded="false"
       aria-controls="mobile-menu"
     >
-      <svg width="24" height="24">
-        <use href="./images/icons/mob-menu.svg"></use>
+      <svg width="32" height="32">
+        <use href="./images/icons/icons.svg#icon-mob-menu"></use>
       </svg>
     </button>
 
@@ -44,13 +44,27 @@
     </div>
   </div>
   <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-toggle js-close-menu">
+    <button class="mobile-menu__close menu-toggle js-close-menu">
       <svg width="32" height="32">
         <use href="./images/icons/icons.svg#icon-close"></use>
       </svg>
     </button>
 
     <div class="mobile-menu">
+      <a class="mobile-menu__logo" href="#">
+        <img
+          srcset="
+            ./images/header-hero/logo_desktop@2x.png 120w,
+            ./images/header-hero/logo_desktop@1x.png  60w,
+            ./images/header-hero/logo_phone@2x.png    90w,
+            ./images/header-hero/logo_phone@1x.png    45w
+          "
+          sizes="(min-width: 1200px) 60px,(min-width: 768px) 60px, (min-width: 480px) 45px,100vw"
+          src="./images/header-hero/logo.png"
+          alt="Logo"
+        />
+      </a>
+
       <ul class="mobile-nav">
         <li class="mobile-nav__item">
           <a class="mobile-nav__link" href="./index.html">Home</a>
