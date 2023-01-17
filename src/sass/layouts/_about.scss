@@ -4,7 +4,7 @@
   color: $modalBgdColor;
   padding-top: 60px;
   @media screen and (min-width: 480px) {
-    .container {
+    .about__container {
       width: 450px;
       display: flex;
       flex-direction: column;
@@ -12,20 +12,19 @@
     }
   }
   @media screen and (min-width: 768px) {
-    .container {
+    .about__container {
       width: 702px;
     }
   }
 
   @media screen and (min-width: 1200px) {
-    .container {
+    .about__container {
       width: 1200px;
     }
-    padding-bottom: 60px;
   }
 }
-.section.about .container {
-  padding: 0;
+.section.about .about__container {
+  padding: 16px;
   margin: 0 auto;
 }
 .about__slogan {
