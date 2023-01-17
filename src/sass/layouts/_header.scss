@@ -9,18 +9,12 @@
   .page-header__logo {
     margin-right: 87px;
   }
+
 }
 
 @media screen and (min-width: 1200px) {
   .page-header__logo {
     margin-right: 93px;
   }
-}
 
-.navigation {
-  display: none;
-
-  @include tablet {
-    display: flex;
-  }
 }
