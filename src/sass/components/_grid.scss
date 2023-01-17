@@ -4,7 +4,7 @@
     justify-content: center;
     margin-top: 40px;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
      align-items: center;
      @include tablet { 
       display: flex;
@@ -30,7 +30,7 @@
     padding-left: 32px;
     padding-right: 40px;
     width: 280px;
-    margin-bottom: 16px;
+    
     @include tablet { 
       width: 224px;
     }
