@@ -20,7 +20,7 @@
 .navigation {
   display: none;
 
-  @include desktop {
+  @include tablet {
     display: flex;
   }
 }
