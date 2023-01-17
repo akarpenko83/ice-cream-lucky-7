@@ -30,3 +30,16 @@
   line-height: $lh;
   letter-spacing: $ls;
 }
+@mixin flex($flx: flex,
+  $fd: row,
+  $fw: wrap,
+  $ac: normal,
+  $ai: center,
+  $jc: center) {
+  display: $flx;
+  flex-direction: $fd;
+  flex-wrap: $fw;
+  align-content: $ac;
+  align-items: $ai;
+  justify-content: $jc;
+}
