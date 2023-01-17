@@ -15,13 +15,12 @@
     information. Please fill out the contact information below and we will reach out for additional
     information. We appreciate your patience.
   </p>
-  <form name="input details" class="modal-franchise__form" action="">
+  <form name="input details" class="modal-franchise__form">
     <ul>
       <li class="modal-franchise__field">
         <input
           type="text"
           name="name"
-          id="name"
           class="modal-franchise__input"
           autocomplete="name"
           placeholder="Name"
@@ -32,10 +31,8 @@
       <li class="modal-franchise__field">
         <input
           type="text"
-          name="phone"
-          id="phone"
           class="modal-franchise__input"
-          autocomplete="phone"
+          autocomplete="tel"
           placeholder="Phone"
           pattern="[0]{1}[0-9]{9}"
           required
@@ -45,7 +42,6 @@
         <input
           type="email"
           name="email"
-          id="email"
           class="modal-franchise__input"
           autocomplete="email"
           placeholder="Email"
@@ -54,14 +50,7 @@
         />
       </li>
       <li class="modal-franchise__field">
-        <textarea
-          type="text"
-          name="comment"
-          id="comment"
-          class="modal-franchise__textarea"
-          autocomplete="none"
-          placeholder="Comment"
-        ></textarea>
+        <textarea name="comment" class="modal-franchise__textarea" placeholder="Comment"></textarea>
       </li>
     </ul>
     <button type="submit" class="button modal-franchise__submit button__submit button--full">
