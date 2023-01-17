@@ -1,84 +1,88 @@
 <header class="page-header">
-    <div class="container page-header__container">
-        <div class="logo page-header__logo">
-            <a class="logo__link" href="#"
-                ><img
-                    class="logo-png"
-                    src="./images/header-hero/logo.png"
-                    srcset="
-                        ./images/header-hero/logo-mob-40-37.png  40w,
-                        ./images/header-hero/logo-tabl-48-44.png 48w,
-                        ./images/header-hero/logo.png            60w
-                    "
-                    sizes=" (min-width:1200px) 60px , (min-width:768px) 48px,(min-width:480px) 48px ,(min-width:320px) 40px  "
-                />
-            </a>
-        </div>
-        <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-        >
-            <svg width="24" height="24">
-                <use href="./images/icons/mob-menu.svg"></use>
-            </svg>
-        </button>
-
-        <div class="menu">
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="./index.html">Home</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#">How it’s made?</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#">Our products</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+  <div class="container page-header__container">
+    <div class="logo page-header__logo">
+      <a class="logo__link" href="#"
+        ><img
+          class="logo-png"
+          src="./images/header-hero/logo.png"
+          srcset="
+            ./images/header-hero/logo-mob-40-37.png  40w,
+            ./images/header-hero/logo-tabl-48-44.png 48w,
+            ./images/header-hero/logo.png            60w
+          "
+          sizes=" (min-width:1200px) 60px , (min-width:768px) 48px,(min-width:480px) 48px ,(min-width:320px) 40px  "
+        />
+      </a>
     </div>
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
-            <svg width="19" height="19">
-                <use href="./images/icons/close.svg"></use>
-            </svg>
-        </button>
+    <button
+      class="page-header__button menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="24" height="24">
+        <use href="./images/icons/mob-menu.svg"></use>
+      </svg>
+    </button>
 
-        <div class="mobile-menu">
-            <ul class="mobile-nav">
-                <li class="mobile-nav__item">
-                    <a class="mobile-nav__link" href="./index.html">Home</a>
-                </li>
-                <li class="mobile-nav__item">
-                    <a
-                        class="mobile-nav__link menu-toggle-link js-close-menu-link"
-                        href="./index.html#about"
-                    >
-                        How it’s made?
-                    </a>
-                </li>
-                <li class="mobile-nav__item">
-                    <a
-                        class="mobile-nav__link menu-toggle-link-2 js-close-menu-link-2"
-                        href="#products"
-                        >Our products</a
-                    >
-                </li>
-                <li class="mobile-nav__item">
-                    <a
-                        class="mobile-nav__link menu-toggle-link-3 js-close-menu-link-3"
-                        href="#Contact"
-                        >Contact</a
-                    >
-                </li>
-            </ul>
-        </div>
+    <div class="menu">
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="./index.html">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">How it’s made?</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Our products</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
+  </div>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg width="32" height="32">
+        <use href="./images/icons/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <div class="mobile-menu">
+      <ul class="mobile-nav">
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="./index.html">Home</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link menu-toggle-link js-close-menu-link" href="./index.html#about">
+            How it’s made?
+          </a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link menu-toggle-link-2 js-close-menu-link-2" href="#products"
+            >Our products</a
+          >
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link menu-toggle-link-3 js-close-menu-link-3" href="#Contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+
+      <button
+        class="button button--full button-none mobile-menu__button js-open-modal"
+        type="submit"
+        data-modal="1"
+      >
+        <span>Buy now</span>
+        <svg width="12" height="12" class="button__icon">
+          <use href="./images/icons/icons.svg#icon-button"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </header>
 <main></main>
