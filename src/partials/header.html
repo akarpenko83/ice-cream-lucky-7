@@ -1,28 +1,77 @@
 <section class="header" id="home">
   <div class="container header__container">
     <a class="header__logo" href="#">
-      <img
-        class="logo-png"
-        src=".\images\header-hero\logo.png"
-        srcset="
-          .\images\header-hero\logo-mob-40-37.png  40w,
-          .\images\header-hero\logo-tabl-48-44.png 48w,
-          .\images\header-hero\logo.png            60w
-        "
-        sizes=" (min-width:1200px) 60px , (min-width:768px) 48px,(min-width:480px) 48px ,(min-width:320px) 40px  "
-      />
+      <picture>
+        <source
+          srcset="
+            ./images/header-hero/logo.png     1x,
+            ./images/header-hero/logo-@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/header-hero/logo-tabl-48-44.png 1x,
+            ./images/header-hero/logo-tabl-48-44.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/header-hero/logo-mob-40-37.png 1x,
+            ./images/header-hero/logo-mob-40-37.png 2x
+          "
+          media="(min-width: 480px)"
+        />
+
+        <img
+          srcset="
+            ./images/header-hero/logo.png     1x,
+            ./images/header-hero/logo-@2x.png 2x
+          "
+          src="./images/header-hero/logo.png"
+          alt="Logo"
+          width="60"
+          height="65"
+        />
+      </picture>
     </a>
     <div class="menu-container" id="menu-container" data-menu>
       <a class="header__logo menu-logo" href="#">
-        <img
-          src=".\images\header-hero\logo-mob-40-37.png "
-          srcset="
-            .\images\header-hero\logo-mob-40-37.png  40w,
-            .\images\header-hero\logo-tabl-48-44.png 48w,
-            .\images\header-hero\logo.png            60w
-          "
-          sizes=" (min-width:1200px) 60px , (min-width:768px) 48px,(min-width:480px) 48px ,(min-width:320px) 40px  "
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/header-hero/logo.png     1x,
+              ./images/header-hero/logo-@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/header-hero/logo-tabl-48-44.png 1x,
+              ./images/header-hero/logo-tabl-48-44.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/header-hero/logo-mob-40-37.png 1x,
+              ./images/header-hero/logo-mob-40-37.png 2x
+            "
+            media="(min-width: 480px)"
+          />
+
+          <img
+            srcset="
+              ./images/header-hero/logo.png     1x,
+              ./images/header-hero/logo-@2x.png 2x
+            "
+            src="./images/header-hero/logo.png"
+            alt="Logo"
+            width="60"
+            height="65"
+          />
+        </picture>
       </a>
 
       <nav>
@@ -64,11 +113,11 @@
         >
           <use
             class="icon-cros"
-            href=".\images\icons\icons.svg#icon-close"
+            href="./images/icons/icons.svg#icon-close"
           ></use>
           <use
             class="icon-menu"
-            href=".\images\icons\icons.svg#icon-mob-menu"
+            href="./images/icons/icons.svg#icon-mob-menu"
           ></use>
         </svg>
       </button>
@@ -76,7 +125,6 @@
       <button
         class="button hero__button button--full button-none js-open-modal"
         type="submit"
-        class="js-open-modal"
         data-modal="1"
       >
         <span>Buy now</span>
@@ -86,5 +134,4 @@
       </button>
     </div>
   </div>
-  <!-------------------------------------------------------->
 </section>

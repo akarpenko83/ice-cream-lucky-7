@@ -5,14 +5,13 @@
         <h1 class="heroy__title">ice cream made with passion</h1>
         <div class="heroy__buttons">
           <a
-            type="button"
             href="#products"
             class="button hero__button button--bordered hero-margin"
           >
             <span>Products</span>
           </a>
 
-          <a type="button" href="#about" class="button button--transparent">
+          <a href="#about" class="button button--transparent">
             <span>How its made?</span>
           </a>
         </div>
@@ -20,20 +19,31 @@
       <div class="heroy__efekt">
         <img
           class="plate animate__animated animate__fadeInLeft"
+          srcset="
+            ./images/header-hero/round-ice-cream.png     1x,
+            ./images/header-hero/round-ice-cream-@2x.png 2x
+          "
+          src="./images/header-hero/round-ice-cream.png"
+          alt="Тарілка з морозивом"
+          width="152"
+        />
+        <!-- <img
+          class="plate animate__animated animate__fadeInLeft"
           src=".\images\header-hero\round-ice-cream.png"
           srcset="
             .\images\header-hero\round-ice-cream-tab.png 152w,
             .\images\header-hero\round-ice-cream.png     225w
           "
           sizes=" (min-width:1200px) 225px , (min-width:768px) 152px "
-        />
+        /> -->
+
         <div class="heroy__efekt-text">
           <p class="heroy__inform animate__animated animate__fadeInLeft">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
           <svg width="40" height="16" class="arrow">
-            <use href=".\images\icons\icons.svg#icon-arrow"></use>
+            <use href="./images/icons/icons.svg#icon-arrow"></use>
           </svg>
         </div>
       </div>
@@ -41,14 +51,15 @@
     <div class="heroy__right">
       <img
         class="img-ice animate__animated animate__backInLeft"
-        src=".\images\header-hero\main-ice-cream-mob.png"
         srcset="
-          .\images\header-hero\main-ice-cream-mob.png 218w,
-          .\images\header-hero\main-ice-cream-tab.png 268w,
-          .\images\header-hero\main-ice-cream.png     456w
+          ./images/header-hero/main-ice-cream.png     1x,
+          ./images/header-hero/main-ice-cream-@2x.png 2x
         "
-        sizes=" (min-width:1200px) 456px , (min-width:768px) 268px,(min-width:480px) 218px ,(min-width:320px) 177px  "
+        src="./images/header-hero/main-ice-cream.png"
+        alt="Ріжок з морозивом"
+        width="268"
       />
+
       <div class="heroy__advantage">
         <p class="heroy-number">16</p>
         <p class="heroy-text">cafes</p>
