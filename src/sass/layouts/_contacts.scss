@@ -11,25 +11,6 @@
             min-height: 620px;
         }
 }
-.contact__container { 
-   
-    @extend %container;
-  position: absolute;
-  top: -400px;
-  left: 50%;
-  transform: translateX(-50%);
-  @include tablet { 
-    top: -340px;
-  }
-   @include desktop { 
-    top: -160px;
-    padding: 0;
-    margin-left: 16px;
-    margin-right: 16px;
-   }
-}
-
-
 
 .section-heading {
     display: none;
@@ -76,6 +57,7 @@
  color: $milkshakeColor;
  font-style: normal;
  margin-top: 8px;
+ 
  @include tablet { 
     font-size: 14px;
     width: 173px;
