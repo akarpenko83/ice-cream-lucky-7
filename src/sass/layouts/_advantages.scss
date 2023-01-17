@@ -92,3 +92,28 @@
   }
   
 }
+
+.benefits__icons { 
+  display: inline-flex;
+  align-items: center;
+  color: currentColor;
+  text-decoration: none;
+}
+
+
+.benefits__icons::before,
+.benefits__icons::after { 
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.benefits__icons::before { 
+  background-image: url(../images/icons/icons.svg#icon-advantages-weight);
+  background-color: $accentColor;
+  border-radius: 25px;
+ color: $txtPrimaryColor;
+ 
+}
+
