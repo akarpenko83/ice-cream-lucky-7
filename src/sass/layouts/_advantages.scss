@@ -17,6 +17,7 @@
     }
     @include desktop { 
         gap: 32px;
+        padding-top: 60px;
     }
 }
 
@@ -107,14 +108,14 @@
 
 
 
-.benefits__icon-cow::after { 
+.benefits__icon-cow::before { 
   content:"";
-  background-image: url('../images/icons/advantages-cow.svg');
+  background-image: url('../images/advantages/cow.png');
   background-color: $accentColor;
   border-radius: 50%;
   color: $txtPrimaryColor;
   fill: #131313;
-
+  margin: 0 auto;
   width: 50px;
   height: 50px;
   background-size: contain;
@@ -133,11 +134,12 @@
 
 
 
-.benefits__icon-weight::after { 
+.benefits__icon-weight::before { 
   content:"";
-  background-image: url('../images/icons/advantages-weight.svg');
+  background-image: url('../images/advantages/weight.png');
   background-color: $accentColor;
   border-radius: 50%;
+  margin: 0 auto;
   color: $txtPrimaryColor;
   fill: #131313;
   
@@ -155,14 +157,14 @@
   margin-bottom: 16px;
 }
 
-.benefits__icon-ice-cream::after { 
+.benefits__icon-ice-cream::before { 
   content:"";
-  background-image: url('../images/icons/advantages-ice-cream.svg');
+  background-image: url('../images/advantages/ice.png');
   background-color: $accentColor;
   border-radius: 50%;
+  margin: 0 auto;
   color: $txtPrimaryColor;
   fill: #131313;
-  
   width: 50px;
   height: 50px;
   background-size: contain;
