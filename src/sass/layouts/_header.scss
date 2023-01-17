@@ -3,7 +3,6 @@
   position: relative;
 }
 .header__container {
-  @extend %container;
   display: flex;
   justify-content: space-between;
   margin-left: auto;
