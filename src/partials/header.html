@@ -2,7 +2,16 @@
     <div class="container page-header__container">
         <div class="logo page-header__logo">
             <a class="logo__link" href="#"
-                ><span class="logo logo--accent">Web</span>Studio
+                ><img
+                    class="logo-png"
+                    src="./images/header-hero/logo.png"
+                    srcset="
+                        ./images/header-hero/logo-mob-40-37.png  40w,
+                        ./images/header-hero/logo-tabl-48-44.png 48w,
+                        ./images/header-hero/logo.png            60w
+                    "
+                    sizes=" (min-width:1200px) 60px , (min-width:768px) 48px,(min-width:480px) 48px ,(min-width:320px) 40px  "
+                />
             </a>
         </div>
         <button
@@ -19,32 +28,19 @@
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a
-                            class="navigation__link navigation__link--active"
-                            href="./index.html"
-                            >Студія</a
-                        >
+                        <a class="navigation__link" href="./index.html">Home</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#">Портфоліо</a>
+                        <a class="navigation__link" href="#">How it’s made?</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#">Контакти</a>
+                        <a class="navigation__link" href="#">Our products</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Contact</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="contacts">
-                <li class="contacts__item">
-                    <a class="contacts__link" href="mailto:info@devstudio.com">
-                        >info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts__item">
-                    <a class="contacts__link" href="tel:+380961111111">
-                        +38 096 111 11 11</a
-                    >
-                </li>
-            </ul>
         </div>
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
@@ -60,15 +56,26 @@
                     <a class="mobile-nav__link" href="./index.html">Home</a>
                 </li>
                 <li class="mobile-nav__item">
-                    <a class="mobile-nav__link" href="./index.html#products"
-                        >How it’s made?</a
+                    <a
+                        class="mobile-nav__link menu-toggle-link js-close-menu-link"
+                        href="./index.html#about"
+                    >
+                        How it’s made?
+                    </a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a
+                        class="mobile-nav__link menu-toggle-link-2 js-close-menu-link-2"
+                        href="#products"
+                        >Our products</a
                     >
                 </li>
                 <li class="mobile-nav__item">
-                    <a class="mobile-nav__link" href="#">Our products</a>
-                </li>
-                <li class="mobile-nav__item">
-                    <a class="mobile-nav__link" href="#">Contact</a>
+                    <a
+                        class="mobile-nav__link menu-toggle-link-3 js-close-menu-link-3"
+                        href="#Contact"
+                        >Contact</a
+                    >
                 </li>
             </ul>
         </div>
