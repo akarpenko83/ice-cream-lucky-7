@@ -5,7 +5,7 @@
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
-    background-color: white;
+    background-color: $themePrimaryColor;
     z-index: 999;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
@@ -17,9 +17,21 @@
 
 .menu-toggle {
     position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #fff;
+    top: 17px;
+    right: 20px;
+    background-color: transparent;
+    border: 0px;
+    @media screen and (min-width: 480px) {
+    top: 14px;
+    right: 20px;
+    }
+    @media screen and (min-width: 768px) {
+    top: 19px;
+    right: 216px;
+    }
+    @media screen and (min-width: 1200px) {
+    display: none;        
+    }
 }
 
 .mobile-menu {
@@ -33,7 +45,8 @@
 }
 .mobile-nav {
     @extend %list;
-
+    margin: 0 auto;
+    text-align: center;
 }
 .mobile-nav__link {
     @extend %link;
