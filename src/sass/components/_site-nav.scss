@@ -1,12 +1,14 @@
 .menu {
     display: none;
     @media screen and (min-width: 1200px) {
-    display: flex;        
+    display: flex; 
+            cursor: url(../images/header-hero/Cursor1.png), pointer;
     }
 }
 .navigation__list {
     @extend %list;
     @include flex(flex, null, nowrap, null, center, null);
+cursor: inherit;
     gap: 28px;
 }
 
@@ -18,7 +20,7 @@
     font-size: 16px;
     line-height: 1.25;
     color: $txtSecondaryColor;
-    cursor: url(../images/icons/сursor.svg), pointer;
+cursor: inherit;
     transition: color 250ms cubic-bezier($cubicBezier);
 
     &:hover,
