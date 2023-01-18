@@ -1,4 +1,5 @@
 .products {
+  position: relative;
   padding: 60px 0px;
   height: 1930px;
   background-color: $modalBgdColor;
@@ -139,11 +140,7 @@
   height: 200px;
 
   border-radius: 50%;
-  background-image: linear-gradient(
-    0deg,
-    rgba(156, 190, 143, 0.7),
-    rgba(156, 190, 143, 0.7)
-  );
+  background-image: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 
   @include phone {
@@ -165,23 +162,13 @@
 
 .card-list__item:nth-child(2) > .card-list__product-card::after {
   background-color: rgba(248, 210, 78, 0.7);
-  background: linear-gradient(
-      0deg,
-      rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)
-    ),
-    #d9d9d9;
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
 
 .card-list__item:nth-child(3) > .card-list__product-card::after {
   background-color: rgba(213, 117, 63, 0.7);
-  background: linear-gradient(
-      0deg,
-      rgba(213, 117, 63, 0.7),
-      rgba(213, 117, 63, 0.7)
-    ),
-    #d9d9d9;
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
 
@@ -321,4 +308,60 @@
 }
 .button__icon {
   fill: $btnSecondaryColor;
+}
+
+.products__ingridients1--position {
+  position: relative;
+}
+
+.products__ingridients1--position .modal-ingridients {
+  top: -50px;
+  @include tablet {
+    top: -300px;
+    left: 158%;
+    // transform: translateX(-8%);
+
+    // transform: translate(-8%, 30px);
+  }
+
+  @include desktop {
+    top: -230px;
+  }
+}
+
+.products__ingridients2--position {
+  position: relative;
+}
+
+.products__ingridients2--position .modal-ingridients {
+  top: -50px;
+  @include tablet {
+    top: -300px;
+  }
+
+  @include desktop {
+    top: -230px;
+  }
+}
+
+.products__ingridients3--position {
+  position: relative;
+}
+.products__ingridients3--position .modal-ingridients {
+  top: -50px;
+  @include tablet {
+    // right: 50%;
+    top: -300px;
+    left: -58%;
+    // transform: translate(-50%, 30px);
+  }
+
+  @include desktop {
+    top: -230px;
+  }
+
+  // @include desktop {
+  //   right: 100%;
+  //   transform: translateX(12%);
+  // }
 }

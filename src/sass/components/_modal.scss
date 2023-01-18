@@ -42,9 +42,9 @@
   /* Скрываем окна  */
 
   position: absolute;
-  top: 25%;
+  top: 30px;
   left: 50%;
-  transform: translate(-50%, -25%);
+  transform: translate(-50%, 30px);
   z-index: 890;
 
   opacity: 0;
@@ -57,7 +57,27 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal.active,
+.modal.active {
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact .modal {
+  position: fixed;
+}
+
+.about .modal {
+  position: fixed;
+}
+
+.products .modal-ingridients {
+  // top: 100px;
+}
+
 .overlay.active {
   position: fixed;
   opacity: 1;

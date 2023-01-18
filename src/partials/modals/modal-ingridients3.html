@@ -1,0 +1,127 @@
+<!-- <button type="submit" class="js-open-modal" data-modal="2">Ingredients</button> -->
+
+<div class="modal-ingridients modal" data-modal="7">
+  <button type="button" class="modals-close__button modals-close__button--position js-modal-close">
+    <svg class="modals-close__icon" width="20" height="20">
+      <use href="./images/icons/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h1 class="modal-ingridients__header">Milkshake</h1>
+
+  <div class="modal-ingridients__picture">
+    <img
+      srcset="
+        ./images/modals/chololate-ice-cream-modal.png     1x,
+        ./images/modals/chololate-ice-cream-modal-@2x.png 2x
+      "
+      width="132"
+      height="132"
+      class="modal-ingridients__img"
+      src="./images/modals/chololate-ice-cream-modal.png"
+      alt="chocolate icecream"
+    />
+    <div class="modal-ingridients__background"></div>
+  </div>
+
+  <ul class="modal-ingridients__composition">
+    <li class="modal-ingridients__composition-item">
+      <div class="modal-ingridients__oval">
+        <div class="modal-ingridients__circle">
+          <p class="modal-ingridients__circle-text">320</p>
+        </div>
+        <div class="modal-ingridients__oval-text">kcal</div>
+      </div>
+    </li>
+    <li class="modal-ingridients__composition-item">
+      <div class="modal-ingridients__oval">
+        <div class="modal-ingridients__circle">
+          <p class="modal-ingridients__circle-text">4g</p>
+        </div>
+        <div class="modal-ingridients__oval-text modal-ingridients__oval-text--phone">Prote...</div>
+        <div class="modal-ingridients__oval-text modal-ingridients__oval-text--tablet">
+          Protein...
+        </div>
+      </div>
+    </li>
+    <li class="modal-ingridients__composition-item">
+      <div class="modal-ingridients__oval">
+        <div class="modal-ingridients__circle">
+          <p class="modal-ingridients__circle-text">8,2g</p>
+        </div>
+        <div class="modal-ingridients__oval-text">Fats</div>
+      </div>
+    </li>
+    <li class="modal-ingridients__composition-item">
+      <div class="modal-ingridients__oval">
+        <div class="modal-ingridients__circle">
+          <p class="modal-ingridients__circle-text">40,4g</p>
+        </div>
+        <div class="modal-ingridients__oval-text">Carbs</div>
+      </div>
+    </li>
+  </ul>
+  <h2 class="modal-ingridients__header2">Ingredients</h2>
+
+  <ul class="modal-ingridients__list">
+    <li class="modal-ingridients__item">
+      <p class="modal-ingridients__text">Milk</p>
+      <p class="modal-ingridients__text">100ml</p>
+    </li>
+    <li class="modal-ingridients__item">
+      <p class="modal-ingridients__text">Belgian chocolate</p>
+      <p class="modal-ingridients__text">20g</p>
+    </li>
+    <li class="modal-ingridients__item">
+      <p class="modal-ingridients__text">Cream</p>
+      <p class="modal-ingridients__text">150ml</p>
+    </li>
+    <li class="modal-ingridients__item">
+      <p class="modal-ingridients__text">Cocoa powder</p>
+      <p class="modal-ingridients__text">30g</p>
+    </li>
+    <li class="modal-ingridients__item">
+      <p class="modal-ingridients__text">Sugar</p>
+      <p class="modal-ingridients__text">40g</p>
+    </li>
+    <li class="modal-ingridients__item">
+      <p class="modal-ingridients__text">Vanilla sugar</p>
+      <p class="modal-ingridients__text">10g</p>
+    </li>
+  </ul>
+  <form name="input details" class="modal-ingridients__form">
+    <ul>
+      <li class="modal-ingridients__field">
+        <input
+          type="text"
+          name="name"
+          class="modal-ingridients__input"
+          autocomplete="name"
+          placeholder="Name"
+          pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}"
+          required
+        />
+      </li>
+      <li class="modal-ingridients__field">
+        <input
+          type="text"
+          name="phone"
+          class="modal-ingridients__input"
+          autocomplete="tel"
+          placeholder="Phone"
+          pattern="[0]{1}[0-9]{9}"
+          required
+        />
+      </li>
+      <li class="modal-ingridients__field">
+        <textarea
+          name="comment"
+          class="modal-ingridients__textarea"
+          placeholder="Comment"
+        ></textarea>
+      </li>
+    </ul>
+    <button type="submit" class="button modal-ingridients__submit button__submit button--full">
+      <span>Submit</span>
+    </button>
+  </form>
+</div>
