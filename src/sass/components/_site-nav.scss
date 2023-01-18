@@ -1,0 +1,46 @@
+.menu {
+    display: none;
+    @media screen and (min-width: 1200px) {
+    display: flex; 
+            cursor: url(../images/header-hero/Cursor1.png), pointer;
+    }
+}
+.navigation__list {
+    @extend %list;
+    @include flex(flex, null, nowrap, null, center, null);
+cursor: inherit;
+    gap: 28px;
+}
+
+.navigation__link {
+    @extend %link;
+    height: 100%;
+    padding-top: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $txtSecondaryColor;
+cursor: inherit;
+    transition: color 250ms cubic-bezier($cubicBezier);
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+
+.navigation__link--active {
+    display: flex;
+    flex-direction: column;
+    color: $accentColor;
+
+    &::after {
+        content: '';
+        flex-grow: 1;
+        width: 100%;
+        height: 4px;
+        background-color: $accentColor;
+        border-radius: 2px;
+        margin-top: 28px;
+    }
+}

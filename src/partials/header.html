@@ -1,115 +1,109 @@
-<section class="header" id="home">
-  <include src="./partials/modals/modal-bynow.html"></include>
-  <div class="container header__container">
-    <a class="header__logo" href="#">
-      <picture>
-        <source
-          srcset="./images/header-hero/logo.png 1x, ./images/header-hero/logo-@2x.png 2x"
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/header-hero/logo-tabl-48-44.png 1x,
-            ./images/header-hero/logo-tabl-48-44.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/header-hero/logo-mob-40-37.png 1x,
-            ./images/header-hero/logo-mob-40-37.png 2x
-          "
-          media="(min-width: 480px)"
-        />
+<header class="page-header">
+    <div class="container page-header__container">
+        <div class="logo page-header__logo">
+            <a class="logo__link" href="#"
+                ><img
+                    class="logo-png"
+                    src="./images/header-hero/logo.png"
+                    srcset="
+                        ./images/header-hero/logo-mob-40-37.png  40w,
+                        ./images/header-hero/logo-tabl-48-44.png 48w,
+                        ./images/header-hero/logo.png            60w
+                    "
+                    sizes=" (min-width:1200px) 60px , (min-width:768px) 48px,(min-width:480px) 48px ,(min-width:320px) 40px  "
+                />
+            </a>
+        </div>
+        <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+        >
+            <img src="./images/icons/mobile-menu.png" alt="menu-toggle" />
+        </button>
 
-        <img
-          srcset="./images/header-hero/logo.png 1x, ./images/header-hero/logo-@2x.png 2x"
-          src="./images/header-hero/logo.png"
-          alt="Logo"
-          width="60"
-          height="65"
-        />
-      </picture>
-    </a>
-    <div class="menu-container" id="menu-container" data-menu>
-      <a class="header__logo menu-logo" href="#">
-        <picture>
-          <source
-            srcset="./images/header-hero/logo.png 1x, ./images/header-hero/logo-@2x.png 2x"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="
-              ./images/header-hero/logo-tabl-48-44.png 1x,
-              ./images/header-hero/logo-tabl-48-44.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              ./images/header-hero/logo-mob-40-37.png 1x,
-              ./images/header-hero/logo-mob-40-37.png 2x
-            "
-            media="(min-width: 480px)"
-          />
-
-          <img
-            srcset="./images/header-hero/logo.png 1x, ./images/header-hero/logo-@2x.png 2x"
-            src="./images/header-hero/logo.png"
-            alt="Logo"
-            width="60"
-            height="65"
-          />
-        </picture>
-      </a>
-
-      <nav>
-        <ul class="header__list">
-          <li class="item"><a href="#home" class="item-link">Home</a></li>
-          <li class="item">
-            <a href="#about" class="item-link">How it’s made?</a>
-          </li>
-          <li class="item">
-            <a href="#products" class="item-link">Our products</a>
-          </li>
-          <li class="item"><a href="#Contact" class="item-link">Contact</a></li>
-        </ul>
-      </nav>
-      <button
-        class="button hero__button button--full buy-now js-open-modal"
-        type="submit"
-        data-modal="1"
-      >
-        <span>Buy now</span>
-        <svg width="12" height="12" class="button__icon">
-          <use href="./images/icons/icons.svg#icon-button"></use>
-        </svg>
-      </button>
+        <div class="menu">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="./index.html">Home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">How it’s made?</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Our products</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <button type="button" class="button hero__button button--full">
+            <span>Buy now</span>
+            <svg width="12" height="12" class="button__icon">
+                <use href="./images/icons/icons.svg#icon-button"></use>
+            </svg>
+        </button>
     </div>
-    <div class="header__tablet">
-      <button
-        type="button"
-        class="menu-button"
-        aria-expanded="false"
-        aria-controls="menu-container"
-        data-menu-button
-      >
-        <svg width="32px" height="32px" class="hiden" aria-label="вмикач мобільного меню">
-          <use class="icon-cros" href="./images/icons/icons.svg#icon-close"></use>
-          <use class="icon-menu" href="./images/icons/icons.svg#icon-mob-menu"></use>
-        </svg>
-      </button>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu menu-toggle__close">
+            <img src="./images/icons/cross.png" alt="mobile-menu close" />
+        </button>
 
-      <button
-        class="button hero__button button--full button-none js-open-modal"
-        type="submit"
-        data-modal="1"
-      >
-        <span>Buy now</span>
-        <svg width="12" height="12" class="button__icon">
-          <use href="./images/icons/icons.svg#icon-button"></use>
-        </svg>
-      </button>
+        <div class="mobile-menu">
+            <div class="logo mobile-menu__logo">
+                <a class="logo__link" href="#"
+                    ><img
+                        class="logo-png"
+                        src="./images/header-hero/logo.png"
+                        srcset="
+                            ./images/header-hero/logo-mob-40-37.png  40w,
+                            ./images/header-hero/logo-tabl-48-44.png 48w,
+                            ./images/header-hero/logo.png            60w
+                        "
+                        sizes=" (min-width:1200px) 60px , (min-width:768px) 48px,(min-width:480px) 48px ,(min-width:320px) 40px  "
+                    />
+                </a>
+            </div>
+            <ul class="mobile-nav">
+                <li class="mobile-nav__item">
+                    <a class="mobile-nav__link" href="./index.html">Home</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a
+                        class="mobile-nav__link menu-toggle-link js-close-menu-link"
+                        href="./index.html#about"
+                    >
+                        How it’s made?
+                    </a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a
+                        class="mobile-nav__link menu-toggle-link-2 js-close-menu-link-2"
+                        href="#products"
+                        >Our products</a
+                    >
+                </li>
+                <li class="mobile-nav__item">
+                    <a
+                        class="mobile-nav__link menu-toggle-link-3 js-close-menu-link-3"
+                        href="#Contact"
+                        >Contact</a
+                    >
+                </li>
+            </ul>
+            <button
+                type="button"
+                class="button mobile-nav__button button--full"
+            >
+                <span>Buy now</span>
+                <svg width="12" height="12" class="button__icon">
+                    <use href="./images/icons/icons.svg#icon-button"></use>
+                </svg>
+            </button>
+        </div>
     </div>
-  </div>
-</section>
+</header>
+<main></main>
