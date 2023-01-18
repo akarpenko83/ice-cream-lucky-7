@@ -17,6 +17,7 @@
     }
     @include desktop { 
         gap: 32px;
+        padding-top: 60px;
     }
 }
 
@@ -91,4 +92,80 @@
     margin-bottom: 32px;
   }
   
+} 
+
+
+.benefits__icon-cow { 
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  color: currentColor;
+  text-decoration: none;
+  padding: 7;
+  margin-bottom: 16px;
+}
+
+
+
+
+.benefits__icon-cow::before { 
+  content:"";
+  background-image: url('../images/advantages/cow.png');
+  background-color: $accentColor;
+  border-radius: 50%;
+  color: $txtPrimaryColor;
+  fill: #131313;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+}
+
+
+
+.benefits__icon-weight { 
+  display: flex;
+  color: currentColor;
+  text-decoration: none;
+  padding: 7;
+  margin-bottom: 16px;
+}
+
+
+
+
+.benefits__icon-weight::before { 
+  content:"";
+  background-image: url('../images/advantages/weight.png');
+  background-color: $accentColor;
+  border-radius: 50%;
+  margin: 0 auto;
+  color: $txtPrimaryColor;
+  fill: #131313;
+  
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+}
+
+.benefits__icon-ice-cream { 
+  display: flex;
+  align-items: center;
+  color: currentColor;
+  text-decoration: none;
+  padding: 7;
+  margin-bottom: 16px;
+}
+
+.benefits__icon-ice-cream::before { 
+  content:"";
+  background-image: url('../images/advantages/ice.png');
+  background-color: $accentColor;
+  border-radius: 50%;
+  margin: 0 auto;
+  color: $txtPrimaryColor;
+  fill: #131313;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
 }

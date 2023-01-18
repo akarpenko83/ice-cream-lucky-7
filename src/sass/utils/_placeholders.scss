@@ -17,13 +17,31 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
 %outline {
   outline: 2px dashed #f44336;
 }
 %container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0px 20px;
+  @media screen and (min-width: 480px) {
+      .container {
+        width: 480px;
+      }
+    }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 32px;
+      width: 768px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .container {
+      padding: 0 16px;
+      width: 1200px;
+    }
+  }
 }
 
 %button-full {
@@ -80,4 +98,7 @@
   &:disabled {
     color: $btnDisableColor;
   }
+}
+html{
+  scroll-behavior:smooth;
 }

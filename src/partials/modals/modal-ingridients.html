@@ -88,13 +88,12 @@
       <p class="modal-ingridients__text">10g</p>
     </li>
   </ul>
-  <form name="input details" class="modal-ingridients__form" action="">
+  <form name="input details" class="modal-ingridients__form">
     <ul>
       <li class="modal-ingridients__field">
         <input
           type="text"
           name="name"
-          id="name"
           class="modal-ingridients__input"
           autocomplete="name"
           placeholder="Name"
@@ -106,9 +105,8 @@
         <input
           type="text"
           name="phone"
-          id="phone"
           class="modal-ingridients__input"
-          autocomplete="phone"
+          autocomplete="tel"
           placeholder="Phone"
           pattern="[0]{1}[0-9]{9}"
           required
@@ -116,11 +114,8 @@
       </li>
       <li class="modal-ingridients__field">
         <textarea
-          type="text"
           name="comment"
-          id="comment"
           class="modal-ingridients__textarea"
-          autocomplete="none"
           placeholder="Comment"
         ></textarea>
       </li>
