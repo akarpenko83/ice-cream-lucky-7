@@ -1,4 +1,5 @@
 <section class="section about" id="about">
+  <include src="./partials/modals/modal-readmore.html"></include>
   <div class="container about__container">
     <div class="about__slogan">
       <p class="about__label">TRADITION AND LOVE</p>
@@ -7,58 +8,39 @@
     <div class="about__wrap">
       <div class="about__picture">
         <span class="about__picture--bg">
-              <picture class="about__picture--cow">
+          <picture class="about__picture--cow">
             <source
-              srcset="
-                ./images/about/cow.png   1x,
-                ./images/about/cow-@2x.png 2x
-              "
+              srcset="./images/about/cow.png 1x, ./images/about/cow-@2x.png 2x"
               media="(min-width: 1200px)"
             />
             <source
-              srcset="
-                ./images/about/cow-tab.png   1x,
-                ./images/about/cow-tab-@2x.png 2x
-              "
+              srcset="./images/about/cow-tab.png 1x, ./images/about/cow-tab-@2x.png 2x"
               media="(min-width: 768px)"
             />
             <source
-              srcset="
-                ./images/about/cow-mob.png   1x,
-                ./images/about/cow-mob-@2x.png 2x
-              "
+              srcset="./images/about/cow-mob.png 1x, ./images/about/cow-mob-@2x.png 2x"
               media="(min-width: 320px)"
             />
-            <img
-              class="about__picture--size"
-              src="./images/about/cow-mob.png"
-              alt="Cow"
-            />
+            <img class="about__picture--size" src="./images/about/cow-mob.png" alt="Cow" />
           </picture>
         </span>
       </div>
       <div class="about-description">
         <div class="about-description__content">
           <p class="about-description__text">
-            Ice is a place where you will become not only a little happier, but
-            also healthier. Health is the main value for us, and we follow it
-            when creating our handmade desserts.
+            Ice is a place where you will become not only a little happier, but also healthier.
+            Health is the main value for us, and we follow it when creating our handmade desserts.
           </p>
           <p class="about-description__text">
-            We use traditional recipes and 100% natural ingredients. Our
-            products are so natural that they can be given to children from the
-            age of three years. Sweets lovers can expect 55 types of ice cream,
-            15 types of coffee and 23 milkshakes.
+            We use traditional recipes and 100% natural ingredients. Our products are so natural
+            that they can be given to children from the age of three years. Sweets lovers can expect
+            55 types of ice cream, 15 types of coffee and 23 milkshakes.
           </p>
           <p class="about-description__text about-description__text--none">
             This is enough to choose ice cream and coffee for any mood!
           </p>
         </div>
-        <button
-          class="about__button js-open-modal"
-          data-modal="3"
-          type="submit"
-        >
+        <button class="about__button js-open-modal" data-modal="3" type="submit">
           Read more
           <svg width="12" height="12">
             <use href="./images/icons/icons.svg#icon-button"></use>

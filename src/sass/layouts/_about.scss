@@ -1,4 +1,5 @@
 .section.about {
+  position: relative;
   justify-content: center;
   text-align: center;
   color: $modalBgdColor;
@@ -203,11 +204,7 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  background-image: linear-gradient(
-    0deg,
-    rgba(248, 210, 78, 0.7),
-    rgba(248, 210, 78, 0.7)
-  );
+  background-image: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
   background-color: $sldrDotColor;
   box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
   @media screen and (max-width: 767px) {

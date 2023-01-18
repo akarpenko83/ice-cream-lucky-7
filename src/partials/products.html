@@ -1,9 +1,11 @@
 <section class="products" id="products">
+  <!-- <include src="./partials/modals/modal-ingridients.html"></include> -->
   <div class="container">
     <p class="products__description" aria-label="products description">100% natural</p>
     <h1 class="products__title">products</h1>
     <ul class="card-list products__card-list">
-      <li class="card-list__item">
+      <li class="card-list__item products__ingridients1--position">
+        <include src="./partials/modals/modal-ingridients.html"></include>
         <article class="product-card card-list__product-card">
           <picture class="product-card__img">
             <source
@@ -40,7 +42,8 @@
           </div>
         </article>
       </li>
-      <li class="card-list__item">
+      <li class="card-list__item products__ingridients2--position">
+        <include src="./partials/modals/modal-ingridients2.html"></include>
         <article class="product-card card-list__product-card">
           <picture class="product-card__img">
             <source
@@ -70,7 +73,7 @@
               Fragrant invigorating drink created from 100% natural ingredients without the use of
               preservatives and flavor enhancers
             </p>
-            <button type="button" class="button button__arrow js-open-modal" data-modal="2">
+            <button type="button" class="button button__arrow js-open-modal" data-modal="6">
               <svg width="40" height="16" class="button__icon">
                 <use href="./images/icons/icons.svg#icon-arrow"></use>
               </svg>
@@ -78,7 +81,8 @@
           </div>
         </article>
       </li>
-      <li class="card-list__item">
+      <li class="card-list__item products__ingridients3--position">
+        <include src="./partials/modals/modal-ingridients3.html"></include>
         <article class="product-card card-list__product-card">
           <picture class="product-card__img">
             <source
@@ -107,7 +111,7 @@
               Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries
               and other sweets of your choice
             </p>
-            <button type="button" class="button button__arrow js-open-modal" data-modal="2">
+            <button type="button" class="button button__arrow js-open-modal" data-modal="7">
               <svg width="40" height="16" class="button__icon">
                 <use href="./images/icons/icons.svg#icon-arrow"></use>
               </svg>

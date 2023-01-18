@@ -1,12 +1,10 @@
 <section class="header" id="home">
+  <include src="./partials/modals/modal-bynow.html"></include>
   <div class="container header__container">
     <a class="header__logo" href="#">
       <picture>
         <source
-          srcset="
-            ./images/header-hero/logo.png     1x,
-            ./images/header-hero/logo-@2x.png 2x
-          "
+          srcset="./images/header-hero/logo.png 1x, ./images/header-hero/logo-@2x.png 2x"
           media="(min-width: 1200px)"
         />
         <source
@@ -25,10 +23,7 @@
         />
 
         <img
-          srcset="
-            ./images/header-hero/logo.png     1x,
-            ./images/header-hero/logo-@2x.png 2x
-          "
+          srcset="./images/header-hero/logo.png 1x, ./images/header-hero/logo-@2x.png 2x"
           src="./images/header-hero/logo.png"
           alt="Logo"
           width="60"
@@ -40,10 +35,7 @@
       <a class="header__logo menu-logo" href="#">
         <picture>
           <source
-            srcset="
-              ./images/header-hero/logo.png     1x,
-              ./images/header-hero/logo-@2x.png 2x
-            "
+            srcset="./images/header-hero/logo.png 1x, ./images/header-hero/logo-@2x.png 2x"
             media="(min-width: 1200px)"
           />
           <source
@@ -62,10 +54,7 @@
           />
 
           <img
-            srcset="
-              ./images/header-hero/logo.png     1x,
-              ./images/header-hero/logo-@2x.png 2x
-            "
+            srcset="./images/header-hero/logo.png 1x, ./images/header-hero/logo-@2x.png 2x"
             src="./images/header-hero/logo.png"
             alt="Logo"
             width="60"
@@ -105,20 +94,9 @@
         aria-controls="menu-container"
         data-menu-button
       >
-        <svg
-          width="32px"
-          height="32px"
-          class="hiden"
-          aria-label="вмикач мобільного меню"
-        >
-          <use
-            class="icon-cros"
-            href="./images/icons/icons.svg#icon-close"
-          ></use>
-          <use
-            class="icon-menu"
-            href="./images/icons/icons.svg#icon-mob-menu"
-          ></use>
+        <svg width="32px" height="32px" class="hiden" aria-label="вмикач мобільного меню">
+          <use class="icon-cros" href="./images/icons/icons.svg#icon-close"></use>
+          <use class="icon-menu" href="./images/icons/icons.svg#icon-mob-menu"></use>
         </svg>
       </button>
 
