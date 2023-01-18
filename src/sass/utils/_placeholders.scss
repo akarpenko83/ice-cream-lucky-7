@@ -17,6 +17,11 @@
   white-space: nowrap;
   overflow: hidden;
 }
+%mainAnime {
+  transition-property: color, transform, background-color, box-shadow;
+  transition-duration: 500ms;
+  transition-timing-function: $cubicBezier;
+}
 
 %outline {
   outline: 2px dashed #f44336;
@@ -49,6 +54,7 @@
 
   background-color: $accentColor;
   color: $btnMainСolor;
+ 
 
   &:hover {
     background-color: $btnHoverColor;
