@@ -32,7 +32,7 @@
   }
 
   &__container {
-    
+    outline: 2px solid red;
     padding: 0;
     margin: 0 auto;
 
@@ -57,7 +57,7 @@
 
   &__wrap {
     display: block;
-
+    outline: 2px solid green;
     height: 1037px;
 
     max-width: 479px;
@@ -108,10 +108,12 @@
   &__slider {
     position: relative;
     background-color: transparent;
+    outline: 2px solid blue;
   }
 
   &__block {
     text-align: center;
+    outline: 2px solid rgb(132, 211, 12);
   }
 
   &__photo {
