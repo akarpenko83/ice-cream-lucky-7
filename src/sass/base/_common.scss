@@ -1,4 +1,19 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+// --------------------------------------------- customized scrollbar ------
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: goldenrod;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $accentColor;
+    border-radius: 5px;
+    box-shadow: 0 -100vh 0 100vh $themePrimaryColor, 0 10 15px 5px black;
+}
+// -------------------------------------------------------------------------
 body {
   background-color: $themePrimaryColor;
   color: $txtPrimaryColor;
