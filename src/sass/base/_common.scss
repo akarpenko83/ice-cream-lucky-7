@@ -5,12 +5,13 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: $accentColor;
+    background: goldenrod;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: $themePrimaryColor;
-    box-shadow: 0 -100vh 0 100vh $themePrimaryColor, 0 0 15px 5px black;
+    background-color: $accentColor;
+    border-radius: 5px;
+    box-shadow: 0 -100vh 0 100vh $themePrimaryColor, 0 10 15px 5px black;
 }
 // -------------------------------------------------------------------------
 body {
