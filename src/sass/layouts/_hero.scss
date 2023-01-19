@@ -123,7 +123,7 @@ p {
     height: 152px;
     transform: rotate(180deg);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
+    cursor: url('../images/header-hero/Cursor1.png'), pointer;
   }
   .plate:hover {
     transform: rotate(360deg);

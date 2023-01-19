@@ -30,7 +30,7 @@
   border-style: none;
   background-color: transparent;
   line-height: 0;
-  cursor: pointer;
+  cursor: url('../images/header-hero/Cursor1.png'), pointer;
   &--position {
     position: absolute;
     right: 12px;
@@ -82,10 +82,6 @@
 
 .about .modal {
   position: fixed;
-}
-
-.products .modal-ingridients {
-  // top: 100px;
 }
 
 .overlay.active {
