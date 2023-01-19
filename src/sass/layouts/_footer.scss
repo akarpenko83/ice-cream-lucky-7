@@ -130,6 +130,7 @@
   border-radius: 50%;
   background-color: $accentColor;
   content: '';
+  cursor: url('../images/header-hero/Cursor1.png'), pointer;
 }
 
 .footer__contacts {
@@ -164,6 +165,7 @@
 
 .footer__contact--tel {
   color: $txtSecondaryColor;
+  cursor: url('../images/header-hero/Cursor1.png'), pointer;
 }
 
 .footer-copyrights {
