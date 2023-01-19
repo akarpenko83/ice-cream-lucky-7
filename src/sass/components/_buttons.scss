@@ -2,11 +2,11 @@
 .button {
   border-radius: 10px;
   font-family: inherit;
-  cursor: pointer;
+
   gap: 7px;
   display: flex;
   align-items: center;
-  cursor: url('../images/header-hero/Cursor1.png'), pointer;
+  cursor: url('../images/header-hero/Vector-.png'), pointer;
   justify-content: center;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);

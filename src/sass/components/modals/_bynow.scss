@@ -3,7 +3,7 @@
   // @extend %outline;
   // z-index: 886;
   padding: 0 28px;
-
+  cursor: url('../images/header-hero/Vector-.png'), pointer;
   @include phone {
     padding: 0 26px;
   }
@@ -54,7 +54,7 @@
   &__picture {
     position: relative;
     display: block;
-
+    cursor: url('../images/header-hero/Vector-.png'), pointer;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 87px;
@@ -81,6 +81,7 @@
     top: 0;
     z-index: 888;
     display: block;
+    cursor: url('../images/header-hero/Vector-.png'), pointer;
   }
 
   &__background {
@@ -149,7 +150,7 @@
 
   &__rectangle {
     box-sizing: border-box;
-
+    cursor: url('../images/header-hero/Vector-.png'), pointer;
     position: absolute;
     top: 63px;
     // top: 2px;

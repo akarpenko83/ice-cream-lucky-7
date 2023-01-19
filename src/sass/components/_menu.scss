@@ -34,6 +34,7 @@
 }
 .menu-logo {
   position: absolute;
+  cursor: url('../images/header-hero/Vector-.png'), pointer;
   top: 7px;
   @media screen and (min-width: 1200px) {
     display: none;

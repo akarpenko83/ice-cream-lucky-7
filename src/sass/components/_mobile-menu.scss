@@ -21,6 +21,7 @@
 }
 
 .menu-toggle {
+  cursor: url('../images/header-hero/Vector-.png'), pointer;
   position: absolute;
   top: 17px;
   right: 20px;
@@ -80,6 +81,7 @@
   font-size: 32px;
   line-height: 1.22;
   color: $txtSecondaryColor;
+  cursor: url('../images/header-hero/Vector-.png'), pointer;
   &:hover {
     color: $txtPrimaryColor;
   }
