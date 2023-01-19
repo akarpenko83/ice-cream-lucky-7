@@ -153,3 +153,44 @@ img.rot {
     -webkit-animation-delay: 3s, 1.5s;
     animation-delay: 3s, 1.5s
 }
+// --------------------------------- shaking every 5 seconds
+.rise-shake {
+    animation-name: jump-shaking;
+    animation-duration: 5000ms;
+    animation-delay: 2000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes jump-shaking {
+    0% {
+        transform: translateX(0)
+    }
+
+    5% {
+        transform: translateY(-9px)
+    }
+
+    7% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    9% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    11% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    15% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    20% {
+        transform: translateY(0) rotate(0)
+    }
+         100% {
+             transform: translateX(0)
+         }
+}
