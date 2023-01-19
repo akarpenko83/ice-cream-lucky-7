@@ -24,6 +24,7 @@
   position: absolute;
   top: 17px;
   right: 20px;
+  cursor: url('../images/header-hero/Cursor1.png'), pointer;
   background-color: transparent;
   border: 0px;
   @media screen and (min-width: 480px) {
@@ -56,6 +57,7 @@
 }
 .mobile-menu__logo {
   margin-bottom: 50px;
+  cursor: url('../images/header-hero/Cursor1.png'), pointer;
   @media screen and (min-width: 480px) {
     margin-bottom: 37px;
   }
@@ -65,13 +67,11 @@
 }
 .mobile-nav {
   @extend %list;
-  // margin: 0 auto;
+
   text-align: center;
   margin-bottom: 110px;
 }
-// .mobile-nav:not(:last-child) {
-//     margin-bottom: 32px;
-//         }
+
 .mobile-nav__item {
   margin-bottom: 32px;
 }
@@ -82,6 +82,7 @@
   font-size: 32px;
   line-height: 1.22;
   color: $txtSecondaryColor;
+  cursor: url('../images/header-hero/Cursor1.png'), pointer;
   &:hover {
     color: $txtPrimaryColor;
   }

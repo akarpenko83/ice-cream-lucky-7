@@ -201,11 +201,15 @@
   right: 20px;
   width: 200px;
   margin: 0 auto;
-
+  @extend %mainAnime;
   z-index: 2;
+  &:hover {
+    transform: translateY(50px);
+  }
 
   @include phone {
     right: 12px;
+
   }
 
   @include tablet {
@@ -218,6 +222,9 @@
 
     top: -89px;
     right: 16px;
+    &:hover {
+        transform: translateY(9px);
+      }
   }
 }
 

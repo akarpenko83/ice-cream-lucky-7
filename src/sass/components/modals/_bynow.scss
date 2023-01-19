@@ -81,6 +81,7 @@
     top: 0;
     z-index: 888;
     display: block;
+    cursor: url('../images/header-hero/Cursor1.png'), pointer;
   }
 
   &__background {
@@ -149,7 +150,7 @@
 
   &__rectangle {
     box-sizing: border-box;
-
+    cursor: url('../images/header-hero/Cursor1.png'), pointer;
     position: absolute;
     top: 63px;
     // top: 2px;
@@ -195,6 +196,7 @@
     z-index: 889;
     bottom: -45px;
     right: 0;
+    cursor: url('../images/header-hero/Cursor1.png'), pointer;
 
     // display: block;
     width: 100%;

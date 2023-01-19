@@ -244,15 +244,24 @@
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
+  @extend %mainAnime;
   @media screen and (max-width: 767px) {
     width: 280px;
     position: relative;
     top: 22px;
+    &:hover {
+      transform: translateY(-22px);
+    }
+      
+    
   }
   @media screen and (min-width: 768px) {
     width: 330px;
     border-radius: 165px;
     top: 26px;
+    &:hover {
+        transform: translateY(-26px);
+      }
   }
   @media screen and (min-width: 1200px) {
     width: 490px;
@@ -260,6 +269,10 @@
     padding-right: 109px;
     border-radius: 250px;
     top: 39px;
+    &:hover {
+        transform: translateY(-39px);
+      }
+    
   }
 }
 

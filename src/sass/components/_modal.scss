@@ -30,11 +30,21 @@
   border-style: none;
   background-color: transparent;
   line-height: 0;
-  cursor: pointer;
+  cursor: url('../images/header-hero/Cursor1.png'), pointer;
   &--position {
     position: absolute;
     right: 12px;
     top: 12px;
+  }
+}
+
+.modals-close__icon {
+  width: 20px;
+  height: 20px;
+
+  @include tablet {
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -74,10 +84,6 @@
   position: fixed;
 }
 
-.products .modal-ingridients {
-  // top: 100px;
-}
-
 .overlay.active {
   position: fixed;
   opacity: 1;
@@ -106,7 +112,6 @@
 
 @import './modals/ingridients';
 @import './modals/bynow';
-@import './modals/bynow-mobile-menu';
 @import './modals/readmore';
 @import './modals/ourlocation';
 @import './modals/franchise';

@@ -2,7 +2,7 @@
 .button {
   border-radius: 10px;
   font-family: inherit;
-  cursor: pointer;
+
   gap: 7px;
   display: flex;
   align-items: center;
@@ -11,6 +11,7 @@
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button__icon {
   fill: currentColor;
@@ -126,4 +127,56 @@
     min-width: 121px;
     @include font(600, 14, 1.2, null);
   }
+}
+
+// -----------------------------SCROLL UP BUTTON
+
+#scrollup-button {
+  display: inline-block;
+  background-color: $themePrimaryColor;
+  border: 8px solid $accentColor;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  transition: background-color 0.01s linear,
+    opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+
+  background-image: url('../images/icons/scroll-up.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include tablet {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  @include desktop {
+    bottom: 45px;
+    right: 45px;
+
+    width: 55px;
+    height: 55px;
+  }
+}
+
+#scrollup-button:active {
+  opacity: 1;
+}
+#scrollup-button.show {
+  opacity: 0.5;
+  visibility: visible;
+}
+#scrollup-button:hover,
+#scrollup-button:focus {
+  background-color: #77a663;
+  opacity: 1;
 }

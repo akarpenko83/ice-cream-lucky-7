@@ -1,3 +1,7 @@
+.page-header {
+  cursor: url('../images/header-hero/Cursor1.png'), pointer;
+}
+
 .page-header__container {
   position: relative;
   min-height: 50px;
@@ -8,8 +12,9 @@
 }
 .hero__button {
   display: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 768px) {
     display: flex;
-    
   }
 }
