@@ -65,13 +65,11 @@
 }
 .mobile-nav {
   @extend %list;
-  // margin: 0 auto;
+
   text-align: center;
   margin-bottom: 110px;
 }
-// .mobile-nav:not(:last-child) {
-//     margin-bottom: 32px;
-//         }
+
 .mobile-nav__item {
   margin-bottom: 32px;
 }
