@@ -2,8 +2,8 @@
 
 .gallery {
   &__container {
+    position: relative;
     height: 0;
-    padding: 0;
     margin: 0 auto;
 
     @include phone {
@@ -11,7 +11,7 @@
     }
 
     @include tablet {
-      width: 768px;
+      width: 769px;
     }
 
     @include desktop {
@@ -24,10 +24,7 @@
   }
 
   &__slider {
-    width: 100%;
     position: absolute;
-
-    // outline: 2px solid red;
 
     top: -32px;
     left: 50%;
@@ -36,19 +33,26 @@
     border-radius: 8px;
     overflow: hidden;
 
-    background: transparent;
+    background: $modalBgdColor;
+
+    @media screen and (max-width: 479px) {
+      width: calc(100% - 40px);
+    }
 
     @include phone {
       top: -27px;
+      width: 440px;
     }
 
     @include tablet {
       top: -144px;
+      width: 704px;
       border-radius: 18px;
     }
 
     @include desktop {
       top: -160px;
+      width: 1013px;
       border-radius: 24px;
     }
   }
@@ -56,29 +60,22 @@
   &__picture {
     display: block;
 
-    margin: 0 20px;
-
-    // outline: 2px solid blue;
-
     height: 130px;
     border-radius: 8px;
     overflow: hidden;
 
     @include phone {
-      width: 440px;
       height: 204px;
       margin-right: auto;
       margin-left: auto;
     }
 
     @include tablet {
-      width: 704px;
       height: 327px;
       border-radius: 18px;
     }
 
     @include desktop {
-      width: 1013px;
       height: 422px;
       border-radius: 24px;
     }

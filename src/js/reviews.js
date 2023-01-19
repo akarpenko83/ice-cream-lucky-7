@@ -7,4 +7,9 @@ $('.reviews__slider').slick({
   autoplay: false,
   autoplaySpeed: 2000,
   speed: 2000,
+  // dots: true,
+  // infinite: true,
+  // speed: 500,
+  // fade: true,
+  // cssEase: 'linear',
 });
