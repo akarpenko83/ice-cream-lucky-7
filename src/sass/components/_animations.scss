@@ -1,0 +1,15 @@
+// ------------------- анімація обертання зображення
+// для додавання обертання потрібно додати клас .rot до необхідного зображення
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+// spin впливає на швидкість обертання 
+img.rot {
+    animation: spin 15s linear 0s infinite; 
+}
