@@ -1,22 +1,23 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 body {
-    background-color: $themePrimaryColor;
-    color: $txtPrimaryColor;
-    font-family: 'Montserrat', 'Seymour One', sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    cursor: url(../images/header-hero/Cursor1.png), pointer;
+  background-color: $themePrimaryColor;
+  color: $txtPrimaryColor;
+  font-family: 'Montserrat', 'Seymour One', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  cursor: url(../images/header-hero/Cursor1.png), pointer;
 }
+
 h1,
 h2,
 h3,
 p,
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
