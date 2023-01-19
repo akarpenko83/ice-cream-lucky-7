@@ -38,6 +38,16 @@
   }
 }
 
+.modals-close__icon {
+  width: 20px;
+  height: 20px;
+
+  @include tablet {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .modal {
   /* Скрываем окна  */
 
