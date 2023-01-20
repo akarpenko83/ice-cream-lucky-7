@@ -1,11 +1,11 @@
-.benefits__container {
+.advantages__container {
   margin-bottom: 64px;
   @include tablet {
     margin-bottom: 204px;
   }
 }
 
-.benefits__list {
+.advantages__list {
   @extend %list;
   display: flex;
   justify-content: center;
@@ -21,44 +21,45 @@
   }
 }
 
-.benefits__icon {
+.advantages__item { 
+  flex-direction: column;
+  align-items: center;
   display: flex;
-  padding: 7;
-  background: $accentColor;
-  border-radius: 25px;
-  width: 50px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 16px;
-  // margin-top: 32px;
-  @include tablet {
-    margin-top: 40px;
+  position: relative;
+  gap: 16px;
+  @include tablet { 
+    gap: 12px;
+  }
+  @include desktop { 
+    gap: 12px;
   }
 }
 
-.benefits__title {
+
+.advantages__title {
   font-size: 36px;
   line-height: 44px;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $modalBgdColor;
-  margin-bottom: 16px;
+  padding-top: 66px;
   @include tablet {
     font-weight: 700;
     font-size: 48px;
     line-height: 59px;
     letter-spacing: 0.04em;
+    padding-top: 82px;
   }
   @include desktop {
     font-size: 58px;
     line-height: 71px;
     letter-spacing: 0.04em;
+    padding-top: 90px;
   }
 }
 
-.benefits__text {
+.advantages__text {
   font-size: 12px;
   line-height: 170%;
   text-align: center;
@@ -81,82 +82,37 @@
   }
 }
 
-.benefits__item:not(:last-child) > .benefits__text {
+.advantages__item:not(:last-child) > .advantages__text {
   margin-bottom: 32px;
 }
 
-.benefits__item:nth-child(3) > .benefits__text {
+.advantages__item:nth-child(3) > .advantages__text {
   @include tablet {
     margin-bottom: 32px;
   }
 }
 
-.benefits__icon-cow {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  color: currentColor;
-  text-decoration: none;
-  padding: 7;
-  margin-bottom: 16px;
-  cursor: url('../images/header-hero/Cursor1.png'), pointer;
+
+
+.advantages__item::before { 
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  position: absolute;
+  top: 0;
 }
 
-.benefits__icon-cow::before {
-  content: '';
+.advantages__item:nth-child(1)::before { 
   background-image: url('../images/advantages/cow.png');
-  background-color: $accentColor;
-  border-radius: 50%;
-  color: $txtPrimaryColor;
-  fill: #131313;
-  margin: 0 auto;
-  width: 50px;
-  height: 50px;
-  background-size: contain;
 }
 
-.benefits__icon-weight {
-  display: flex;
-  color: currentColor;
-  text-decoration: none;
-  padding: 7;
-  margin-bottom: 16px;
-  cursor: url('../images/header-hero/Cursor1.png'), pointer;
-}
 
-.benefits__icon-weight::before {
-  content: '';
+.advantages__item:nth-child(2)::before { 
   background-image: url('../images/advantages/weight.png');
-  background-color: $accentColor;
-  border-radius: 50%;
-  margin: 0 auto;
-  color: $txtPrimaryColor;
-  fill: #131313;
-
-  width: 50px;
-  height: 50px;
-  background-size: contain;
 }
 
-.benefits__icon-ice-cream {
-  display: flex;
-  align-items: center;
-  color: currentColor;
-  text-decoration: none;
-  padding: 7;
-  margin-bottom: 16px;
-  cursor: url('../images/header-hero/Cursor1.png'), pointer;
-}
-
-.benefits__icon-ice-cream::before {
-  content: '';
+.advantages__item:nth-child(3)::before { 
   background-image: url('../images/advantages/ice.png');
-  background-color: $accentColor;
-  border-radius: 50%;
-  margin: 0 auto;
-  color: $txtPrimaryColor;
-  fill: #131313;
-  width: 50px;
-  height: 50px;
-  background-size: contain;
 }
+
