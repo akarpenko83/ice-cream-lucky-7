@@ -1,4 +1,4 @@
-/* --- reviews --- */
+/* --- customers-reviews --- */
 
 .reviews {
   background-color: $modalBgdColor;
@@ -30,74 +30,45 @@
       background-image: url('../images/backgrounds/background-@2x.png');
     }
   }
-
   &__container {
-    
-    padding: 0;
     margin: 0 auto;
 
     @include phone {
       width: 480px;
-      padding-left: 0;
-      padding-right: 0;
     }
 
     @include tablet {
-      width: 768px;
-      padding-left: 0;
-      padding-right: 0;
+      width: 769px;
     }
 
     @include desktop {
       width: 1200px;
-      padding-left: 0;
-      padding-right: 0;
     }
   }
-
   &__wrap {
     display: block;
 
+    width: 100%;
     height: 1037px;
 
-    max-width: 479px;
-    min-width: 320px;
-
     padding-top: 178px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
     margin: 0 auto;
 
     @include phone {
       height: 1132px;
-      max-width: none;
-      min-width: none;
-      width: 480px;
       padding-top: 257px;
-      padding-left: 0;
-      padding-right: 0;
     }
 
     @include tablet {
       height: 1017px;
-      max-width: none;
-      min-width: none;
-      width: 768px;
       padding-top: 283px;
-
-      padding-left: 0;
-      padding-right: 0;
     }
 
     @include desktop {
       height: 1053px;
-      max-width: none;
-      min-width: none;
-      width: 1200px;
       padding-top: 400px;
-
-      padding-left: 0;
-      padding-right: 0;
     }
   }
 
@@ -108,6 +79,7 @@
   &__slider {
     position: relative;
     background-color: transparent;
+    margin: 0 20px;
   }
 
   &__block {
@@ -126,7 +98,7 @@
   }
 
   &__statement {
-    width: 280px;
+    width: calc(100% - 40px);
     padding: 35px 39px;
     margin-left: auto;
     margin-right: auto;
@@ -142,18 +114,11 @@
 
     @include phone {
       width: 280px;
-      padding: 35px 39px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 32px;
-      @include font($fw: null, $fs: 12, $lh: 2.55, $ls: null);
     }
 
     @include tablet {
       width: 705px;
       padding: 28px 80px;
-      margin-left: auto;
-      margin-right: auto;
       border-radius: 24px;
       @include font($fw: 500, $fs: 14, $lh: 1.86, $ls: 0.04em);
     }
@@ -161,31 +126,16 @@
     @include desktop {
       width: 968px;
       padding: 43px 109px;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 24px;
       @include font($fw: 500, $fs: 16, $lh: 1.86, $ls: 0.04em);
     }
   }
 
   &__name {
     margin-bottom: 12px;
-
     @include font($fw: 500, $fs: 20, $lh: 1.86, $ls: null);
-
     color: $txtPrimaryColor;
 
-    @include phone {
-      margin-bottom: 12px;
-      @include font($fw: 500, $fs: 20, $lh: 1.86, $ls: null);
-    }
-
     @include tablet {
-      margin-bottom: 32px;
-      @include font($fw: 500, $fs: 16, $lh: 1.86, $ls: null);
-    }
-
-    @include desktop {
       margin-bottom: 32px;
       @include font($fw: 500, $fs: 16, $lh: 1.86, $ls: null);
     }

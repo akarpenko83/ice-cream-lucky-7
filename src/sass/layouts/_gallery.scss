@@ -2,60 +2,20 @@
 
 .gallery {
   &__container {
-    padding: 0;
-    margin: 0 auto;
-
-    @include phone {
-      width: 480px;
-      padding: 0;
-      margin: 0 auto;
-    }
-
-    @include tablet {
-      width: 768px;
-      padding: 0;
-      margin: 0 auto;
-    }
-
-    @include desktop {
-      width: 1200px;
-      padding: 0;
-      margin: 0 auto;
-    }
-  }
-
-  &__wrap {
     position: relative;
-    width: 100%;
-    max-width: 479px;
-    min-width: 320px;
     height: 0;
-
     margin: 0 auto;
-    padding: 0 20px;
 
     @include phone {
-      max-width: none;
-      min-width: none;
       width: 480px;
-      margin: 0 auto;
-      padding: 0 20px;
     }
 
     @include tablet {
-      max-width: none;
-      min-width: none;
-      width: 768px;
-      margin: 0 auto;
-      padding: 0 32px;
+      width: 769px;
     }
 
     @include desktop {
-      max-width: none;
-      min-width: none;
       width: 1200px;
-      margin: 0 auto;
-      padding: 0 93px;
     }
   }
 
@@ -66,43 +26,58 @@
   &__slider {
     position: absolute;
 
-    z-index: 10;
     top: -32px;
     left: 50%;
     transform: translateX(-50%);
 
-    width: 100%;
-    height: 130px;
-
-    overflow: hidden;
     border-radius: 8px;
+    overflow: hidden;
+
     background: $modalBgdColor;
+
+    @media screen and (max-width: 479px) {
+      width: calc(100% - 40px);
+    }
 
     @include phone {
       top: -27px;
-      height: 204px;
+      width: 440px;
     }
 
     @include tablet {
       top: -144px;
-      height: 327px;
-
+      width: 704px;
       border-radius: 18px;
     }
 
     @include desktop {
       top: -160px;
-      height: 422px;
+      width: 1013px;
       border-radius: 24px;
     }
   }
 
-  // &__item {
-  //   display: block;
-  // }
+  &__picture {
+    display: block;
 
-  &__image {
-    width: 100%;
-    height: auto;
+    height: 130px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    @include phone {
+      height: 204px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @include tablet {
+      height: 327px;
+      border-radius: 18px;
+    }
+
+    @include desktop {
+      height: 422px;
+      border-radius: 24px;
+    }
   }
 }

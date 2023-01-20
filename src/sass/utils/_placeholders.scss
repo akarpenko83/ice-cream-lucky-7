@@ -3,10 +3,12 @@
   margin: 0;
   list-style: none;
 }
+
 %link {
   text-decoration: none;
   color: inherit;
 }
+
 %visually-hidden {
   position: absolute;
   width: 0px;
@@ -17,6 +19,7 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
 %mainAnime {
   transition-property: color, transform, background-color, box-shadow;
   transition-duration: 500ms;
@@ -26,15 +29,16 @@
 %outline {
   outline: 2px dashed #f44336;
 }
+
 %container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0px 20px;
   @media screen and (min-width: 480px) {
-      .container {
-        width: 480px;
-      }
+    .container {
+      width: 480px;
     }
+  }
   @media screen and (min-width: 768px) {
     .container {
       padding: 0 32px;
@@ -54,7 +58,6 @@
 
   background-color: $accentColor;
   color: $btnMainСolor;
- 
 
   &:hover {
     background-color: $btnHoverColor;
@@ -105,6 +108,7 @@
     color: $btnDisableColor;
   }
 }
-html{
-  scroll-behavior:smooth;
+
+html {
+  scroll-behavior: smooth;
 }
