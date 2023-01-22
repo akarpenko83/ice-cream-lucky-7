@@ -145,6 +145,9 @@
     display: flex;
     column-gap: 38px;
   }
+  @media screen and(min-width:768px) and (max-width:1199px) {
+    margin-bottom: 60px;
+  }
 }
 .about__button {
   font-weight: 600;
@@ -163,16 +166,14 @@
   margin-top: 10px;
   cursor: pointer;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     margin: 10px auto 50px;
   }
-
-  @media screen and (min-width: 480px) {
-    margin: 16px auto 60px;
-  }
-
   @media screen and (min-width: 768px) {
-    margin-top: 44px;
+    margin-top: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 54px;
   }
 }
 
@@ -288,4 +289,7 @@
   @media screen and(min-width:1200px) {
     max-width: 490px;
   }
+}
+.about__button--svg{
+
 }
