@@ -1,0 +1,2 @@
+!function(){function e(e){return e&&e.__esModule?e.default:e}var a,r={};Object.defineProperty(r,"__esModule",{value:!0}),r.default=function(e,a,r){a in e?Object.defineProperty(e,a,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[a]=r;return e},$(".gallery__slider").slick((a={arrows:!1,autoplay:!0,autoplaySpeed:2500,speed:2e3,dots:!1,infinite:!0},e(r)(a,"speed",2500),e(r)(a,"fade",!0),e(r)(a,"cssEase","linear"),a))}();
+//# sourceMappingURL=index.4eb40846.js.map
