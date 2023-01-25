@@ -204,7 +204,7 @@
   @extend %mainAnime;
   z-index: 2;
   &:hover {
-    transform: translateY(50px);
+    transform: translateY(5.5px);
   }
 
   @include phone {
