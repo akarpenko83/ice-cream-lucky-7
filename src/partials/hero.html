@@ -14,7 +14,9 @@
     <div class="container heroy__container">
         <div class="heroy__left-part">
             <div>
-                <h1 class="heroy__title">ice cream made with passion</h1>
+                <h1 class="heroy__title">
+                    ice cream made with passion
+                </h1>
                 <div class="heroy__buttons">
                     <a
                         href="#products"
@@ -23,19 +25,22 @@
                         <span>Products</span>
                     </a>
 
-                    <a href="#about" class="button button--transparent">
+                    <a
+                        href="#about"
+                        class="button button--transparent"
+                    >
                         <span>How its made?</span>
                     </a>
                 </div>
             </div>
             <div class="heroy__efekt">
                 <img
-                    class="plate animate__animated animate__fadeInLeft rot"
+                    class="plate animate__animated animate__fadeInLeft rot lazyload"
                     srcset="
                         ./images/header-hero/round-ice-cream.png     1x,
                         ./images/header-hero/round-ice-cream-@2x.png 2x
                     "
-                    src="./images/header-hero/round-ice-cream.png"
+                    data-src="./images/header-hero/round-ice-cream.png"
                     alt="Тарілка з морозивом"
                     width="152"
                 />
@@ -53,31 +58,43 @@
                     <p
                         class="heroy__inform animate__animated animate__fadeInLeft"
                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore
+                        et
                     </p>
-                    <svg width="40" height="16" class="arrow">
-                        <use href="./images/icons/icons.svg#icon-arrow"></use>
+                    <svg
+                        width="40"
+                        height="16"
+                        class="arrow"
+                    >
+                        <use
+                            href="./images/icons/icons.svg#icon-arrow"
+                        ></use>
                     </svg>
                 </div>
             </div>
         </div>
         <div class="heroy__right">
             <img
-                class="img-ice animate__animated animate__backInLeft"
+                class="img-ice animate__animated animate__backInLeft lazyload"
                 srcset="
                     ./images/header-hero/main-ice-cream.png     1x,
                     ./images/header-hero/main-ice-cream-@2x.png 2x
                 "
-                src="./images/header-hero/main-ice-cream.png"
+                data-src="./images/header-hero/main-ice-cream.png"
                 alt="Ріжок з морозивом"
                 width="268"
             />
 
             <div class="heroy__advantage">
-                <div class="heroy-number value" akhi="16">0</div>
+                <div class="heroy-number value" akhi="16">
+                    0
+                </div>
                 <p class="heroy-text">cafes</p>
-                <div class="heroy-number value" akhi="26">0</div>
+                <div class="heroy-number value" akhi="26">
+                    0
+                </div>
                 <p class="heroy-text">food trucks</p>
             </div>
         </div>

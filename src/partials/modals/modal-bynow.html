@@ -1,121 +1,164 @@
 <!-- <button type="submit" class="js-open-modal" data-modal="1">BuyNow</button> -->
 
 <div class="modal-buynow modal" data-modal="1">
-  <button type="button" class="modals-close__button modals-close__button--position js-modal-close">
-    <svg class="modals-close__icon" width="20" height="20">
-      <use href="./images/icons/icons.svg#icon-close"></use>
-    </svg>
-  </button>
-  <h1 class="modal-buynow__header">Buy Now</h1>
-  <form name="input details" class="modal-buynow__form">
-    <ul class="modal-buynow__products">
-      <li class="modal-buynow__picture">
-        <label for="modal-buynow__item-check" class="modal-buynow__label">
-          <input
-            type="checkbox"
-            name="modal-buynow__checkbox"
-            class="modal-buynow__checkbox"
-            id="modal-buynow__item-check"
-            value="modal-buynow__checkbox"
-          />
-          <img
-            srcset="
-              ./images/modals/ice-cream-modal.png     1x,
-              ./images/modals/ice-cream-modal-@2x.png 2x
-            "
-            width="132"
-            height="132"
-            class="modal-buynow__img"
-            src="./images/modals/ice-cream-modal.png"
-            alt="chocolate icecream"
-          />
-          <span class="modal-buynow__text">ice cream</span>
-          <span class="modal-buynow__background modal-buynow__background--color"></span>
-          <span class="modal-buynow__rectangle modal-buynow__rectangle--color"></span>
-        </label>
-      </li>
-
-      <li class="modal-buynow__picture">
-        <label for="modal-buynow__item-check2" class="modal-buynow__label">
-          <input
-            type="checkbox"
-            name="modal-buynow__checkbox"
-            class="modal-buynow__checkbox"
-            id="modal-buynow__item-check2"
-            value="modal-buynow__checkbox"
-          />
-          <img
-            srcset="
-              ./images/modals/ice-coffee-modal.png     1x,
-              ./images/modals/ice-coffee-modal-@2x.png 2x
-            "
-            width="132"
-            height="132"
-            class="modal-buynow__img"
-            src="./images/modals/ice-coffee-modal.png"
-            alt="chocolate icecream"
-          />
-          <span class="modal-buynow__text">ice coffee</span>
-          <span class="modal-buynow__background modal-buynow__background--color2"></span>
-          <span class="modal-buynow__rectangle modal-buynow__rectangle--color2"></span>
-        </label>
-      </li>
-
-      <li class="modal-buynow__picture">
-        <label for="modal-buynow__item-check3" class="modal-buynow__label">
-          <input
-            type="checkbox"
-            name="modal-buynow__checkbox"
-            class="modal-buynow__checkbox"
-            id="modal-buynow__item-check3"
-            value="modal-buynow__checkbox"
-          />
-          <img
-            srcset="
-              ./images/modals/milkshake-modal.png     1x,
-              ./images/modals/milkshake-modal-@2x.png 2x
-            "
-            width="132"
-            height="132"
-            class="modal-buynow__img"
-            src="./images/modals/milkshake-modal.png"
-            alt="chocolate icecream"
-          />
-          <span class="modal-buynow__text">milkshake </span>
-          <span class="modal-buynow__background modal-buynow__background--color3"></span>
-          <span class="modal-buynow__rectangle modal-buynow__rectangle--color3"></span>
-        </label>
-      </li>
-    </ul>
-    <div class="modal-bynow__fields">
-      <div class="modal-buynow__field">
-        <input
-          type="text"
-          name="name"
-          class="modal-buynow__input"
-          autocomplete="name"
-          placeholder="Name"
-          pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}"
-          required
-        />
-      </div>
-      <div class="modal-buynow__field">
-        <input
-          type="tel"
-          name="phone"
-          class="modal-buynow__input"
-          autocomplete="tel"
-          placeholder="Phone"
-          pattern="[0]{1}[0-9]{9}"
-          required
-        />
-      </div>
-      <div class="modal-buynow__field">
-        <textarea name="comment" class="modal-buynow__textarea" placeholder="Comment"></textarea>
-      </div>
-    </div>
-    <button type="submit" class="modal-buynow__submit button button__submit button--full">
-      Submit
+    <button
+        type="button"
+        class="modals-close__button modals-close__button--position js-modal-close"
+    >
+        <svg
+            class="modals-close__icon"
+            width="20"
+            height="20"
+        >
+            <use
+                href="./images/icons/icons.svg#icon-close"
+            ></use>
+        </svg>
     </button>
-  </form>
+    <h1 class="modal-buynow__header">Buy Now</h1>
+    <form name="input details" class="modal-buynow__form">
+        <ul class="modal-buynow__products">
+            <li class="modal-buynow__picture">
+                <label
+                    for="modal-buynow__item-check"
+                    class="modal-buynow__label"
+                >
+                    <input
+                        type="checkbox"
+                        name="modal-buynow__checkbox"
+                        class="modal-buynow__checkbox"
+                        id="modal-buynow__item-check"
+                        value="modal-buynow__checkbox"
+                    />
+                    <img
+                        srcset="
+                            ./images/modals/ice-cream-modal.png     1x,
+                            ./images/modals/ice-cream-modal-@2x.png 2x
+                        "
+                        width="132"
+                        height="132"
+                        class="modal-buynow__img lazyload"
+                        src="./images/modals/ice-cream-modal.png"
+                        alt="chocolate icecream"
+                    />
+                    <span class="modal-buynow__text"
+                        >ice cream</span
+                    >
+                    <span
+                        class="modal-buynow__background modal-buynow__background--color"
+                    ></span>
+                    <span
+                        class="modal-buynow__rectangle modal-buynow__rectangle--color"
+                    ></span>
+                </label>
+            </li>
+
+            <li class="modal-buynow__picture">
+                <label
+                    for="modal-buynow__item-check2"
+                    class="modal-buynow__label"
+                >
+                    <input
+                        type="checkbox"
+                        name="modal-buynow__checkbox"
+                        class="modal-buynow__checkbox"
+                        id="modal-buynow__item-check2"
+                        value="modal-buynow__checkbox"
+                    />
+                    <img
+                        srcset="
+                            ./images/modals/ice-coffee-modal.png     1x,
+                            ./images/modals/ice-coffee-modal-@2x.png 2x
+                        "
+                        width="132"
+                        height="132"
+                        class="modal-buynow__img lazyload"
+                        src="./images/modals/ice-coffee-modal.png"
+                        alt="chocolate icecream"
+                    />
+                    <span class="modal-buynow__text"
+                        >ice coffee</span
+                    >
+                    <span
+                        class="modal-buynow__background modal-buynow__background--color2"
+                    ></span>
+                    <span
+                        class="modal-buynow__rectangle modal-buynow__rectangle--color2"
+                    ></span>
+                </label>
+            </li>
+
+            <li class="modal-buynow__picture">
+                <label
+                    for="modal-buynow__item-check3"
+                    class="modal-buynow__label"
+                >
+                    <input
+                        type="checkbox"
+                        name="modal-buynow__checkbox"
+                        class="modal-buynow__checkbox"
+                        id="modal-buynow__item-check3"
+                        value="modal-buynow__checkbox"
+                    />
+                    <img
+                        srcset="
+                            ./images/modals/milkshake-modal.png     1x,
+                            ./images/modals/milkshake-modal-@2x.png 2x
+                        "
+                        width="132"
+                        height="132"
+                        class="modal-buynow__img lazyload"
+                        src="./images/modals/milkshake-modal.png"
+                        alt="chocolate icecream"
+                    />
+                    <span class="modal-buynow__text"
+                        >milkshake
+                    </span>
+                    <span
+                        class="modal-buynow__background modal-buynow__background--color3"
+                    ></span>
+                    <span
+                        class="modal-buynow__rectangle modal-buynow__rectangle--color3"
+                    ></span>
+                </label>
+            </li>
+        </ul>
+        <div class="modal-bynow__fields">
+            <div class="modal-buynow__field">
+                <input
+                    type="text"
+                    name="name"
+                    class="modal-buynow__input"
+                    autocomplete="name"
+                    placeholder="Name"
+                    pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}"
+                    required
+                />
+            </div>
+            <div class="modal-buynow__field">
+                <input
+                    type="tel"
+                    name="phone"
+                    class="modal-buynow__input"
+                    autocomplete="tel"
+                    placeholder="Phone"
+                    pattern="[0]{1}[0-9]{9}"
+                    required
+                />
+            </div>
+            <div class="modal-buynow__field">
+                <textarea
+                    name="comment"
+                    class="modal-buynow__textarea"
+                    placeholder="Comment"
+                ></textarea>
+            </div>
+        </div>
+        <button
+            type="submit"
+            class="modal-buynow__submit button button__submit button--full"
+        >
+            Submit
+        </button>
+    </form>
 </div>

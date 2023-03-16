@@ -1,12 +1,14 @@
 <header class="page-header">
     <div class="container page-header__container">
-        <include src="./partials/modals/modal-bynow.html"></include>
+        <include
+            src="./partials/modals/modal-bynow.html"
+        ></include>
         <!-- <div class="overlay js-overlay-modal"></div> -->
         <div class="logo page-header__logo">
             <a class="logo__link" href="#"
                 ><img
-                    class="logo-png rise-shake"
-                    src="./images/header-hero/logo.png"
+                    class="logo-png rise-shake lazyload"
+                    data-src="./images/header-hero/logo.png"
                     srcset="
                         ./images/header-hero/logo-mob-40-37.png  40w,
                         ./images/header-hero/logo-tabl-48-44.png 48w,
@@ -21,27 +23,43 @@
             aria-expanded="false"
             aria-controls="mobile-menu"
         >
-            <img src="./images/icons/mobile-menu.png" alt="menu-toggle" />
+            <img
+                class="lazyload"
+                data-src="./images/icons/mobile-menu.png"
+                alt="menu-toggle"
+            />
         </button>
 
         <div class="menu">
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a class="navigation__link" href="./index.html">Home</a>
+                        <a
+                            class="navigation__link"
+                            href="./index.html"
+                            >Home</a
+                        >
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#about"
+                        <a
+                            class="navigation__link"
+                            href="#about"
                             >How it’s made?</a
                         >
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#products"
+                        <a
+                            class="navigation__link"
+                            href="#products"
                             >Our products</a
                         >
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#Contact">Contact</a>
+                        <a
+                            class="navigation__link"
+                            href="#Contact"
+                            >Contact</a
+                        >
                     </li>
                 </ul>
             </nav>
@@ -52,25 +70,42 @@
             data-modal="1"
         >
             <span>Buy now</span>
-            <svg width="12" height="12" class="button__icon">
-                <use href="./images/icons/icons.svg#icon-button"></use>
+            <svg
+                width="12"
+                height="12"
+                class="button__icon"
+            >
+                <use
+                    href="./images/icons/icons.svg#icon-button"
+                ></use>
             </svg>
         </button>
     </div>
-    <div class="menu-container js-menu-container" id="mobile-menu">
+    <div
+        class="menu-container js-menu-container"
+        id="mobile-menu"
+    >
         <!-- <div class="overlay js-overlay-modal"></div> -->
-        <include src="./partials/modals/modal-bynow.html"></include>
+        <include
+            src="./partials/modals/modal-bynow.html"
+        ></include>
 
-        <button class="menu-toggle js-close-menu menu-toggle__close">
-            <img src="./images/icons/cross.png" alt="mobile-menu close" />
+        <button
+            class="menu-toggle js-close-menu menu-toggle__close"
+        >
+            <img
+                class="lazyload"
+                data-src="./images/icons/cross.png"
+                alt="mobile-menu close"
+            />
         </button>
 
         <div class="mobile-menu">
             <div class="logo mobile-menu__logo">
                 <a class="logo__link" href="#"
                     ><img
-                        class="logo-png"
-                        src="./images/header-hero/logo.png"
+                        class="logo-png lazyload"
+                        data-src="./images/header-hero/logo.png"
                         srcset="
                             ./images/header-hero/logo-mob-40-37.png  40w,
                             ./images/header-hero/logo-tabl-48-44.png 48w,
@@ -82,7 +117,11 @@
             </div>
             <ul class="mobile-nav">
                 <li class="mobile-nav__item">
-                    <a class="mobile-nav__link" href="./index.html">Home</a>
+                    <a
+                        class="mobile-nav__link"
+                        href="./index.html"
+                        >Home</a
+                    >
                 </li>
                 <li class="mobile-nav__item">
                     <a
@@ -113,8 +152,14 @@
                 data-modal="1"
             >
                 <span>Buy now</span>
-                <svg width="12" height="12" class="button__icon">
-                    <use href="./images/icons/icons.svg#icon-button"></use>
+                <svg
+                    width="12"
+                    height="12"
+                    class="button__icon"
+                >
+                    <use
+                        href="./images/icons/icons.svg#icon-button"
+                    ></use>
                 </svg>
             </button>
         </div>
